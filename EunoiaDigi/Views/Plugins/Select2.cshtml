@@ -1,0 +1,790 @@
+﻿@{
+    ViewData["Title"] = "Plugins";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <div class="col-xl-6">
+        <div class="card">
+            <div class="card-body">
+                <div class="mb-4">
+                    <h4 class="card-title">Single select boxes</h4>
+                    <p>Select2 can take a regular select box like this...</p>
+                </div>
+
+                <div class="dropdown bootstrap-select select2-hidden-accessible">
+                    <select id="single-select" data-select2-id="single-select" tabindex="-1" class="select2-hidden-accessible" aria-hidden="true">
+                        <option value="AL" data-select2-id="2">Alabama</option>
+                        <option value="WY">Wyoming</option>
+                    </select><button type="button" tabindex="-1" class="btn dropdown-toggle btn-light" data-bs-toggle="dropdown" role="combobox" aria-owns="bs-select-2" aria-haspopup="listbox" aria-expanded="false" title="Alabama" data-id="single-select"><div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner">Alabama</div></div> </div></button><div class="dropdown-menu "><div class="inner show" role="listbox" id="bs-select-2" tabindex="-1"><ul class="dropdown-menu inner show" role="presentation"></ul></div></div>
+                </div><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="1" style="width: 91px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-single-select-container"><span class="select2-selection__rendered" id="select2-single-select-container" role="textbox" aria-readonly="true" title="Alabama">Alabama</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-6">
+        <div class="card">
+            <div class="card-body">
+                <div class="mb-4">
+                    <h4 class="card-title">Multi-select boxes</h4>
+                    <p>Select2 also supports multi-value select boxes. The select below is declared with the multiple <mark class="text-primary">attribute</mark>.</p>
+                </div>
+                <div class="dropdown bootstrap-select show-tick multi-select select2-hidden-accessible">
+                    <select class="multi-select select2-hidden-accessible" name="states[]" multiple="" data-select2-id="3" tabindex="-1" aria-hidden="true">
+                        <option value="AL">Alabama</option>
+                        <option value="WY">Wyoming</option>
+                        <option value="UI">dlf</option>
+                    </select><button type="button" tabindex="-1" class="btn dropdown-toggle bs-placeholder btn-light" data-bs-toggle="dropdown" role="combobox" aria-owns="bs-select-3" aria-haspopup="listbox" aria-expanded="false" title="Nothing selected"><div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner">Nothing selected</div></div> </div></button><div class="dropdown-menu "><div class="inner show" role="listbox" id="bs-select-3" tabindex="-1" aria-multiselectable="true"><ul class="dropdown-menu inner show" role="presentation"></ul></div></div>
+                </div><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="4" style="width: 73.5469px;"><span class="selection"><span class="select2-selection select2-selection--multiple" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1"><ul class="select2-selection__rendered"><li class="select2-search select2-search--inline"><input class="select2-search__field" type="search" tabindex="0" autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false" role="textbox" aria-autocomplete="list" placeholder="" style="width: 0.75em;"></li></ul></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-6">
+        <div class="card">
+            <div class="card-body">
+                <div class="mb-4">
+                    <h4 class="card-title">Dropdown option groups</h4>
+                    <p>In HTML, <code>&lt;option&gt;</code> elements can be grouped by wrapping them with in <br> an <code>&lt;optgroup&gt;</code> element: </p>
+                </div>
+
+                <div class="dropdown bootstrap-select dropdown-groups select2-hidden-accessible">
+                    <select class="dropdown-groups select2-hidden-accessible" data-select2-id="5" tabindex="-1" aria-hidden="true">
+                        <optgroup label="Group Name">
+                            <option data-select2-id="7">Nested option 1</option>
+                            <option>Nested option 2</option>
+                            <option>Nested option 3</option>
+                        </optgroup>
+                        <optgroup label="Another Group Name">
+                            <option>Nested option 1</option>
+                            <option>Nested option 2</option>
+                            <option>Nested option 3</option>
+                        </optgroup>
+                    </select><button type="button" tabindex="-1" class="btn dropdown-toggle btn-light" data-bs-toggle="dropdown" role="combobox" aria-owns="bs-select-4" aria-haspopup="listbox" aria-expanded="false" title="Nested option 1Nested option 1"><div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner">Nested option 1Nested option 1</div></div> </div></button><div class="dropdown-menu "><div class="inner show" role="listbox" id="bs-select-4" tabindex="-1"><ul class="dropdown-menu inner show" role="presentation"></ul></div></div>
+                </div><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="6" style="width: 154px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-b2o1-container"><span class="select2-selection__rendered" id="select2-b2o1-container" role="textbox" aria-readonly="true" title="Nested option 1">Nested option 1</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-6">
+        <div class="card">
+            <div class="card-body">
+                <div class="mb-4">
+                    <h4 class="card-title">Disabling options</h4>
+                    <p>
+                        Select2 will correctly handle disabled options when <code>disabled</code> attribute is set) and from remote srouces where the object has <code>
+                            disabled:
+                            true
+                        </code> set.
+                    </p>
+                </div>
+                <div class="dropdown bootstrap-select disabling-options select2-hidden-accessible">
+                    <select class="disabling-options select2-hidden-accessible" data-select2-id="8" tabindex="-1" aria-hidden="true">
+                        <option value="one" data-select2-id="10">First</option>
+                        <option value="two" disabled="disabled">Second (disabled)</option>
+                        <option value="three">Third</option>
+                    </select><button type="button" tabindex="-1" class="btn dropdown-toggle btn-light" data-bs-toggle="dropdown" role="combobox" aria-owns="bs-select-5" aria-haspopup="listbox" aria-expanded="false" title="First"><div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner">First</div></div> </div></button><div class="dropdown-menu "><div class="inner show" role="listbox" id="bs-select-5" tabindex="-1"><ul class="dropdown-menu inner show" role="presentation"></ul></div></div>
+                </div><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="9" style="width: 153px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-qxr0-container"><span class="select2-selection__rendered" id="select2-qxr0-container" role="textbox" aria-readonly="true" title="First">First</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-6">
+        <div class="card">
+            <div class="card-body">
+                <div class="mb-4">
+                    <h4 class="card-title">Disabling a Select2 control</h4>
+                    <p>
+                        Select2 will respond to the <code>disabled</code> attribute on
+                        <code>&lt;select&gt;</code> elements. You can also initialize Select2 with
+                        <code>disabled: true</code> to get the same effect.
+                    </p>
+                </div>
+
+                <div class="mb-3">
+                    <div class="dropdown bootstrap-select js-example-disabled select2-hidden-accessible">
+                        <select class="js-example-disabled select2-hidden-accessible" data-select2-id="11" tabindex="-1" aria-hidden="true">
+                            <option value="AL" data-select2-id="13">Alabama</option>
+                            <option value="WY">Wyoming</option>
+                        </select><button type="button" tabindex="-1" class="btn dropdown-toggle btn-light" data-bs-toggle="dropdown" role="combobox" aria-owns="bs-select-6" aria-haspopup="listbox" aria-expanded="false" title="Alabama"><div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner">Alabama</div></div> </div></button><div class="dropdown-menu "><div class="inner show" role="listbox" id="bs-select-6" tabindex="-1"><ul class="dropdown-menu inner show" role="presentation"></ul></div></div>
+                    </div><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="12" style="width: 91px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-qr4s-container"><span class="select2-selection__rendered" id="select2-qr4s-container" role="textbox" aria-readonly="true" title="Alabama">Alabama</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                </div>
+                <div class="mb-3">
+                    <div class="dropdown bootstrap-select show-tick js-example-disabled-multi select2-hidden-accessible">
+                        <select class="js-example-disabled-multi select2-hidden-accessible" name="states[]" multiple="" data-select2-id="14" tabindex="-1" aria-hidden="true">
+                            <option value="AL">Alabama</option>
+                            <option value="WY">Wyoming</option>
+                        </select><button type="button" tabindex="-1" class="btn dropdown-toggle bs-placeholder btn-light" data-bs-toggle="dropdown" role="combobox" aria-owns="bs-select-7" aria-haspopup="listbox" aria-expanded="false" title="Nothing selected"><div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner">Nothing selected</div></div> </div></button><div class="dropdown-menu "><div class="inner show" role="listbox" id="bs-select-7" tabindex="-1" aria-multiselectable="true"><ul class="dropdown-menu inner show" role="presentation"></ul></div></div>
+                    </div><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="15" style="width: 73.5469px;"><span class="selection"><span class="select2-selection select2-selection--multiple" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1"><ul class="select2-selection__rendered"><li class="select2-search select2-search--inline"><input class="select2-search__field" type="search" tabindex="0" autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false" role="textbox" aria-autocomplete="list" placeholder="" style="width: 0.75em;"></li></ul></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                </div>
+
+                <button class="btn btn-primary me-2" id="js-programmatic-enable">Enable</button>
+                <button class="btn btn-primary" id="js-programmatic-disable">Disable</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xl-6">
+        <div class="card">
+            <div class="card-body">
+                <div class="mb-4">
+                    <h4 class="card-title">Select2 With Labels</h4>
+                    <p>You can, and should, use a <code>&lt;label&gt;</code> with Select2, just like any other <code>&lt;select&gt;</code> element.</p>
+                </div>
+
+                <label class="mb-4 select2-label" for="id_label_single">
+                    Click this to highlight the single select element <br>
+
+                    <div class="dropdown bootstrap-select select2-with-label-single js-states d-block select2-hidden-accessible">
+                        <select class="select2-with-label-single js-states d-block select2-hidden-accessible" id="id_label_single" data-select2-id="id_label_single" tabindex="-1" aria-hidden="true">
+                            <option value="AL" data-select2-id="17">Alabama</option>
+                            <option value="WY">Wyoming</option>
+                        </select><button type="button" tabindex="-1" class="btn dropdown-toggle btn-light" data-bs-toggle="dropdown" role="combobox" aria-owns="bs-select-8" aria-haspopup="listbox" aria-expanded="false" title="Alabama" data-id="id_label_single"><div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner">Alabama</div></div> </div></button><div class="dropdown-menu "><div class="inner show" role="listbox" id="bs-select-8" tabindex="-1"><ul class="dropdown-menu inner show" role="presentation"></ul></div></div>
+                    </div><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="16" style="width: 91px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-id_label_single-container"><span class="select2-selection__rendered" id="select2-id_label_single-container" role="textbox" aria-readonly="true" title="Alabama">Alabama</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                </label>
+
+                <label class="select2-label" for="id_label_multiple">
+                    Click this to highlight the multiple select element <br>
+
+                    <div class="dropdown bootstrap-select show-tick select2-with-label-multiple js-states select2-hidden-accessible">
+                        <select class="select2-with-label-multiple js-states select2-hidden-accessible" id="id_label_multiple" multiple="" data-select2-id="id_label_multiple" tabindex="-1" aria-hidden="true">
+                            <option value="AL">Alabama</option>
+                            <option value="WY">Wyoming</option>
+                        </select><button type="button" tabindex="-1" class="btn dropdown-toggle bs-placeholder btn-light" data-bs-toggle="dropdown" role="combobox" aria-owns="bs-select-9" aria-haspopup="listbox" aria-expanded="false" title="Nothing selected" data-id="id_label_multiple"><div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner">Nothing selected</div></div> </div></button><div class="dropdown-menu "><div class="inner show" role="listbox" id="bs-select-9" tabindex="-1" aria-multiselectable="true"><ul class="dropdown-menu inner show" role="presentation"></ul></div></div>
+                    </div><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="18" style="width: 73.5469px;"><span class="selection"><span class="select2-selection select2-selection--multiple" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1"><ul class="select2-selection__rendered"><li class="select2-search select2-search--inline"><input class="select2-search__field" type="search" tabindex="0" autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false" role="textbox" aria-autocomplete="list" placeholder="" style="width: 0.75em;"></li></ul></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xl-6">
+        <div class="card">
+            <div class="card-body">
+                <div class="mb-4">
+                    <h4 class="card-title">Container Width</h4>
+                    <p>The two Select2 boxes below are styled to <code>50%</code> and <code>75%</code> width respectively to support responsive design:</p>
+                </div>
+
+                <div class="mb-3">
+                    <div class="dropdown bootstrap-select select2-width-50 select2-hidden-accessible">
+                        <select class="select2-width-50 select2-hidden-accessible" style="width: 50%" data-select2-id="19" tabindex="-1" aria-hidden="true">
+                            <option value="AL" data-select2-id="21">Alabama</option>
+                            <option value="WY">Wyoming</option>
+                        </select><button type="button" tabindex="-1" class="btn dropdown-toggle btn-light" data-bs-toggle="dropdown" role="combobox" aria-owns="bs-select-10" aria-haspopup="listbox" aria-expanded="false" title="Alabama"><div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner">Alabama</div></div> </div></button><div class="dropdown-menu "><div class="inner show" role="listbox" id="bs-select-10" tabindex="-1"><ul class="dropdown-menu inner show" role="presentation"></ul></div></div>
+                    </div><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="20" style="width: 50%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-y0qw-container"><span class="select2-selection__rendered" id="select2-y0qw-container" role="textbox" aria-readonly="true" title="Alabama">Alabama</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                </div>
+                <div class="mb-3">
+                    <div class="dropdown bootstrap-select show-tick select2-width-75 select2-hidden-accessible">
+                        <select class="select2-width-75 select2-hidden-accessible" multiple="" style="width: 75%" data-select2-id="25" tabindex="-1" aria-hidden="true">
+                            <option value="AL">Alabama</option>
+                            <option value="WY">Wyoming</option>
+                        </select><button type="button" tabindex="-1" class="btn dropdown-toggle bs-placeholder btn-light" data-bs-toggle="dropdown" role="combobox" aria-owns="bs-select-11" aria-haspopup="listbox" aria-expanded="false" title="Nothing selected"><div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner">Nothing selected</div></div> </div></button><div class="dropdown-menu "><div class="inner show" role="listbox" id="bs-select-11" tabindex="-1" aria-multiselectable="true"><ul class="dropdown-menu inner show" role="presentation"></ul></div></div>
+                    </div><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="26" style="width: 75%;"><span class="selection"><span class="select2-selection select2-selection--multiple" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1"><ul class="select2-selection__rendered"><li class="select2-search select2-search--inline"><input class="select2-search__field" type="search" tabindex="0" autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false" role="textbox" aria-autocomplete="list" placeholder="" style="width: 0.75em;"></li></ul></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xl-6">
+        <div class="card">
+            <div class="card-body">
+                <div class="mb-4">
+                    <h4 class="card-title">Themes</h4>
+                    <p>Select2 supports custom themes using the <code>theme</code> option so you can style Select2 to match the rest of your application.</p>
+                </div>
+
+                <div class="mb-4">
+                    <div class="dropdown bootstrap-select select2-width-50 select2-hidden-accessible">
+                        <select class="select2-width-50 select2-hidden-accessible" "=" " data-select2-id="22" tabindex="-1" aria-hidden="true">
+                            <option value="AL" data-select2-id="24">Alabama</option>
+                            <option value="WY">Wyoming</option>
+                        </select><button type="button" tabindex="-1" class="btn dropdown-toggle btn-light" data-bs-toggle="dropdown" role="combobox" aria-owns="bs-select-12" aria-haspopup="listbox" aria-expanded="false" title="Alabama"><div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner">Alabama</div></div> </div></button><div class="dropdown-menu "><div class="inner show" role="listbox" id="bs-select-12" tabindex="-1"><ul class="dropdown-menu inner show" role="presentation"></ul></div></div>
+                    </div><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="23" style="width: 91px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-znh6-container"><span class="select2-selection__rendered" id="select2-znh6-container" role="textbox" aria-readonly="true" title="Alabama">Alabama</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                </div>
+
+                <div class="">
+                    <div class="dropdown bootstrap-select show-tick js-example-theme-multiple select2-hidden-accessible">
+                        <select class="js-example-theme-multiple select2-hidden-accessible" name="states[]" multiple="" data-select2-id="27" tabindex="-1" aria-hidden="true">
+                            <option value="AL">Alabama</option>
+                            <option value="WY">Wyoming</option>
+                        </select><button type="button" tabindex="-1" class="btn dropdown-toggle bs-placeholder btn-light" data-bs-toggle="dropdown" role="combobox" aria-owns="bs-select-13" aria-haspopup="listbox" aria-expanded="false" title="Nothing selected"><div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner">Nothing selected</div></div> </div></button><div class="dropdown-menu "><div class="inner show" role="listbox" id="bs-select-13" tabindex="-1" aria-multiselectable="true"><ul class="dropdown-menu inner show" role="presentation"></ul></div></div>
+                    </div><span class="select2 select2-container select2-container--classic" dir="ltr" data-select2-id="28" style="width: 73.5469px;"><span class="selection"><span class="select2-selection select2-selection--multiple" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1"><ul class="select2-selection__rendered"><li class="select2-search select2-search--inline"><input class="select2-search__field" type="search" tabindex="0" autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false" role="textbox" aria-autocomplete="list" placeholder="" style="width: 0.75em;"></li></ul></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xl-6">
+        <div class="card">
+            <div class="card-body">
+                <div class="mb-4">
+                    <h4 class="card-title">Ajax (remote data)</h4>
+                    <p>Select2 comes with AJAX support built in, using jQuery's AJAX methods. In this example, we can search for repositories using GitHub's API:</p>
+                </div>
+
+                <div class="dropdown bootstrap-select js-data-example-ajax w-100 select2-hidden-accessible">
+                    <select class="js-data-example-ajax w-100 select2-hidden-accessible" data-select2-id="29" tabindex="-1" aria-hidden="true">
+                    </select><button type="button" tabindex="-1" class="btn dropdown-toggle bs-placeholder btn-light" data-bs-toggle="dropdown" role="combobox" aria-owns="bs-select-14" aria-haspopup="listbox" aria-expanded="false" title="Nothing selected"><div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner">Nothing selected</div></div> </div></button><div class="dropdown-menu "><div class="inner show" role="listbox" id="bs-select-14" tabindex="-1"><ul class="dropdown-menu inner show" role="presentation"></ul></div></div>
+                </div><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="30" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-1xhe-container"><span class="select2-selection__rendered" id="select2-1xhe-container" role="textbox" aria-readonly="true"><span class="select2-selection__placeholder">Search for a repository</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xl-6">
+        <div class="card">
+            <div class="card-body">
+                <div class="mb-4">
+                    <h4 class="card-title">Loading array data</h4>
+                    <p>You may use the <code>data</code> configuration option to load dropdown options from a local array.</p>
+                </div>
+
+                <div class="dropdown bootstrap-select js-example-data-array select2-hidden-accessible">
+                    <select class="js-example-data-array select2-hidden-accessible" data-select2-id="31" tabindex="-1" aria-hidden="true">
+
+                        <option value="0" data-select2-id="32">enhancement</option>
+                        <option value="1" data-select2-id="33">bug</option>
+                        <option value="2" data-select2-id="34">duplicate</option>
+                        <option value="3" data-select2-id="35">invalid</option>
+                        <option value="4" data-select2-id="36">wontfix</option>
+                    </select><button type="button" tabindex="-1" class="btn dropdown-toggle btn-light" data-bs-toggle="dropdown" role="combobox" aria-owns="bs-select-15" aria-haspopup="listbox" aria-expanded="false" title="enhancement"><div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner">enhancement</div></div> </div></button><div class="dropdown-menu "><div class="inner show" role="listbox" id="bs-select-15" tabindex="-1"><ul class="dropdown-menu inner show" role="presentation"></ul></div></div>
+                </div><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="37" style="width: 121px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-xb62-container"><span class="select2-selection__rendered" id="select2-xb62-container" role="textbox" aria-readonly="true" title="enhancement">enhancement</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xl-6">
+        <div class="card">
+            <div class="card-body">
+                <div class="mb-4">
+                    <h4 class="card-title">Automatic Selection</h4>
+                    <p>
+                        Select2 can be configured to automatically select the currently highlighted result when the dropdown is btn-closed by using the <code>selectOnbtn-close</code> option:
+                    </p>
+                </div>
+
+                <div class="dropdown bootstrap-select select2-hidden-accessible">
+                    <select id="automatic-selection" data-select2-id="automatic-selection" tabindex="-1" class="select2-hidden-accessible" aria-hidden="true">
+                        <option value="AL" data-select2-id="39">Alabama</option>
+                        <option value="WY">Wyoming</option>
+                    </select><button type="button" tabindex="-1" class="btn dropdown-toggle btn-light" data-bs-toggle="dropdown" role="combobox" aria-owns="bs-select-16" aria-haspopup="listbox" aria-expanded="false" title="Alabama" data-id="automatic-selection"><div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner">Alabama</div></div> </div></button><div class="dropdown-menu "><div class="inner show" role="listbox" id="bs-select-16" tabindex="-1"><ul class="dropdown-menu inner show" role="presentation"></ul></div></div>
+                </div><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="38" style="width: 91px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-automatic-selection-container"><span class="select2-selection__rendered" id="select2-automatic-selection-container" role="textbox" aria-readonly="true" title="Alabama">Alabama</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xl-6">
+        <div class="card">
+            <div class="card-body">
+                <div class="mb-4">
+                    <h4 class="card-title">Remain open after selection</h4>
+                    <p>
+                        Select2 will automatically btn-close the dropdown when an element is selected, similar to what is done with a normal select box. You may use the
+                        <code>btn-closeOnSelect</code> option to prevent the dropdown from closing when a result is selected:
+                    </p>
+                </div>
+
+                <div class="dropdown bootstrap-select select2-hidden-accessible">
+                    <select id="remain-open" data-select2-id="remain-open" tabindex="-1" class="select2-hidden-accessible" aria-hidden="true">
+                        <option value="AL" data-select2-id="41">Alabama</option>
+                        <option value="WY">Wyoming</option>
+                    </select><button type="button" tabindex="-1" class="btn dropdown-toggle btn-light" data-bs-toggle="dropdown" role="combobox" aria-owns="bs-select-17" aria-haspopup="listbox" aria-expanded="false" title="Alabama" data-id="remain-open"><div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner">Alabama</div></div> </div></button><div class="dropdown-menu "><div class="inner show" role="listbox" id="bs-select-17" tabindex="-1"><ul class="dropdown-menu inner show" role="presentation"></ul></div></div>
+                </div><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="40" style="width: 91px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-remain-open-container"><span class="select2-selection__rendered" id="select2-remain-open-container" role="textbox" aria-readonly="true" title="Alabama">Alabama</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xl-6">
+        <div class="card">
+            <div class="card-body">
+                <div class="mb-4">
+                    <h4 class="card-title">Dropdown placement</h4>
+                    <p>The <code>dropdownParent</code> option allows you to pick an alternative element for the dropdown to be appended to:</p>
+                </div>
+
+                <div class="dropdown bootstrap-select select2-hidden-accessible">
+                    <select id="dropdown-placement" data-select2-id="dropdown-placement" tabindex="-1" class="select2-hidden-accessible" aria-hidden="true">
+                        <option value="AL" data-select2-id="43">Alabama</option>
+                        <option value="WY">Wyoming</option>
+                    </select><button type="button" tabindex="-1" class="btn dropdown-toggle btn-light" data-bs-toggle="dropdown" role="combobox" aria-owns="bs-select-18" aria-haspopup="listbox" aria-expanded="false" title="Alabama" data-id="dropdown-placement"><div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner">Alabama</div></div> </div></button><div class="dropdown-menu "><div class="inner show" role="listbox" id="bs-select-18" tabindex="-1"><ul class="dropdown-menu inner show" role="presentation"></ul></div></div>
+                </div><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="42" style="width: 91px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-dropdown-placement-container"><span class="select2-selection__rendered" id="select2-dropdown-placement-container" role="textbox" aria-readonly="true" title="Alabama">Alabama</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                <div id="select2-modal">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xl-6">
+        <div class="card">
+            <div class="card-body">
+                <div class="mb-4">
+                    <h4 class="card-title">Limiting the number of selections</h4>
+                    <p>
+                        Select2 multi-value select boxes can set restrictions regarding the maximum number of options that can be selected. The select below is declared with the
+                        <code>multiple</code> attribute with <code>maximumSelectionLength</code> in the select2 options.
+                    </p>
+                </div>
+
+                <div class="dropdown bootstrap-select show-tick select2-hidden-accessible">
+                    <select id="limit-selection" name="states[]" multiple="" data-select2-id="limit-selection" tabindex="-1" class="select2-hidden-accessible" aria-hidden="true">
+                        <option value="AL">Alabama</option>
+                        <option value="WY">Wyoming</option>
+                        <option value="BY">Lorem</option>
+                        <option value="DY">Ipsum</option>
+                        <option value="MY">Dolor</option>
+                    </select><button type="button" tabindex="-1" class="btn dropdown-toggle bs-placeholder btn-light" data-bs-toggle="dropdown" role="combobox" aria-owns="bs-select-19" aria-haspopup="listbox" aria-expanded="false" title="Nothing selected" data-id="limit-selection"><div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner">Nothing selected</div></div> </div></button><div class="dropdown-menu "><div class="inner show" role="listbox" id="bs-select-19" tabindex="-1" aria-multiselectable="true"><ul class="dropdown-menu inner show" role="presentation"></ul></div></div>
+                </div><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="44" style="width: 73.5469px;"><span class="selection"><span class="select2-selection select2-selection--multiple" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1"><ul class="select2-selection__rendered"><li class="select2-search select2-search--inline"><input class="select2-search__field" type="search" tabindex="0" autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false" role="textbox" aria-autocomplete="list" placeholder="" style="width: 0.75em;"></li></ul></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xl-6">
+        <div class="card">
+            <div class="card-body">
+                <div class="mb-4">
+                    <h4 class="card-title">Dynamic option creation</h4>
+                    <p>
+                        In addition to a prepopulated menu of options, Select2 can dynamically create new options from text input by the user in the search box. This feature is called "tagging". To enable tagging, set the <code>tags</code>                                        option to
+                        <code>true</code>:
+                    </p>
+                </div>
+                <div class="dropdown bootstrap-select select2-hidden-accessible">
+                    <select id="dynamic-option-creation" data-select2-id="dynamic-option-creation" tabindex="-1" class="select2-hidden-accessible" aria-hidden="true">
+                        <option value="AL" data-select2-id="46">Red</option>
+                        <option value="WY">Green</option>
+                        <option value="BY">Yellow</option>
+                    </select><button type="button" tabindex="-1" class="btn dropdown-toggle btn-light" data-bs-toggle="dropdown" role="combobox" aria-owns="bs-select-20" aria-haspopup="listbox" aria-expanded="false" title="Red" data-id="dynamic-option-creation"><div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner">Red</div></div> </div></button><div class="dropdown-menu "><div class="inner show" role="listbox" id="bs-select-20" tabindex="-1"><ul class="dropdown-menu inner show" role="presentation"></ul></div></div>
+                </div><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="45" style="width: 70px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-dynamic-option-creation-container"><span class="select2-selection__rendered" id="select2-dynamic-option-creation-container" role="textbox" aria-readonly="true" title="Red">Red</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xl-6">
+        <div class="card">
+            <div class="card-body">
+                <div class="mb-4">
+                    <h4 class="card-title">Tagging with multi-value select boxes</h4>
+                    <p>Tagging can also be used in multi-value select boxes. In the example below, we set the <code>multiple="multiple"</code> attribute on a Select2 control that also has <code>tags: true</code> enabled:</p>
+                </div>
+
+                <div class="dropdown bootstrap-select show-tick select2-hidden-accessible">
+                    <select id="multi-value-select" multiple="" data-select2-id="multi-value-select" tabindex="-1" class="select2-hidden-accessible" aria-hidden="true">
+                        <option selected="selected" data-select2-id="48">orange</option>
+                        <option>white</option>
+                        <option selected="selected" data-select2-id="49">purple</option>
+                    </select><button type="button" tabindex="-1" class="btn dropdown-toggle btn-light" data-bs-toggle="dropdown" role="combobox" aria-owns="bs-select-21" aria-haspopup="listbox" aria-expanded="false" title="orange, purple" data-id="multi-value-select"><div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner">orange, purple</div></div> </div></button><div class="dropdown-menu "><div class="inner show" role="listbox" id="bs-select-21" tabindex="-1" aria-multiselectable="true"><ul class="dropdown-menu inner show" role="presentation"></ul></div></div>
+                </div><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="47" style="width: 56.8281px;"><span class="selection"><span class="select2-selection select2-selection--multiple" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1"><ul class="select2-selection__rendered"><li class="select2-selection__choice" title="orange" data-select2-id="50"><span class="select2-selection__choice__remove" role="presentation">×</span>orange</li><li class="select2-selection__choice" title="purple" data-select2-id="51"><span class="select2-selection__choice__remove" role="presentation">×</span>purple</li><li class="select2-search select2-search--inline"><input class="select2-search__field" type="search" tabindex="0" autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false" role="textbox" aria-autocomplete="list" placeholder="" style="width: 0.75em;"></li></ul></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xl-4">
+        <div class="card">
+            <div class="card-body">
+                <div class="mb-4">
+                    <h4 class="card-title">Single select placeholders</h4>
+                    <p>
+                        Select2 supports displaying a placeholder value using the
+                        <code>placeholder</code> configuration option. The placeholder value will be displayed until a selection is made.
+                    </p>
+                </div>
+
+                <div class="dropdown bootstrap-select single-select-placeholder js-states select2-hidden-accessible">
+                    <select class="single-select-placeholder js-states select2-hidden-accessible" data-select2-id="52" tabindex="-1" aria-hidden="true">
+
+                        <option value="Alaska" data-select2-id="54">Alaska</option>
+                        <option value="Hawaii">Hawaii</option>
+                        <option value="California">California</option>
+                    </select><button type="button" tabindex="-1" class="btn dropdown-toggle btn-light" data-bs-toggle="dropdown" role="combobox" aria-owns="bs-select-22" aria-haspopup="listbox" aria-expanded="false" title="Alaska"><div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner">Alaska</div></div> </div></button><div class="dropdown-menu "><div class="inner show" role="listbox" id="bs-select-22" tabindex="-1"><ul class="dropdown-menu inner show" role="presentation"></ul></div></div>
+                </div><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="53" style="width: 92px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-x8pk-container"><span class="select2-selection__rendered" id="select2-x8pk-container" role="textbox" aria-readonly="true" title="Alaska"><span class="select2-selection__clear" data-select2-id="55">×</span>Alaska</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xl-4">
+        <div class="card">
+            <div class="card-body">
+                <div class="mb-4">
+                    <h4 class="card-title">Multi-select placeholders</h4>
+                    <p>
+                        For multi-selects, you must <strong>not</strong> have an empty
+                        <code>&lt;option&gt;</code>element:
+                    </p>
+                </div>
+
+                <div class="dropdown bootstrap-select show-tick multi-select-placeholder js-states select2-hidden-accessible">
+                    <select class="multi-select-placeholder js-states select2-hidden-accessible" multiple="" data-select2-id="56" tabindex="-1" aria-hidden="true">
+                        <option value="Alaska">Alaska</option>
+                        <option value="Hawaii">Hawaii</option>
+                        <option value="California">California</option>
+                    </select><button type="button" tabindex="-1" class="btn dropdown-toggle bs-placeholder btn-light" data-bs-toggle="dropdown" role="combobox" aria-owns="bs-select-23" aria-haspopup="listbox" aria-expanded="false" title="Nothing selected"><div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner">Nothing selected</div></div> </div></button><div class="dropdown-menu "><div class="inner show" role="listbox" id="bs-select-23" tabindex="-1" aria-multiselectable="true"><ul class="dropdown-menu inner show" role="presentation"></ul></div></div>
+                </div><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="57" style="width: 74.5938px;"><span class="selection"><span class="select2-selection select2-selection--multiple" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1"><ul class="select2-selection__rendered"><li class="select2-search select2-search--inline"><input class="select2-search__field" type="search" tabindex="0" autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false" role="textbox" aria-autocomplete="list" placeholder="Select a state" style="width: 537.984px;"></li></ul></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xl-4">
+        <div class="card">
+            <div class="card-body">
+                <div class="mb-4">
+                    <h4 class="card-title">Default selection placeholders</h4>
+                    <p>
+                        Alternatively, the value of the <code>placeholder</code> option can be a data object representing a default selection (<code>&lt;option&gt;</code>). In this case the <code>id</code> of the data object should match the
+                        <code>value</code> of the corresponding default selection.
+                    </p>
+                </div>
+
+                <div class="dropdown bootstrap-select default-placeholder select2-hidden-accessible">
+                    <select class="default-placeholder select2-hidden-accessible" data-select2-id="58" tabindex="-1" aria-hidden="true">
+
+                        <option value="Alaska" data-select2-id="60">Alaska</option>
+                        <option value="Hawaii">Hawaii</option>
+                        <option value="California">California</option>
+                    </select><button type="button" tabindex="-1" class="btn dropdown-toggle btn-light" data-bs-toggle="dropdown" role="combobox" aria-owns="bs-select-24" aria-haspopup="listbox" aria-expanded="false" title="Alaska"><div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner">Alaska</div></div> </div></button><div class="dropdown-menu "><div class="inner show" role="listbox" id="bs-select-24" tabindex="-1"><ul class="dropdown-menu inner show" role="presentation"></ul></div></div>
+                </div><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="59" style="width: 92px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-9xtb-container"><span class="select2-selection__rendered" id="select2-9xtb-container" role="textbox" aria-readonly="true" title="Alaska">Alaska</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xl-6">
+        <div class="card">
+            <div class="card-body">
+                <div class="mb-4">
+                    <h4 class="card-title">Customizing how results are matched</h4>
+                    <p>
+                        When users filter down the results by entering search terms into the search box, Select2 uses an internal "matcher" to match search terms to results. You may customize the way that Select2 matches search terms by specifying
+                        a callback for the <code>matcher</code> configuration option.
+                    </p>
+                </div>
+
+                <div class="dropdown bootstrap-select customize-result select2-hidden-accessible">
+                    <select class="customize-result select2-hidden-accessible" data-select2-id="61" tabindex="-1" aria-hidden="true">
+                        <option value="Alaska" data-select2-id="63">Alaska</option>
+                        <option value="Hawaii">Hawaii</option>
+                        <option value="California">California</option>
+                    </select><button type="button" tabindex="-1" class="btn dropdown-toggle btn-light" data-bs-toggle="dropdown" role="combobox" aria-owns="bs-select-25" aria-haspopup="listbox" aria-expanded="false" title="Alaska"><div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner">Alaska</div></div> </div></button><div class="dropdown-menu "><div class="inner show" role="listbox" id="bs-select-25" tabindex="-1"><ul class="dropdown-menu inner show" role="presentation"></ul></div></div>
+                </div><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="62" style="width: 92px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-vepp-container"><span class="select2-selection__rendered" id="select2-vepp-container" role="textbox" aria-readonly="true" title="Alaska">Alaska</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xl-6">
+        <div class="card">
+            <div class="card-body">
+                <div class="mb-4">
+                    <h4 class="card-title">Matching grouped options</h4>
+                    <p>
+                        Only first-level objects will be passed in to the <code>matcher</code> callback. If you are working with nested data, you must iterate through the
+                        <code>children</code> array and match them individually. This allows for more advanced matching when working with nested objects, allowing you to handle them however you want.
+                    </p>
+                </div>
+
+                <div class="dropdown bootstrap-select match-grouped-options select2-hidden-accessible">
+                    <select class="match-grouped-options select2-hidden-accessible" data-select2-id="64" tabindex="-1" aria-hidden="true">
+                        <optgroup label="Alaskan/Hawaiian Time Zone">
+                            <option data-select2-id="66">Alaska</option>
+                            <option>Hawaii</option>
+                        </optgroup>
+                        <optgroup label="Pacific Time Zone">
+                            <option>California</option>
+                            <option>Nevada</option>
+                            <option>Oregon</option>
+                            <option>Washington</option>
+                        </optgroup>
+                        <optgroup label="Mountain Time Zone">
+                            <option>Arizona</option>
+                            <option>Colorado</option>
+                            <option>Idaho</option>
+                            <option>Mountana</option>
+                            <option>Nebraska</option>
+                            <option>New Mexico</option>
+                            <option>Utah</option>
+                            <option>Wyoming</option>
+                        </optgroup>
+                        <optgroup label="Central Time Zone">
+                            <option>Alabama</option>
+                            <option>Arkansas</option>
+                            <option>Illinois</option>
+                            <option>Lowa</option>
+                            <option>Kansas</option>
+                        </optgroup>
+                        <optgroup label="Eastern Time Zone">
+                            <option>Connecticut</option>
+                            <option>Delaware</option>
+                            <option>Florida</option>
+                            <option>Georgia</option>
+                            <option>Indiana</option>
+                            <option>Maine</option>
+                            <option>Maryland</option>
+                            <option>Massachusetts</option>
+                            <option>Michigan</option>
+                        </optgroup>
+                    </select><button type="button" tabindex="-1" class="btn dropdown-toggle btn-light" data-bs-toggle="dropdown" role="combobox" aria-owns="bs-select-26" aria-haspopup="listbox" aria-expanded="false" title="AlaskaAlaskaAlaskaAlaskaAlaska"><div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner">AlaskaAlaskaAlaskaAlaskaAlaska</div></div> </div></button><div class="dropdown-menu "><div class="inner show" role="listbox" id="bs-select-26" tabindex="-1"><ul class="dropdown-menu inner show" role="presentation"></ul></div></div>
+                </div><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="65" style="width: 149px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-e6bw-container"><span class="select2-selection__rendered" id="select2-e6bw-container" role="textbox" aria-readonly="true" title="Alaska">Alaska</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xl-6">
+        <div class="card">
+            <div class="card-body">
+                <div class="mb-4">
+                    <h4 class="card-title">Minumum search term length</h4>
+                    <p>
+                        You may set a minimum search term length by using the
+                        <code>minimumInputLength</code> option:
+                    </p>
+                </div>
+
+                <div class="dropdown bootstrap-select minimum-search-length select2-hidden-accessible">
+                    <select class="minimum-search-length select2-hidden-accessible" data-select2-id="67" tabindex="-1" aria-hidden="true">
+                        <option value="Alaska" data-select2-id="69">Alaska</option>
+                        <option value="Hawaii">Hawaii</option>
+                        <option value="California">California</option>
+                    </select><button type="button" tabindex="-1" class="btn dropdown-toggle btn-light" data-bs-toggle="dropdown" role="combobox" aria-owns="bs-select-27" aria-haspopup="listbox" aria-expanded="false" title="Alaska"><div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner">Alaska</div></div> </div></button><div class="dropdown-menu "><div class="inner show" role="listbox" id="bs-select-27" tabindex="-1"><ul class="dropdown-menu inner show" role="presentation"></ul></div></div>
+                </div><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="68" style="width: 92px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-hzjo-container"><span class="select2-selection__rendered" id="select2-hzjo-container" role="textbox" aria-readonly="true" title="Alaska">Alaska</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xl-6">
+        <div class="card">
+            <div class="card-body">
+                <div class="mb-4">
+                    <h4 class="card-title">Maximum search term length</h4>
+                    <p>
+                        You may limit the maximum length of search terms by using the
+                        <code>maximumInputLength</code> option:
+                    </p>
+                </div>
+
+                <div class="dropdown bootstrap-select maximum-search-length select2-hidden-accessible">
+                    <select class="maximum-search-length select2-hidden-accessible" data-select2-id="70" tabindex="-1" aria-hidden="true">
+                        <option value="Alaska" data-select2-id="72">Alaska</option>
+                        <option value="Hawaii">Hawaii</option>
+                        <option value="California">California</option>
+                    </select><button type="button" tabindex="-1" class="btn dropdown-toggle btn-light" data-bs-toggle="dropdown" role="combobox" aria-owns="bs-select-28" aria-haspopup="listbox" aria-expanded="false" title="Alaska"><div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner">Alaska</div></div> </div></button><div class="dropdown-menu "><div class="inner show" role="listbox" id="bs-select-28" tabindex="-1"><ul class="dropdown-menu inner show" role="presentation"></ul></div></div>
+                </div><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="71" style="width: 92px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-a140-container"><span class="select2-selection__rendered" id="select2-a140-container" role="textbox" aria-readonly="true" title="Alaska">Alaska</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xl-6">
+        <div class="card">
+            <div class="card-body">
+                <div class="mb-4">
+                    <h4 class="card-title">Programmatically add new options</h4>
+                    <p>New options can be added to a Select2 control programmatically by creating a new Javascript <code>Option</code> object and appending it to the control:</p>
+                </div>
+
+                <div class="dropdown bootstrap-select add-new-options select2-hidden-accessible">
+                    <select class="add-new-options select2-hidden-accessible" data-select2-id="73" tabindex="-1" aria-hidden="true">
+
+                        <option value="1" data-select2-id="75">New Item</option>
+                    </select><button type="button" tabindex="-1" class="btn dropdown-toggle btn-light" data-bs-toggle="dropdown" role="combobox" aria-owns="bs-select-29" aria-haspopup="listbox" aria-expanded="false" title="New Item"><div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner">New Item</div></div> </div></button><div class="dropdown-menu "><div class="inner show" role="listbox" id="bs-select-29" tabindex="-1"><ul class="dropdown-menu inner show" role="presentation"></ul></div></div>
+                </div><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="74" style="width: 92px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-4zvl-container"><span class="select2-selection__rendered" id="select2-4zvl-container" role="textbox" aria-readonly="true" title="New Item">New Item</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xl-6">
+        <div class="card">
+            <div class="card-body">
+                <div class="mb-4">
+                    <h4 class="card-title">Create if not exists</h4>
+                    <p>You can use <code>.find</code> to select the option if it already exists, and create it otherwise:</p>
+                </div>
+
+                <div class="dropdown bootstrap-select create-if-not-exists select2-hidden-accessible">
+                    <select class="create-if-not-exists select2-hidden-accessible" data-select2-id="76" tabindex="-1" aria-hidden="true">
+                        <option value="Alaska">Alaska</option>
+                        <option value="Hawaii">Hawaii</option>
+                        <option value="California">California</option>
+                        <option value="1" selected="" data-select2-id="78">New Item</option>
+                    </select><button type="button" tabindex="-1" class="btn dropdown-toggle btn-light" data-bs-toggle="dropdown" role="combobox" aria-owns="bs-select-30" aria-haspopup="listbox" aria-expanded="false" title="New Item"><div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner">New Item</div></div> </div></button><div class="dropdown-menu "><div class="inner show" role="listbox" id="bs-select-30" tabindex="-1"><ul class="dropdown-menu inner show" role="presentation"></ul></div></div>
+                </div><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="77" style="width: 92px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-46io-container"><span class="select2-selection__rendered" id="select2-46io-container" role="textbox" aria-readonly="true" title="New Item">New Item</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xl-6">
+        <div class="card">
+            <div class="card-body">
+                <div class="mb-4">
+                    <h4 class="card-title">Using jQuery selector</h4>
+                    <p>
+                        Selected items can also be accessed via the <code>:selected</code> jQuery selector:
+                    </p>
+                </div>
+
+                <div class="dropdown bootstrap-select jquery-selector select2-hidden-accessible">
+                    <select class="jquery-selector select2-hidden-accessible" data-select2-id="79" tabindex="-1" aria-hidden="true">
+                        <option value="Alaska" data-select2-id="81">Alaska</option>
+                        <option value="Hawaii">Hawaii</option>
+                        <option value="California">California</option>
+                    </select><button type="button" tabindex="-1" class="btn dropdown-toggle btn-light" data-bs-toggle="dropdown" role="combobox" aria-owns="bs-select-31" aria-haspopup="listbox" aria-expanded="false" title="Alaska"><div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner">Alaska</div></div> </div></button><div class="dropdown-menu "><div class="inner show" role="listbox" id="bs-select-31" tabindex="-1"><ul class="dropdown-menu inner show" role="presentation"></ul></div></div>
+                </div><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="80" style="width: 92px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-uk3z-container"><span class="select2-selection__rendered" id="select2-uk3z-container" role="textbox" aria-readonly="true" title="Alaska">Alaska</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xl-6">
+        <div class="card">
+            <div class="card-body">
+                <div class="mb-4">
+                    <h4 class="card-title">RTL support</h4>
+                    <p>
+                        Select2 will work on RTL websites if the <code>dir</code> attribute is set on the
+                        <code>&lt;select&gt;</code><span class="copy-to-clipboard" title="Copy to clipboard"></span> or any parents of it. You can also initialize Select2 with the <code>dir: "rtl"</code><span class="copy-to-clipboard" title="Copy to clipboard"></span> configuration option.
+                    </p>
+                </div>
+
+                <div class="dropdown bootstrap-select rtl-select2 select2-hidden-accessible">
+                    <select class="rtl-select2 select2-hidden-accessible" data-select2-id="82" tabindex="-1" aria-hidden="true">
+                        <option value="Alaska" data-select2-id="84">Alaska</option>
+                        <option value="Hawaii">Hawaii</option>
+                        <option value="California">California</option>
+                    </select><button type="button" tabindex="-1" class="btn dropdown-toggle btn-light" data-bs-toggle="dropdown" role="combobox" aria-owns="bs-select-32" aria-haspopup="listbox" aria-expanded="false" title="Alaska"><div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner">Alaska</div></div> </div></button><div class="dropdown-menu "><div class="inner show" role="listbox" id="bs-select-32" tabindex="-1"><ul class="dropdown-menu inner show" role="presentation"></ul></div></div>
+                </div><span class="select2 select2-container select2-container--default" dir="rtl" data-select2-id="83" style="width: 92px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-izlc-container"><span class="select2-selection__rendered" id="select2-izlc-container" role="textbox" aria-readonly="true" title="Alaska">Alaska</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xl-4">
+        <div class="card">
+            <div class="card-body">
+                <div class="mb-4">
+                    <h4 class="card-title">Destroying the Select2 control</h4>
+                    <p>The <code>destroy</code> method will remove the Select2 widget from the target element. It will revert back to a standard <code>select</code> control:</p>
+                </div>
+
+                <div class="mb-4">
+                    <div class="dropdown bootstrap-select destroy-selector select2-hidden-accessible">
+                        <select class="destroy-selector select2-hidden-accessible" data-select2-id="85" tabindex="-1" aria-hidden="true">
+                            <option value="Alaska" data-select2-id="87">Alaska</option>
+                            <option value="Hawaii">Hawaii</option>
+                            <option value="California">California</option>
+                        </select><button type="button" tabindex="-1" class="btn dropdown-toggle btn-light" data-bs-toggle="dropdown" role="combobox" aria-owns="bs-select-33" aria-haspopup="listbox" aria-expanded="false" title="Alaska"><div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner">Alaska</div></div> </div></button><div class="dropdown-menu "><div class="inner show" role="listbox" id="bs-select-33" tabindex="-1"><ul class="dropdown-menu inner show" role="presentation"></ul></div></div>
+                    </div><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="86" style="width: 539.984px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-l5po-container"><span class="select2-selection__rendered" id="select2-l5po-container" role="textbox" aria-readonly="true" title="Alaska">Alaska</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                </div>
+                <button id="destroy-selector-trigger" class="btn btn-primary">Destroy Select2</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xl-4">
+        <div class="card">
+            <div class="card-body">
+                <div class="mb-4">
+                    <h4 class="card-title">Opening the dropdown</h4>
+                    <p>Select2 will trigger a few different events when different actions are taken using the component, allowing you to add custom hooks and perform actions.</p>
+                </div>
+
+                <div class="mb-4">
+                    <div class="dropdown bootstrap-select opening-dropdown select2-hidden-accessible">
+                        <select class="opening-dropdown select2-hidden-accessible" data-select2-id="88" tabindex="-1" aria-hidden="true">
+                            <option value="Alaska" data-select2-id="90">Alaska</option>
+                            <option value="Hawaii">Hawaii</option>
+                            <option value="California">California</option>
+                        </select><button type="button" tabindex="-1" class="btn dropdown-toggle btn-light" data-bs-toggle="dropdown" role="combobox" aria-owns="bs-select-34" aria-haspopup="listbox" aria-expanded="false" title="Alaska"><div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner">Alaska</div></div> </div></button><div class="dropdown-menu "><div class="inner show" role="listbox" id="bs-select-34" tabindex="-1"><ul class="dropdown-menu inner show" role="presentation"></ul></div></div>
+                    </div><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="89" style="width: 92px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-9e3s-container"><span class="select2-selection__rendered" id="select2-9e3s-container" role="textbox" aria-readonly="true" title="Alaska">Alaska</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                </div>
+                <button id="dropdown-trigger-open" class="btn btn-primary">Open Dropdown</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xl-4">
+        <div class="card">
+            <div class="card-body">
+                <div class="mb-4">
+                    <h4 class="card-title">Opening/Closing the dropdown</h4>
+                    <p>Select2 will trigger a few different events when different actions are taken using the component, allowing you to add custom hooks and perform actions.</p>
+                </div>
+                <button id="opening-dropdown-trigger" class="btn btn-primary mb-2">
+                    Open
+                    Dropdown
+                </button>
+                <button id="closing-dropdown-trigger" class="btn btn-primary mb-2">
+                    btn-close
+                    Dropdown
+                </button>
+                <div class="mt-4">
+                    <div class="dropdown bootstrap-select open-close-dropdown select2-hidden-accessible">
+                        <select class="open-close-dropdown select2-hidden-accessible" data-select2-id="91" tabindex="-1" aria-hidden="true">
+                            <option value="Alaska" data-select2-id="93">Alaska</option>
+                            <option value="Hawaii">Hawaii</option>
+                            <option value="California">California</option>
+                        </select><button type="button" tabindex="-1" class="btn dropdown-toggle btn-light" data-bs-toggle="dropdown" role="combobox" aria-owns="bs-select-35" aria-haspopup="listbox" aria-expanded="false" title="Alaska"><div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner">Alaska</div></div> </div></button><div class="dropdown-menu "><div class="inner show" role="listbox" id="bs-select-35" tabindex="-1"><ul class="dropdown-menu inner show" role="presentation"></ul></div></div>
+                    </div><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="92" style="width: 92px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-6mtn-container"><span class="select2-selection__rendered" id="select2-6mtn-container" role="textbox" aria-readonly="true" title="Alaska">Alaska</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xl-6">
+        <div class="card">
+            <div class="card-body">
+                <div class="mb-4">
+                    <h4 class="card-title">Select2 methods</h4>
+                    <p>Select2 has several built-in methods that allow programmatic control of the component. </p>
+                </div>
+
+                <label class="select2-label form-label">Single select</label> <br>
+                <button class="js-programmatic-set-val btn btn-primary mb-2" aria-label="Set Select2 option">
+                    Set "California"
+                </button>
+
+                <button class="js-programmatic-open btn btn-primary mb-2">
+                    Open
+                </button>
+
+                <button class="js-programmatic-btn-close btn btn-primary mb-2">
+                    btn-close
+                </button>
+
+                <button class="js-programmatic-destroy btn btn-primary mb-2">
+                    Destroy
+                </button>
+
+                <button class="js-programmatic-init btn btn-primary mb-2">
+                    Re-initialize
+                </button>
+
+                <div class="mt-4">
+                    <div class="dropdown bootstrap-select single-event-unbind select2-hidden-accessible">
+                        <select class="single-event-unbind select2-hidden-accessible" data-select2-id="94" tabindex="-1" aria-hidden="true">
+                            <option value="AL" data-select2-id="96">Alaska</option>
+                            <option value="HA">Hawaii</option>
+                            <option value="CA">California</option>
+                        </select><button type="button" tabindex="-1" class="btn dropdown-toggle btn-light" data-bs-toggle="dropdown" role="combobox" aria-owns="bs-select-36" aria-haspopup="listbox" aria-expanded="false" title="Alaska"><div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner">Alaska</div></div> </div></button><div class="dropdown-menu "><div class="inner show" role="listbox" id="bs-select-36" tabindex="-1"><ul class="dropdown-menu inner show" role="presentation"></ul></div></div>
+                    </div><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="95" style="width: 855px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-9l6h-container"><span class="select2-selection__rendered" id="select2-9l6h-container" role="textbox" aria-readonly="true" title="Alaska">Alaska</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xl-6">
+        <div class="card">
+            <div class="card-body">
+                <div class="mb-4">
+                    <h4 class="card-title">Select2 methods</h4>
+                    <p>Select2 has several built-in methods that allow programmatic control of the component. </p>
+                </div>
+
+                <label class="select2-label form-label">Multiple select</label> <br>
+                <button class="js-programmatic-multi-set-val btn btn-primary mb-2" aria-label="Set Select2 option">
+                    Set to Hawaii and California
+                </button>
+
+                <button class="js-programmatic-multi-clear btn btn-primary mb-2">
+                    Clear
+                </button>
+
+                <div class="mt-4">
+                    <div class="dropdown bootstrap-select show-tick js-example-programmatic-multi select2-hidden-accessible">
+                        <select class="js-example-programmatic-multi select2-hidden-accessible" multiple="" data-select2-id="97" tabindex="-1" aria-hidden="true">
+                            <option value="AL">Alaska</option>
+                            <option value="HA">Hawaii</option>
+                            <option value="CA">California</option>
+                        </select><button type="button" tabindex="-1" class="btn dropdown-toggle bs-placeholder btn-light" data-bs-toggle="dropdown" role="combobox" aria-owns="bs-select-37" aria-haspopup="listbox" aria-expanded="false" title="Nothing selected"><div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner">Nothing selected</div></div> </div></button><div class="dropdown-menu "><div class="inner show" role="listbox" id="bs-select-37" tabindex="-1" aria-multiselectable="true"><ul class="dropdown-menu inner show" role="presentation"></ul></div></div>
+                    </div><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="98" style="width: 74.5938px;"><span class="selection"><span class="select2-selection select2-selection--multiple" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1"><ul class="select2-selection__rendered"><li class="select2-search select2-search--inline"><input class="select2-search__field" type="search" tabindex="0" autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false" role="textbox" aria-autocomplete="list" placeholder="" style="width: 0.75em;"></li></ul></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                </div>
+            </div>
+        </div>
+    </div>

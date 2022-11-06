@@ -1,0 +1,1190 @@
+﻿@{
+	ViewData["Title"] = "Bootstrap";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+				<div class="row ">
+					<div class="col-xl-12">
+                        <div class="page-titles">
+                            <div class="d-flex align-items-center">
+                                <h2 class="heading">Label</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+				<!-- --element-area-- -->
+				<div class="element-area">
+					<div class="demo-view">
+						<div class="container-fluid pt-0 ps-0 pe-lg-4 pe-0">
+							<!-- row -->
+							<div class="row">
+								<!-- Column  -->
+								<div class="col-xl-12">
+									<div class="card dz-card" id="basic-dropdown">
+										<div class="card-header border-0  flex-wrap">
+											<div>
+											<h4 class="card-title">Basic Dropdown</h4>
+											<p class="m-0 subtitle">A dropdown menu is a toggleable menu that allows the user to choose one value from a predefined list
+											</p>
+											</div>
+											<ul class="nav nav-tabs dzm-tabs" id="myTab" role="tablist">
+												<li class="nav-item" role="presentation">
+													<button class="nav-link active " id="home-tab" data-bs-toggle="tab" data-bs-target="#BasicDropdown" type="button" role="tab" aria-controls="home" aria-selected="true">Preview</button>
+												</li>
+												<li class="nav-item" role="presentation">
+													<button class="nav-link " id="profile-tab" data-bs-toggle="tab" data-bs-target="#BasicDropdown-html" type="button" role="tab" aria-controls="html" aria-selected="false">HTML</button>
+												</li>
+											</ul>
+										</div>
+										<div class="tab-content" id="myTabContent">
+											<div class="tab-pane fade show active" id="BasicDropdown" role="tabpanel" aria-labelledby="home-tab">
+												<div class="card-body pt-0">
+													<div class="basic-dropdown">
+														<div class="dropdown">
+															<button type="button" class="btn btn-primary dropdown-toggle show" data-bs-toggle="dropdown" aria-expanded="true">
+																Dropdown button
+															</button>
+															<div class="dropdown-menu show" data-popper-placement="top-start" style="position: absolute; inset: auto auto 0px 0px; margin: 0px; transform: translate(0px, -50px);">
+																<a class="dropdown-item" href="javascript:void(0);">Link 1</a>
+																<a class="dropdown-item" href="javascript:void(0);">Link 2</a>
+																<a class="dropdown-item" href="javascript:void(0);">Link 3</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="tab-pane fade " id="BasicDropdown-html" role="tabpanel" aria-labelledby="home-tab">
+												<div class="card-body p-0 code-area">
+<pre class="m-0"><code class="language-html hljs language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"basic-dropdown"</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown"</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-default dropdown-toggle"</span> <span class="hljs-attr">data-bs-toggle</span>=<span class="hljs-string">"dropdown"</span>&gt;</span>
+			Dropdown button
+		<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-menu"</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Link 1<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Link 2<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Link 3<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+		<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+	<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+												</div>
+											</div>
+										</div>		
+									</div>
+								</div>
+								<!-- /Column  -->
+								<!-- Column  -->
+								<div class="col-xl-12">
+									<div class="card dz-card">
+										<div class="card-header flex-wrap d-flex justify-content-between border-0 ">
+											<div>
+												<h4 class="card-title">Dropdown Divider</h4>
+												<p class="m-0 subtitle">The
+													<code>.dropdown-divider</code> class is used to separate links inside the dropdown menu with a thin horizontal border
+												</p>
+											</div>
+											<ul class="nav nav-tabs dzm-tabs" id="myTab" role="tablist">
+												<li class="nav-item" role="presentation">
+													<button class="nav-link active " id="home-tab" data-bs-toggle="tab" data-bs-target="#DropdownDivider" type="button" role="tab" aria-controls="home" aria-selected="true">Preview</button>
+												</li>
+												<li class="nav-item" role="presentation">
+													<button class="nav-link " id="profile-tab" data-bs-toggle="tab" data-bs-target="#DropdownDivider-html" type="button" role="tab" aria-controls="html" aria-selected="false">HTML</button>
+												</li>
+											</ul>
+										</div>
+										<div class="tab-content" id="myTabContent">
+											<div class="tab-pane fade show active" id="DropdownDivider" role="tabpanel" aria-labelledby="home-tab">
+												<div class="card-body pt-0">
+
+													<div class="basic-dropdown">
+														<div class="dropdown">
+															<button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+																Dropdown button
+															</button>
+															<div class="dropdown-menu">
+																<a class="dropdown-item" href="javascript:void(0);">Link 1</a>
+																<a class="dropdown-item" href="javascript:void(0);">Link 2</a>
+																<a class="dropdown-item" href="javascript:void(0);">Link 3</a>
+																<div class="dropdown-divider"></div>
+																<a class="dropdown-item" href="javascript:void(0);">Another link</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="tab-pane fade " id="DropdownDivider-html" role="tabpanel" aria-labelledby="home-tab">
+												<div class="card-body p-0 code-area">
+<pre class="m-0"> <code class="language-html hljs language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"basic-dropdown"</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown"</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-default dropdown-toggle"</span> <span class="hljs-attr">data-bs-toggle</span>=<span class="hljs-string">"dropdown"</span>&gt;</span>
+			Dropdown button
+		<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-menu"</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Link 1<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Link 2<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Link 3<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-divider"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span>  <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Another link<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+		<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+	<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+												</div>
+											</div>
+										</div>
+
+
+									</div>
+								</div>
+								<!-- /Column  -->
+								<!-- Column  -->
+								<div class="col-xl-12 ">
+									<div class="card dz-card" id="dropdown-header">
+										<div class="card-header flex-wrap border-0">
+											<div>
+												<h4 class="card-title">Dropdown Header</h4>
+												<p class="m-0 subtitle">The
+													<code>.dropdown-header</code> class is used to add headers inside the dropdown menu
+												</p>
+											</div>
+											<ul class="nav nav-tabs dzm-tabs" id="myTab" role="tablist">
+												<li class="nav-item" role="presentation">
+													<button class="nav-link active " id="home-tab" data-bs-toggle="tab" data-bs-target="#DropdownHeader" type="button" role="tab" aria-controls="home" aria-selected="true">Preview</button>
+												</li>
+												<li class="nav-item" role="presentation">
+													<button class="nav-link " id="profile-tab" data-bs-toggle="tab" data-bs-target="#DropdownHeader-html" type="button" role="tab" aria-controls="html" aria-selected="false">HTML</button>
+												</li>
+											</ul>
+										</div>
+										<div class="tab-content" id="myTabContent">
+											<div class="tab-pane fade show active" id="DropdownHeader" role="tabpanel" aria-labelledby="home-tab">	
+												<div class="card-body pt-0">
+
+													<div class="basic-dropdown">
+														<div class="dropdown">
+															<button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+																Dropdown button
+															</button>
+															<div class="dropdown-menu">
+																<h5 class="dropdown-header">Dropdown header</h5>
+																<a class="dropdown-item" href="javascript:void(0);">Link 1</a>
+																<a class="dropdown-item" href="javascript:void(0);">Link 2</a>
+																<a class="dropdown-item" href="javascript:void(0);">Link 3</a>
+																<h5 class="dropdown-header">Dropdown header</h5>
+																<a class="dropdown-item" href="javascript:void(0);">Another link</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="tab-pane fade" id="DropdownHeader-html" role="tabpanel" aria-labelledby="home-tab">	
+												<div class="card-body p-0 code-area">
+<pre class="m-0"><code class="language-html hljs language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"basic-dropdown"</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown"</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-default dropdown-toggle"</span> <span class="hljs-attr">data-bs-toggle</span>=<span class="hljs-string">"dropdown"</span>&gt;</span>
+			Dropdown button
+		<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-menu"</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">h5</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-header"</span>&gt;</span>Dropdown header<span class="hljs-tag">&lt;/<span class="hljs-name">h5</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Link 1<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Link 2<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Link 3<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">h5</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-header"</span>&gt;</span>Dropdown header<span class="hljs-tag">&lt;/<span class="hljs-name">h5</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Another link<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+		<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+	<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+													
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+								<!-- /Column  -->
+								
+								<!-- Column  -->
+								<div class="col-xl-12">
+									<div class="card dz-card" id="disable-active">
+										<div class="card-header flex-wrap border-0">
+											<div>	
+												<h4 class="card-title">Disable and Active items</h4>
+												<p class="m-0 subtitle">The
+													<code>.dropdown-header</code> class is used to add headers inside the dropdown menu
+												</p>
+											</div>
+											<ul class="nav nav-tabs dzm-tabs" id="myTab" role="tablist">
+												<li class="nav-item" role="presentation">
+													<button class="nav-link active " id="home-tab" data-bs-toggle="tab" data-bs-target="#DisableActive" type="button" role="tab" aria-controls="home" aria-selected="true">Preview</button>
+												</li>
+												<li class="nav-item" role="presentation">
+													<button class="nav-link " id="profile-tab" data-bs-toggle="tab" data-bs-target="#DisableActive-html" type="button" role="tab" aria-controls="html" aria-selected="false">HTML</button>
+												</li>
+											</ul>
+										</div>
+										<div class="tab-content" id="myTabContent">
+											<div class="tab-pane fade show active" id="DisableActive" role="tabpanel" aria-labelledby="home-tab">	
+												<div class="card-body pt-0">
+													<div class="basic-dropdown">
+														<div class="dropdown">
+															<button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+																Dropdown button
+															</button>
+															<div class="dropdown-menu">
+																<a class="dropdown-item" href="javascript:void(0);">Normal</a>
+																<a class="dropdown-item active" href="javascript:void(0);">Active</a>
+																<a class="dropdown-item disabled" href="javascript:void(0);">Disabled</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="tab-pane fade" id="DisableActive-html" role="tabpanel" aria-labelledby="home-tab">	
+												<div class="card-body p-0 code-area">
+<pre class="m-0"><code class="language-html hljs language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"basic-dropdown"</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown"</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-default dropdown-toggle"</span> <span class="hljs-attr">data-bs-toggle</span>=<span class="hljs-string">"dropdown"</span>&gt;</span>
+			Dropdown button
+		<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-menu"</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Normal<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item active"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Active<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item disabled"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Disabled<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+		<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+	<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+								<!-- /Column  -->
+								<!-- Column  -->
+								<div class="col-xl-12 ">
+									<div class="card dz-card" id="align-right">
+										<div class="card-header flex-wrap border-0">
+											<div>
+												<h4 class="card-title">Align Right</h4>
+												<p class="m-0 subtitle">To right-align the dropdown, add the
+												<code>.dropdown-menu-end</code> class to the element with .dropdown-menu</p>
+											</div>
+											<ul class="nav nav-tabs dzm-tabs" id="myTab" role="tablist">
+												<li class="nav-item" role="presentation">
+													<button class="nav-link active " id="home-tab" data-bs-toggle="tab" data-bs-target="#AlignRight" type="button" role="tab" aria-controls="home" aria-selected="true">Preview</button>
+												</li>
+												<li class="nav-item" role="presentation">
+													<button class="nav-link " id="profile-tab" data-bs-toggle="tab" data-bs-target="#AlignRight-html" type="button" role="tab" aria-controls="html" aria-selected="false">HTML</button>
+												</li>
+											</ul>	
+										</div>
+										<div class="tab-content" id="myTabContent">
+											<div class="tab-pane fade show active" id="AlignRight" role="tabpanel" aria-labelledby="home-tab">	
+												<div class="card-body pt-0">
+													<div class="basic-dropdown">
+														<div class="dropdown">
+															<button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+																Dropdown button
+															</button>
+															<div class="dropdown-menu dropdown-menu-end">
+																<a class="dropdown-item" href="javascript:void(0);">Link 1</a>
+																<a class="dropdown-item" href="javascript:void(0);">Link 2</a>
+																<a class="dropdown-item" href="javascript:void(0);">Link 3</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="tab-pane fade" id="AlignRight-html" role="tabpanel" aria-labelledby="home-tab">	
+												<div class="card-body p-0 code-area">
+<pre class="m-0"> <code class="language-html hljs language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"basic-dropdown"</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown"</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-default dropdown-toggle"</span> <span class="hljs-attr">data-bs-toggle</span>=<span class="hljs-string">"dropdown"</span>&gt;</span>
+			Dropdown button
+		<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-menu dropdown-menu-end"</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Link 1<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Link 2<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Link 3<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+		<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+	<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+								<!-- /Column  -->
+								<!-- Column  -->
+								<div class="col-xl-12 ">
+									<div class="card dz-card" id="dropup">
+										<div class="card-header flex-wrap border-0">
+											<div>
+												<h4 class="card-title">Dropup</h4>
+												<p class="m-0 subtitle">The
+													<code>.dropup</code> class makes the dropdown menu expand upwards instead of downwards
+												</p>
+											</div>
+											<ul class="nav nav-tabs dzm-tabs" id="myTab" role="tablist">
+												<li class="nav-item" role="presentation">
+													<button class="nav-link active " id="home-tab" data-bs-toggle="tab" data-bs-target="#Dropup" type="button" role="tab" aria-controls="home" aria-selected="true">Preview</button>
+												</li>
+												<li class="nav-item" role="presentation">
+													<button class="nav-link " id="profile-tab" data-bs-toggle="tab" data-bs-target="#Dropup-html" type="button" role="tab" aria-controls="html" aria-selected="false">HTML</button>
+												</li>
+											</ul>	
+										</div>
+										<div class="tab-content" id="myTabContent">
+											<div class="tab-pane fade show active" id="Dropup" role="tabpanel" aria-labelledby="home-tab">	
+												<div class="card-body pt-0">
+
+													<div class="basic-dropdown">
+														<!-- Default dropup button -->
+														<div class="btn-group dropup mb-1">
+															<button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+																Dropup
+															</button>
+															<div class="dropdown-menu">
+																<a class="dropdown-item" href="javascript:void(0);">Link 1</a>
+																<a class="dropdown-item" href="javascript:void(0);">Link 2</a>
+																<a class="dropdown-item" href="javascript:void(0);">Link 3</a>
+															</div>
+														</div>
+														<!-- Split dropup button -->
+														<div class="btn-group dropup mb-1">
+															<button type="button" class="btn btn-primary">
+																Split dropup
+															</button>
+															<button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown">
+																<span class="sr-only">Toggle Dropdown</span>
+															</button>
+															<div class="dropdown-menu">
+																<a class="dropdown-item" href="javascript:void(0);">Link 1</a>
+																<a class="dropdown-item" href="javascript:void(0);">Link 2</a>
+																<a class="dropdown-item" href="javascript:void(0);">Link 3</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="tab-pane fade " id="Dropup-html" role="tabpanel" aria-labelledby="home-tab">	
+												<div class="card-body p-0 code-area">
+<pre class="m-0"><code class="language-html hljs language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"basic-dropdown"</span>&gt;</span>
+	<span class="hljs-comment">&lt;!-- Default dropup button --&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn-group dropup mb-1"</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-default dropdown-toggle"</span> <span class="hljs-attr">data-bs-toggle</span>=<span class="hljs-string">"dropdown"</span>&gt;</span>
+			Dropup
+		<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-menu"</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Link 1<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Link 2<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Link 3<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+		<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+	<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>javascript:void(0);
+	<span class="hljs-comment">&lt;!-- Split dropup button --&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn-group dropup mb-1"</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-primary"</span>&gt;</span>
+			Split dropup
+		<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-primary dropdown-toggle dropdown-toggle-split"</span> <span class="hljs-attr">data-bs-toggle</span>=<span class="hljs-string">"dropdown"</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only"</span>&gt;</span>Toggle Dropdown<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+		<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-menu"</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Link 1<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Link 2<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Link 3<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+		<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+	<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+												</div>
+											</div>
+										</div>		
+									</div>
+								</div>
+								<!-- /Column  -->
+								<!-- Column  -->
+								<div class="col-xl-12">
+									<div class="card dz-card" id="dropright">
+										<div class="card-header flex-wrap border-0">
+											<div>
+												<h4 class="card-title">Dropright</h4>
+												<p class="m-0 subtitle">Trigger dropdown menus at the right of the elements by adding
+													<code>.dropend</code> to the parent element</p>
+											</div>
+											<ul class="nav nav-tabs dzm-tabs" id="myTab" role="tablist">
+												<li class="nav-item" role="presentation">
+													<button class="nav-link active " id="home-tab" data-bs-toggle="tab" data-bs-target="#Dropright" type="button" role="tab" aria-controls="home" aria-selected="true">Preview</button>
+												</li>
+												<li class="nav-item" role="presentation">
+													<button class="nav-link " id="profile-tab" data-bs-toggle="tab" data-bs-target="#Dropright-html" type="button" role="tab" aria-controls="html" aria-selected="false">HTML</button>
+												</li>
+											</ul>	
+										</div>
+										<div class="tab-content" id="myTabContent">
+											<div class="tab-pane fade show active" id="Dropright" role="tabpanel" aria-labelledby="home-tab">	
+												<div class="card-body pt-0">
+
+													<div class="basic-dropdown">
+														<!-- Default dropright button -->
+														<div class="btn-group dropend mb-1">
+															<button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+																Dropright
+															</button>
+															<div class="dropdown-menu">
+																<a class="dropdown-item" href="javascript:void(0);">Link 1</a>
+																<a class="dropdown-item" href="javascript:void(0);">Link 2</a>
+																<a class="dropdown-item" href="javascript:void(0);">Link 3</a>
+															</div>
+														</div>
+
+														<!-- Split dropright button -->
+														<div class="btn-group dropend mb-1">
+															<button type="button" class="btn btn-primary">
+																Split dropright
+															</button>
+															<button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown">
+																<span class="sr-only">Toggle Dropright</span>
+															</button>
+															<div class="dropdown-menu">
+																<a class="dropdown-item" href="javascript:void(0);">Link 1</a>
+																<a class="dropdown-item" href="javascript:void(0);">Link 2</a>
+																<a class="dropdown-item" href="javascript:void(0);">Link 3</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="tab-pane fade " id="Dropright-html" role="tabpanel" aria-labelledby="home-tab">	
+												<div class="card-body p-0 code-area">
+<pre class="m-0"> <code class="language-html hljs language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"basic-dropdown"</span>&gt;</span>
+	<span class="hljs-comment">&lt;!-- Default dropright button --&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn-group dropend mb-1"</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-primary dropdown-toggle"</span> <span class="hljs-attr">data-bs-toggle</span>=<span class="hljs-string">"dropdown"</span>&gt;</span>
+			Dropright
+		<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-menu"</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Link 1<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Link 2<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Link 3<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+		<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+	<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+	<span class="hljs-comment">&lt;!-- Split dropright button --&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn-group dropend mb-1"</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-primary"</span>&gt;</span>
+			Split dropright
+		<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-primary dropdown-toggle dropdown-toggle-split"</span> <span class="hljs-attr">data-bs-toggle</span>=<span class="hljs-string">"dropdown"</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only"</span>&gt;</span>Toggle Dropright<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+		<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-menu"</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Link 1<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Link 2<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Link 3<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+		<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+	<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+								<!-- /Column  -->
+								<!-- Column  -->
+								<div class="col-xl-12 ">
+									<div class="card dz-card" id="dropstart">
+										<div class="card-header flex-wrap border-0">
+											<div>
+												<h4 class="card-title">dropstart </h4>
+												<p class="m-0 subtitle">Trigger dropdown menus at the right of the elements by adding
+													<code>.dropstart </code> to the parent element</p>
+											</div>
+											<ul class="nav nav-tabs dzm-tabs" id="myTab" role="tablist">
+												<li class="nav-item" role="presentation">
+													<button class="nav-link active " id="home-tab" data-bs-toggle="tab" data-bs-target="#Dropstart" type="button" role="tab" aria-controls="home" aria-selected="true">Preview</button>
+												</li>
+												<li class="nav-item" role="presentation">
+													<button class="nav-link " id="profile-tab" data-bs-toggle="tab" data-bs-target="#Dropstart-html" type="button" role="tab" aria-controls="html" aria-selected="false">HTML</button>
+												</li>
+											</ul>	
+										</div>
+										<div class="tab-content" id="myTabContent">
+											<div class="tab-pane fade show active" id="Dropstart" role="tabpanel" aria-labelledby="home-tab">
+												<div class="card-body pt-0">
+													<div class="basic-dropdown">
+														<!-- Default dropstart button -->
+														<div class="btn-group dropstart mb-1">
+															<button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+																dropstart
+															</button>
+															<div class="dropdown-menu">
+																<a class="dropdown-item" href="javascript:void(0);">Link 1</a>
+																<a class="dropdown-item" href="javascript:void(0);">Link 2</a>
+																<a class="dropdown-item" href="javascript:void(0);">Link 3</a>
+															</div>
+														</div>
+
+														<!-- Split dropstart button -->
+														<div class="btn-group mb-1">
+															<div class="btn-group dropstart " role="group">
+																<button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown">
+																	<span class="sr-only">Toggle dropstart</span>
+																</button>
+																<div class="dropdown-menu">
+																	<a class="dropdown-item" href="javascript:void(0);">Link 1</a>
+																	<a class="dropdown-item" href="javascript:void(0);">Link 2</a>
+																	<a class="dropdown-item" href="javascript:void(0);">Link 3</a>
+																</div>
+															</div>
+															<button type="button" class="btn btn-primary">
+																Split dropstart
+															</button>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="tab-pane fade " id="Dropstart-html" role="tabpanel" aria-labelledby="home-tab">
+												<div class="card-body p-0 code-area">
+<pre class="m-0"> <code class="language-html hljs language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"basic-dropdown"</span>&gt;</span>
+	<span class="hljs-comment">&lt;!-- Default dropstart button --&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn-group dropstart mb-1"</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-primary dropdown-toggle"</span> <span class="hljs-attr">data-bs-toggle</span>=<span class="hljs-string">"dropdown"</span>&gt;</span>
+			dropstart
+		<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-menu"</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Link 1<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Link 2<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Link 3<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+		<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+	<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+	<span class="hljs-comment">&lt;!-- Split dropstart button --&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn-group mb-1"</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn-group dropstart "</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"group"</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-primary dropdown-toggle dropdown-toggle-split"</span> <span class="hljs-attr">data-bs-toggle</span>=<span class="hljs-string">"dropdown"</span>&gt;</span>
+				<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only"</span>&gt;</span>Toggle dropstart<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+			<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-menu"</span>&gt;</span>
+				<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Link 1<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+				<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Link 2<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+				<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Link 3<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+			<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+		<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-primary"</span>&gt;</span>
+			Split dropstart
+		<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+	<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+												</div>
+											</div>
+										</div>		
+									</div>
+								</div>
+								<!-- /Column  -->
+							
+							
+								<!-- Column  -->
+								<div class="col-xl-12" id="button-dropdowns">
+									<div class="card dz-card">
+										<div class="card-header flex-wrap border-0">
+											<h4 class="card-title">Button Dropdowns</h4>
+											<ul class="nav nav-tabs dzm-tabs" id="myTab" role="tablist">
+												<li class="nav-item" role="presentation">
+													<button class="nav-link active " id="home-tab" data-bs-toggle="tab" data-bs-target="#ButtonDropdowns" type="button" role="tab" aria-controls="home" aria-selected="true">Preview</button>
+												</li>
+												<li class="nav-item" role="presentation">
+													<button class="nav-link " id="profile-tab" data-bs-toggle="tab" data-bs-target="#ButtonDropdowns-html" type="button" role="tab" aria-controls="html" aria-selected="false">HTML</button>
+												</li>
+											</ul>	
+										</div>
+										<div class="tab-content" id="myTabContent">
+											<div class="tab-pane fade show active" id="ButtonDropdowns" role="tabpanel" aria-labelledby="home-tab">
+												<div class="card-body pt-0">
+													<div class="button-dropdown">
+														<div class="btn-group mb-1">
+															<button type="button" class="btn btn-primary">Primary</button>
+															<button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown">
+															</button>
+															<div class="dropdown-menu">
+																<a class="dropdown-item" href="javascript:void(0);">Action</a>
+																<a class="dropdown-item" href="javascript:void(0);">Another action</a>
+																<a class="dropdown-item" href="javascript:void(0);">Something else here</a>
+																<div class="dropdown-divider"></div>
+																<a class="dropdown-item" href="javascript:void(0);">Separated link</a>
+															</div>
+														</div>
+														<div class="btn-group mb-1">
+															<button type="button" class="btn btn-secondary">Secondary</button>
+															<button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown">
+															</button>
+															<div class="dropdown-menu">
+																<a class="dropdown-item" href="javascript:void(0);">Action</a>
+																<a class="dropdown-item" href="javascript:void(0);">Another action</a>
+																<a class="dropdown-item" href="javascript:void(0);">Something else here</a>
+																<div class="dropdown-divider"></div>
+																<a class="dropdown-item" href="javascript:void(0);">Separated link</a>
+															</div>
+														</div>
+
+														<div class="btn-group mb-1">
+															<button type="button" class="btn btn-success">Success</button>
+															<button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown">
+															</button>
+															<div class="dropdown-menu">
+																<a class="dropdown-item" href="javascript:void(0);">Action</a>
+																<a class="dropdown-item" href="javascript:void(0);">Another action</a>
+																<a class="dropdown-item" href="javascript:void(0);">Something else here</a>
+																<div class="dropdown-divider"></div>
+																<a class="dropdown-item" href="javascript:void(0);">Separated link</a>
+															</div>
+														</div>
+
+														<div class="btn-group mb-1">
+															<button type="button" class="btn btn-info">Info</button>
+															<button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown">
+															</button>
+															<div class="dropdown-menu">
+																<a class="dropdown-item" href="javascript:void(0);">Action</a>
+																<a class="dropdown-item" href="javascript:void(0);">Another action</a>
+																<a class="dropdown-item" href="javascript:void(0);">Something else here</a>
+																<div class="dropdown-divider"></div>
+																<a class="dropdown-item" href="javascript:void(0);">Separated link</a>
+															</div>
+														</div>
+
+														<div class="btn-group mb-1">
+															<button type="button" class="btn btn-warning">Warning</button>
+															<button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown">
+															</button>
+															<div class="dropdown-menu">
+																<a class="dropdown-item" href="javascript:void(0);">Action</a>
+																<a class="dropdown-item" href="javascript:void(0);">Another action</a>
+																<a class="dropdown-item" href="javascript:void(0);">Something else here</a>
+																<div class="dropdown-divider"></div>
+																<a class="dropdown-item" href="javascript:void(0);">Separated link</a>
+															</div>
+														</div>
+
+														<div class="btn-group mb-1">
+															<button type="button" class="btn btn-danger">Danger</button>
+															<button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown">
+															</button>
+															<div class="dropdown-menu">
+																<a class="dropdown-item" href="javascript:void(0);">Action</a>
+																<a class="dropdown-item" href="javascript:void(0);">Another action</a>
+																<a class="dropdown-item" href="javascript:void(0);">Something else here</a>
+																<div class="dropdown-divider"></div>
+																<a class="dropdown-item" href="javascript:void(0);">Separated link</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="tab-pane fade " id="ButtonDropdowns-html" role="tabpanel" aria-labelledby="home-tab">
+												<div class="card-body p-0 code-area">
+<pre class="m-0"> <code class="language-html hljs language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button-dropdown"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn-group mb-1"</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-primary"</span>&gt;</span>Primary<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-primary dropdown-toggle dropdown-toggle-split"</span> <span class="hljs-attr">data-bs-toggle</span>=<span class="hljs-string">"dropdown"</span>&gt;</span>
+	<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-menu"</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Action<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Another action<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Something else here<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-divider"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Separated link<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+	<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>javascript:void(0);
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn-group mb-1"</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-secondary"</span>&gt;</span>Secondary<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-secondary dropdown-toggle dropdown-toggle-split"</span> <span class="hljs-attr">data-bs-toggle</span>=<span class="hljs-string">"dropdown"</span>&gt;</span>
+	<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-menu"</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Action<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Another action<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Something else here<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-divider"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Separated link<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+	<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn-group mb-1"</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-success"</span>&gt;</span>Success<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-success dropdown-toggle dropdown-toggle-split"</span> <span class="hljs-attr">data-bs-toggle</span>=<span class="hljs-string">"dropdown"</span>&gt;</span>
+	<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-menu"</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Action<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Another action<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Something else here<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-divider"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Separated link<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+	<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn-group mb-1"</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-info"</span>&gt;</span>Info<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-info dropdown-toggle dropdown-toggle-split"</span> <span class="hljs-attr">data-bs-toggle</span>=<span class="hljs-string">"dropdown"</span>&gt;</span>
+	<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-menu"</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Action<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Another action<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Something else here<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-divider"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Separated link<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+	<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn-group mb-1"</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-warning"</span>&gt;</span>Warning<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-warning dropdown-toggle dropdown-toggle-split"</span> <span class="hljs-attr">data-bs-toggle</span>=<span class="hljs-string">"dropdown"</span>&gt;</span>
+	<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-menu"</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Action<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Another action<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Something else here<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-divider"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Separated link<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+	<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn-group mb-1"</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-danger"</span>&gt;</span>Danger<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-danger dropdown-toggle dropdown-toggle-split"</span> <span class="hljs-attr">data-bs-toggle</span>=<span class="hljs-string">"dropdown"</span>&gt;</span>
+	<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-menu"</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Action<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Another action<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Something else here<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-divider"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Separated link<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+	<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+												</div>
+											</div>
+										</div>		
+									</div>
+								</div>
+								<!-- /Column  -->
+							
+							 
+								<!-- Column  -->
+								<div class="col-xl-12 ">
+									<div class="card dz-card" id="sizing">
+										<div class="card-header flex-wrap border-0">
+											<div>
+												<h4 class="card-title">Sizing</h4>
+												<p class="m-0 subtitle">Button dropdowns work with buttons of all sizes, including default and split dropdown buttons.</p>
+											</div>
+											<ul class="nav nav-tabs dzm-tabs" id="myTab" role="tablist">
+												<li class="nav-item" role="presentation">
+													<button class="nav-link active " id="home-tab" data-bs-toggle="tab" data-bs-target="#Sizing" type="button" role="tab" aria-controls="home" aria-selected="true">Preview</button>
+												</li>
+												<li class="nav-item" role="presentation">
+													<button class="nav-link " id="profile-tab" data-bs-toggle="tab" data-bs-target="#Sizing-html" type="button" role="tab" aria-controls="html" aria-selected="false">HTML</button>
+												</li>
+											</ul>		
+										</div>
+										<div class="tab-content" id="myTabContent">
+											<div class="tab-pane fade show active" id="Sizing" role="tabpanel" aria-labelledby="home-tab">
+												<div class="card-body pt-0">
+													<div class="dropdown-size">
+														<!-- Large button groups (default and split) -->
+														<div class="btn-group mb-1">
+															<button class="btn btn-primary btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown">
+																Large button
+															</button>
+															<div class="dropdown-menu">
+																<a class="dropdown-item" href="javascript:void(0);">Action</a>
+																<a class="dropdown-item" href="javascript:void(0);">Another action</a>
+																<a class="dropdown-item" href="javascript:void(0);">Something else here</a>
+																<div class="dropdown-divider"></div>
+																<a class="dropdown-item" href="javascript:void(0);">Separated link</a>
+															</div>
+														</div>
+														<div class="btn-group mb-1">
+															<button class="btn btn-primary btn-lg" type="button">
+																Large split button
+															</button>
+															<button type="button" class="btn btn-lg btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+																<span class="sr-only">Toggle Dropdown</span>
+															</button>
+															<div class="dropdown-menu">
+																<a class="dropdown-item" href="javascript:void(0);">Action</a>
+																<a class="dropdown-item" href="javascript:void(0);">Another action</a>
+																<a class="dropdown-item" href="javascript:void(0);">Something else here</a>
+																<div class="dropdown-divider"></div>
+																<a class="dropdown-item" href="javascript:void(0);">Separated link</a>
+															</div>
+														</div>
+
+														<!-- Small button groups (default and split) -->
+														<div class="btn-group mb-1">
+															<button class="btn btn-primary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown">
+																Small button
+															</button>
+															<div class="dropdown-menu">
+																<a class="dropdown-item" href="javascript:void(0);">Action</a>
+																<a class="dropdown-item" href="javascript:void(0);">Another action</a>
+																<a class="dropdown-item" href="javascript:void(0);">Something else here</a>
+																<div class="dropdown-divider"></div>
+																<a class="dropdown-item" href="javascript:void(0);">Separated link</a>
+															</div>
+														</div>
+														<div class="btn-group mb-1">
+															<button class="btn btn-primary btn-sm" type="button">
+																Small split button
+															</button>
+															<button type="button" class="btn btn-sm btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+																<span class="sr-only">Toggle Dropdown</span>
+															</button>
+															<div class="dropdown-menu">
+																<a class="dropdown-item" href="javascript:void(0);">Action</a>
+																<a class="dropdown-item" href="javascript:void(0);">Another action</a>
+																<a class="dropdown-item" href="javascript:void(0);">Something else here</a>
+																<div class="dropdown-divider"></div>
+																<a class="dropdown-item" href="javascript:void(0);">Separated link</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="tab-pane fade " id="Sizing-html" role="tabpanel" aria-labelledby="home-tab">
+												<div class="card-body p-0 code-area">
+<pre class="m-0"> <code class="language-html hljs language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-size"</span>&gt;</span>
+	<span class="hljs-comment">&lt;!-- Large button groups (default and split) --&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn-group mb-1"</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-primary btn-lg dropdown-toggle"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">data-bs-toggle</span>=<span class="hljs-string">"dropdown"</span>&gt;</span>
+			Large button
+		<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-menu"</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Action<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Another action<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Something else here<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-divider"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Separated link<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+		<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+	<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn-group mb-1"</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-primary btn-lg"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span>&gt;</span>
+			Large split button
+		<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-lg btn-primary dropdown-toggle dropdown-toggle-split"</span> <span class="hljs-attr">data-bs-toggle</span>=<span class="hljs-string">"dropdown"</span> <span class="hljs-attr">aria-haspopup</span>=<span class="hljs-string">"true"</span> <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">"false"</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only"</span>&gt;</span>Toggle Dropdown<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+		<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-menu"</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Action<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Another action<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Something else here<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-divider"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Separated link<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+		<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+	<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+	<span class="hljs-comment">&lt;!-- Small button groups (default and split) --&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn-group mb-1"</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-primary btn-sm dropdown-toggle"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">data-bs-toggle</span>=<span class="hljs-string">"dropdown"</span>&gt;</span>
+			Small button
+		<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-menu"</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Action<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Another action<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Something else here<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-divider"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Separated link<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+		<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+	<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn-group mb-1"</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-primary btn-sm"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span>&gt;</span>
+			Small split button
+		<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-sm btn-primary dropdown-toggle dropdown-toggle-split"</span> <span class="hljs-attr">data-bs-toggle</span>=<span class="hljs-string">"dropdown"</span> <span class="hljs-attr">aria-haspopup</span>=<span class="hljs-string">"true"</span> <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">"false"</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only"</span>&gt;</span>Toggle Dropdown<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+		<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-menu"</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Action<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Another action<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Something else here<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-divider"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Separated link<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+		<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+	<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+								<!-- /Column  -->
+								<!-- Column  -->
+								<div class="col-lg-12">
+									<div class="card dz-card" id="custom-style">
+										<div class="card-header flex-wrap border-0">
+											<div>
+											<h4 class="card-title">Custom style</h4>
+											<p class="m-0 subtitle">Use
+												<code>.custom-dropdown</code> this class for this style</p>
+											</div>
+											<ul class="nav nav-tabs dzm-tabs" id="myTab" role="tablist">
+												<li class="nav-item" role="presentation">
+													<button class="nav-link active " id="home-tab" data-bs-toggle="tab" data-bs-target="#CustomStyle" type="button" role="tab" aria-controls="home" aria-selected="true">Preview</button>
+												</li>
+												<li class="nav-item" role="presentation">
+													<button class="nav-link " id="profile-tab" data-bs-toggle="tab" data-bs-target="#CustomStyle-html" type="button" role="tab" aria-controls="html" aria-selected="false">HTML</button>
+												</li>
+											</ul>		
+										</div>
+										<div class="tab-content" id="myTabContent">
+											<div class="tab-pane fade show active" id="CustomStyle" role="tabpanel" aria-labelledby="home-tab">
+												<div class="card-body pt-0">
+													<div class="row">
+														<div class="col-xl-3 col-md-3 col-sm-4 col-6 ">
+															<div class="dropdown custom-dropdown">
+																<div data-bs-toggle="dropdown">Last 7 days
+																	<i class="fa fa-angle-down ms-3"></i>
+																</div>
+																<div class="dropdown-menu dropdown-menu-end">
+																	<a class="dropdown-item" href="javascript:void(0);">Last 1 Month</a>
+																	<a class="dropdown-item" href="javascript:void(0);">Last 6 Month</a>
+																	<a class="dropdown-item" href="javascript:void(0);">Last 10 Month</a>
+																</div>
+															</div>
+														</div>
+
+														<div class="col-xl-3 col-md-3 mb-3 col-sm-4 col-6">
+															<div class="dropdown custom-dropdown">
+																<button type="button" class="btn btn-sm btn-outline-primary" data-bs-toggle="dropdown">Last 7 days
+																	<i class="fa fa-angle-down ms-3"></i>
+																</button>
+																<div class="dropdown-menu dropdown-menu-end">
+																	<a class="dropdown-item" href="javascript:void(0);">Last 1 Month</a>
+																	<a class="dropdown-item" href="javascript:void(0);">Last 6 Month</a>
+																	<a class="dropdown-item" href="javascript:void(0);">Last 10 Month</a>
+																</div>
+															</div>
+														</div>
+
+														<div class="col-xl-3 col-md-3 col-sm-4 col-6 mb-3 mb-sm-0">
+															<div class="dropdown custom-dropdown">
+																<button type="button" class="btn btn-sm btn-outline-primary" data-bs-toggle="dropdown">Last 1 Hour
+																	<i class="fa fa-angle-down ms-3"></i>
+																</button>
+																<div class="dropdown-menu dropdown-menu-end">
+																	<a class="dropdown-item" href="javascript:void(0);">Last 1 hour</a>
+																	<a class="dropdown-item" href="javascript:void(0);">Last 2 hour</a>
+																	<a class="dropdown-item" href="javascript:void(0);">Last 3 hour</a>
+																</div>
+															</div>
+														</div>
+
+														<div class="col-xl-3 col-md-3 col-sm-4 col-6 mb-3 mb-sm-0">
+															<div class="dropdown custom-dropdown">
+																<button type="button" class="btn btn-sm btn-primary" data-bs-toggle="dropdown">Last 7 days
+																	<i class="fa fa-angle-down ms-3"></i>
+																</button>
+																<div class="dropdown-menu dropdown-menu-end">
+																	<a class="dropdown-item" href="javascript:void(0);">Last 1 Month</a>
+																	<a class="dropdown-item" href="javascript:void(0);">Last 6 Month</a>
+																	<a class="dropdown-item" href="javascript:void(0);">Last 10 Month</a>
+																</div>
+															</div>
+														</div>
+
+														<div class="col-xl-3 col-md-3 col-sm-4 col-6 mb-3 mb-sm-0">
+															<div class="dropdown custom-dropdown">
+																<button type="button" class="btn btn-sm btn-primary d-flex align-items-center" data-bs-toggle="dropdown">
+																	<i class="ti-search me-2 mt-1"></i> 3 AM
+																	<i class="fa fa-angle-down ms-3"></i>
+																</button>
+																<div class="dropdown-menu dropdown-menu-end">
+																	<a class="dropdown-item" href="javascript:void(0);">6 AM</a>
+																	<a class="dropdown-item" href="javascript:void(0);">9 AM</a>
+																	<a class="dropdown-item" href="javascript:void(0);">12 AM</a>
+																</div>
+															</div>
+														</div>
+
+														<div class="col-xl-3 col-md-3 col-sm-4 col-6 mb-3 mb-sm-0">
+															<div class="dropdown custom-dropdown">
+																<button type="button" class="btn btn-sm btn-primary text-nowrap" data-bs-toggle="dropdown">
+																	<i class="ti-calendar me-3"></i> March 20, 2018 &nbsp; To &nbsp;April
+																	20, 2018
+																	<i class="fa fa-angle-down ms-3"></i>
+																</button>
+																<div class="dropdown-menu dropdown-menu-end">
+																	<a class="dropdown-item" href="javascript:void(0);">May 20, 2018 &nbsp; To &nbsp; June 20,
+																		2018</a>
+																	<a class="dropdown-item" href="javascript:void(0);">July 20, 2018 &nbsp; To &nbsp; August
+																		20, 2018</a>
+																</div>
+															</div>
+														</div>
+														<div class="col-xl-3 col-md-3 col-sm-4 col-6">
+															<div class="dropdown custom-dropdown ">
+																<div class="btn sharp btn-primary tp-btn  ms-3" data-bs-toggle="dropdown">
+																	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="18px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="12" cy="5" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="19" r="2"></circle></g></svg>
+																</div>
+																<div class="dropdown-menu dropdown-menu-end">
+																	<a class="dropdown-item" href="javascript:void(0);">Option 1</a>
+																	<a class="dropdown-item" href="javascript:void(0);">Option 2</a>
+																	<a class="dropdown-item" href="javascript:void(0);">Option 3</a>
+																</div>
+															</div>
+														</div>
+
+														<div class="col-xl-3 col-md-3 col-sm-4 col-6">
+															<div class="dropdown custom-dropdown">
+																<div class="btn sharp btn-primary tp-btn" data-bs-toggle="dropdown">
+																	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="18px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="12" cy="5" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="19" r="2"></circle></g></svg>
+																</div>
+																<div class="dropdown-menu dropdown-menu-end">
+																	<a class="dropdown-item" href="javascript:void(0);">Option 1</a>
+																	<a class="dropdown-item" href="javascript:void(0);">Option 2</a>
+																	<a class="dropdown-item" href="javascript:void(0);">Option 3</a>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="tab-pane fade" id="CustomStyle-html" role="tabpanel" aria-labelledby="home-tab">
+												<div class="card-body p-0 code-area">
+<pre class="m-0"> <code class="language-html hljs language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-xl-3"</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown custom-dropdown"</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">data-bs-toggle</span>=<span class="hljs-string">"dropdown"</span>&gt;</span>Last 7 days
+			<span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fa fa-angle-down ms-3"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+		<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-menu dropdown-menu-end"</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Last 1 Month<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Last 6 Month<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Last 10 Month<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+		<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+	<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-xl-3"</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown custom-dropdown"</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-sm btn-outline-primary"</span> <span class="hljs-attr">data-bs-toggle</span>=<span class="hljs-string">"dropdown"</span>&gt;</span>Last 7 days
+			<span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fa fa-angle-down ms-3"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+		<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-menu dropdown-menu-end"</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Last 1 Month<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Last 6 Month<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Last 10 Month<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+		<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+	<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-xl-3"</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown custom-dropdown"</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-sm btn-outline-primary"</span> <span class="hljs-attr">data-bs-toggle</span>=<span class="hljs-string">"dropdown"</span>&gt;</span>Last 1 Hour
+			<span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fa fa-angle-down ms-3"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+		<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-menu dropdown-menu-end"</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Last 1 hour<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Last 2 hour<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Last 3 hour<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+		<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+	<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-xl-3"</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown custom-dropdown"</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-sm btn-primary"</span> <span class="hljs-attr">data-bs-toggle</span>=<span class="hljs-string">"dropdown"</span>&gt;</span>Last 7 days
+			<span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fa fa-angle-down ms-3"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+		<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-menu dropdown-menu-end"</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span>  <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Last 1 Month<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span>  <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Last 6 Month<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span>  <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Last 10 Month<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+		<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+	<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-xl-3"</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown custom-dropdown"</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-sm btn-primary"</span> <span class="hljs-attr">data-bs-toggle</span>=<span class="hljs-string">"dropdown"</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ti-search mr-3"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span> 3 AM
+			<span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fa fa-angle-down ms-3"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+		<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-menu dropdown-menu-end"</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span>  <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>6 AM<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span>  <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>9 AM<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span>  <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>12 AM<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+		<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+	<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-xl-3"</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown custom-dropdown"</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-sm btn-primary"</span> <span class="hljs-attr">data-bs-toggle</span>=<span class="hljs-string">"dropdown"</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ti-calendar m-r-5"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span> March 20, 2018 &nbsp; To &nbsp;April
+			20, 2018
+			<span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fa fa-angle-down ms-3"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+		<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-menu dropdown-menu-end"</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span>  <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>May 20, 2018 &nbsp; To &nbsp; June 20,
+				2018<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span>  <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>July 20, 2018 &nbsp; To &nbsp; August
+				20, 2018<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+		<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+	<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-xl-3"</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown custom-dropdown"</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn sharp btn-primary tp-btn"</span> <span class="hljs-attr">data-bs-toggle</span>=<span class="hljs-string">"dropdown"</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.w3.org/2000/svg"</span> <span class="hljs-attr">xmlns:xlink</span>=<span class="hljs-string">"http://www.w3.org/1999/xlink"</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"18px"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"18px"</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">"0 0 24 24"</span> <span class="hljs-attr">version</span>=<span class="hljs-string">"1.1"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">g</span> <span class="hljs-attr">stroke</span>=<span class="hljs-string">"none"</span> <span class="hljs-attr">stroke-width</span>=<span class="hljs-string">"1"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"none"</span> <span class="hljs-attr">fill-rule</span>=<span class="hljs-string">"evenodd"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">rect</span> <span class="hljs-attr">x</span>=<span class="hljs-string">"0"</span> <span class="hljs-attr">y</span>=<span class="hljs-string">"0"</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"24"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"24"</span>/&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">circle</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"#000000"</span> <span class="hljs-attr">cx</span>=<span class="hljs-string">"12"</span> <span class="hljs-attr">cy</span>=<span class="hljs-string">"5"</span> <span class="hljs-attr">r</span>=<span class="hljs-string">"2"</span>/&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">circle</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"#000000"</span> <span class="hljs-attr">cx</span>=<span class="hljs-string">"12"</span> <span class="hljs-attr">cy</span>=<span class="hljs-string">"12"</span> <span class="hljs-attr">r</span>=<span class="hljs-string">"2"</span>/&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">circle</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"#000000"</span> <span class="hljs-attr">cx</span>=<span class="hljs-string">"12"</span> <span class="hljs-attr">cy</span>=<span class="hljs-string">"19"</span> <span class="hljs-attr">r</span>=<span class="hljs-string">"2"</span>/&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">g</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+		<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-menu dropdown-menu-end"</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span>  <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Option 1<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span>  <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Option 2<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span>  <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Option 3<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+		<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+	<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-xl-3"</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown custom-dropdown"</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn sharp btn-primary tp-btn"</span> <span class="hljs-attr">data-bs-toggle</span>=<span class="hljs-string">"dropdown"</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.w3.org/2000/svg"</span> <span class="hljs-attr">xmlns:xlink</span>=<span class="hljs-string">"http://www.w3.org/1999/xlink"</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"18px"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"18px"</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">"0 0 24 24"</span> <span class="hljs-attr">version</span>=<span class="hljs-string">"1.1"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">g</span> <span class="hljs-attr">stroke</span>=<span class="hljs-string">"none"</span> <span class="hljs-attr">stroke-width</span>=<span class="hljs-string">"1"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"none"</span> <span class="hljs-attr">fill-rule</span>=<span class="hljs-string">"evenodd"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">rect</span> <span class="hljs-attr">x</span>=<span class="hljs-string">"0"</span> <span class="hljs-attr">y</span>=<span class="hljs-string">"0"</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"24"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"24"</span>/&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">circle</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"#000000"</span> <span class="hljs-attr">cx</span>=<span class="hljs-string">"12"</span> <span class="hljs-attr">cy</span>=<span class="hljs-string">"5"</span> <span class="hljs-attr">r</span>=<span class="hljs-string">"2"</span>/&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">circle</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"#000000"</span> <span class="hljs-attr">cx</span>=<span class="hljs-string">"12"</span> <span class="hljs-attr">cy</span>=<span class="hljs-string">"12"</span> <span class="hljs-attr">r</span>=<span class="hljs-string">"2"</span>/&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">circle</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"#000000"</span> <span class="hljs-attr">cx</span>=<span class="hljs-string">"12"</span> <span class="hljs-attr">cy</span>=<span class="hljs-string">"19"</span> <span class="hljs-attr">r</span>=<span class="hljs-string">"2"</span>/&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">g</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+		<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-menu dropdown-menu-end"</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span>  <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Option 1<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span>  <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Option 2<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span>  <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span>&gt;</span>Option 3<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+		<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+	<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+								<!-- /Column  -->
+							</div>
+							<!-- /row -->
+						</div>
+					</div>
+					<div class="demo-right ">
+                        <div class="demo-right-inner dlab-scroll " id="right-sidebar">
+                            <h4 class="title">Examples For Dropdown</h4>
+                            <ul class="navbar-nav" id="menu-bar">
+                                <li><a href="#basic-dropdown" class="scroll">Basic Dropdown</a></li>
+                                <li><a href="#dropdown-divider" class="scroll">Dropdown Divider</a></li>
+                                <li><a href="#dropdown-header" class="scroll">Dropdown Header</a></li>
+                                <li><a href="#align-right" class="scroll">Align Right</a></li>
+                                <li><a href="#dropright" class="scroll">Dropright</a></li>  
+								<li><a href="#dropstart" class="scroll">Dropstart</a></li>  
+								<li><a href="#button-dropdowns" class="scroll">Button Dropdowns</a></li>  
+								<li><a href="#sizing" class="scroll">Sizing</a></li>
+								<li><a href="#custom-style" class="scroll">Custom Style</a></li> 
+
+
+                            </ul>	
+                        </div>
+                    </div>				
+				

@@ -1,0 +1,605 @@
+﻿@{
+    ViewData["Title"] = "Plugins";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="row">
+    <div class="col-xl-4">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">Basic slider</h4>
+            </div>
+            <div class="card-body">
+                <div id="basic-slider" class="noUi-target noUi-ltr noUi-horizontal"><div class="noUi-base"><div class="noUi-connects"><div class="noUi-connect" style="transform: translate(20%, 0px) scale(0.331837, 1);"></div></div><div class="noUi-origin" style="transform: translate(-80%, 0px); z-index: 5;"><div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="0.0" aria-valuemax="53.2" aria-valuenow="20.0" aria-valuetext="20.00"></div></div><div class="noUi-origin" style="transform: translate(-46.8163%, 0px); z-index: 4;"><div class="noUi-handle noUi-handle-upper" data-handle="1" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="20.0" aria-valuemax="100.0" aria-valuenow="53.2" aria-valuetext="53.18"></div></div></div></div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-4">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">Stepping and snapping to values</h4>
+            </div>
+            <div class="card-body">
+                <div class="stepping-slider">
+                    <div id="slider-step" class="noUi-target noUi-ltr noUi-horizontal"><div class="noUi-base"><div class="noUi-connects"></div><div class="noUi-origin" style="transform: translate(-75%, 0px); z-index: 4;"><div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="2000.0" aria-valuemax="10000.0" aria-valuenow="4000.0" aria-valuetext="4000.00"></div></div></div></div>
+                    <span class="example-val" id="slider-step-value">4000.00</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-4">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">Slider margin</h4>
+            </div>
+            <div class="card-body">
+                <div class="margin-slider">
+                    <div id="slider-margin" class="noUi-target noUi-ltr noUi-horizontal"><div class="noUi-base"><div class="noUi-connects"></div><div class="noUi-origin" style="transform: translate(-80%, 0px); z-index: 5;"><div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="0.0" aria-valuemax="50.0" aria-valuenow="20.0" aria-valuetext="20.00"></div></div><div class="noUi-origin" style="transform: translate(-20%, 0px); z-index: 4;"><div class="noUi-handle noUi-handle-upper" data-handle="1" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="50.0" aria-valuemax="100.0" aria-valuenow="80.0" aria-valuetext="80.00"></div></div></div></div>
+                    <span class="example-val" id="slider-margin-value-min">20.00</span>
+                    <span class="example-val" id="slider-margin-value-max">80.00</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-4">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">Slider limit</h4>
+            </div>
+            <div class="card-body">
+                <div class="limit-slider">
+                    <div id="slider-limit" class="noUi-target noUi-ltr noUi-horizontal"><div class="noUi-base"><div class="noUi-connects"><div class="noUi-connect noUi-draggable" style="transform: translate(10%, 0px) scale(0.4, 1);"></div></div><div class="noUi-origin" style="transform: translate(-90%, 0px); z-index: 5;"><div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="10.0" aria-valuemax="50.0" aria-valuenow="10.0" aria-valuetext="10.00"></div></div><div class="noUi-origin" style="transform: translate(-50%, 0px); z-index: 6;"><div class="noUi-handle noUi-handle-upper" data-handle="1" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="10.0" aria-valuemax="50.0" aria-valuenow="50.0" aria-valuetext="50.00"></div></div></div></div>
+                    <span class="example-val" id="slider-limit-value-min">10.00</span>
+                    <span class="example-val" id="slider-limit-value-max">50.00</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-4">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">Slider padding</h4>
+            </div>
+            <div class="card-body">
+                <div class="padding-slider">
+                    <div id="slider-padding" class="noUi-target noUi-ltr noUi-horizontal"><div class="noUi-base"><div class="noUi-connects"></div><div class="noUi-origin" style="transform: translate(-80%, 0px); z-index: 5;"><div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="10.0" aria-valuemax="80.0" aria-valuenow="20.0" aria-valuetext="20.00"></div></div><div class="noUi-origin" style="transform: translate(-20%, 0px); z-index: 4;"><div class="noUi-handle noUi-handle-upper" data-handle="1" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="20.0" aria-valuemax="85.0" aria-valuenow="80.0" aria-valuetext="80.00"></div></div></div></div>
+                    <span class="example-val" id="slider-padding-value-min">20.00</span>
+                    <span class="example-val" id="slider-padding-value-max">80.00</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-4">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">Slider tooltip</h4>
+            </div>
+            <div class="card-body">
+                <div class="slider-tooltip ">
+                    <div id="slider-tooltips" class="noUi-target noUi-ltr noUi-horizontal"><div class="noUi-base"><div class="noUi-connects"></div><div class="noUi-origin" style="transform: translate(-90%, 0px); z-index: 6;"><div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="0.0" aria-valuemax="80.0" aria-valuenow="20.0" aria-valuetext="20.00"></div></div><div class="noUi-origin" style="transform: translate(-60%, 0px); z-index: 7;"><div class="noUi-handle" data-handle="1" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="20.0" aria-valuemax="120.0" aria-valuenow="80.0" aria-valuetext="80.00"><div class="noUi-tooltip">80.0</div></div></div><div class="noUi-origin" style="transform: translate(-40%, 0px); z-index: 4;"><div class="noUi-handle noUi-handle-upper" data-handle="2" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="80.0" aria-valuemax="200.0" aria-valuenow="120.0" aria-valuetext="120.00"><div class="noUi-tooltip">120.00</div></div></div></div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-4">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">Slider behaviour (Drag)</h4>
+            </div>
+            <div class="card-body">
+                <div class="slider-behaviour">
+                    <div id="behaviour" class="noUi-target noUi-ltr noUi-horizontal"><div class="noUi-base"><div class="noUi-connects"><div class="noUi-connect noUi-draggable" style="transform: translate(0%, 0px) scale(0.333333, 1);"></div></div><div class="noUi-origin" style="transform: translate(-100%, 0px); z-index: 5;"><div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="20.0" aria-valuemax="40.0" aria-valuenow="20.0" aria-valuetext="20.00"></div></div><div class="noUi-origin" style="transform: translate(-66.6667%, 0px); z-index: 6;"><div class="noUi-handle noUi-handle-upper" data-handle="1" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="20.0" aria-valuemax="80.0" aria-valuenow="40.0" aria-valuetext="40.00"></div></div></div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-4">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">Slider behaviour (Tap)</h4>
+            </div>
+            <div class="card-body">
+                <div class="slider-behaviour">
+                    <div id="tap" class="noUi-target noUi-ltr noUi-horizontal"><div class="noUi-base"><div class="noUi-connects"><div class="noUi-connect" style="transform: translate(33.3333%, 0px) scale(0.666667, 1);"></div></div><div class="noUi-origin" style="transform: translate(-66.6667%, 0px); z-index: 4;"><div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="20.0" aria-valuemax="80.0" aria-valuenow="40.0" aria-valuetext="40.00"></div></div></div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-4">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">Slider behaviour (Fixed dragging)</h4>
+            </div>
+            <div class="card-body">
+                <div class="slider-behaviour">
+                    <div id="drag-fixed" class="noUi-target noUi-ltr noUi-horizontal"><div class="noUi-base"><div class="noUi-connects"><div class="noUi-connect noUi-draggable" style="transform: translate(33.3333%, 0px) scale(0.333333, 1);"></div></div><div class="noUi-origin" style="transform: translate(-66.6667%, 0px); z-index: 5;"><div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="20.0" aria-valuemax="40.0" aria-valuenow="40.0" aria-valuetext="40.00"></div></div><div class="noUi-origin" style="transform: translate(-33.3333%, 0px); z-index: 4;"><div class="noUi-handle noUi-handle-upper" data-handle="1" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="60.0" aria-valuemax="80.0" aria-valuenow="60.0" aria-valuetext="60.00"></div></div></div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-4">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">Slider behaviour (Snap)</h4>
+            </div>
+            <div class="card-body">
+                <div class="snap">
+                    <div id="snap" class="noUi-target noUi-ltr noUi-horizontal"><div class="noUi-base"><div class="noUi-connects"><div class="noUi-connect" style="transform: translate(0%, 0px) scale(0.333333, 1);"></div></div><div class="noUi-origin" style="transform: translate(-66.6667%, 0px); z-index: 4;"><div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="20.0" aria-valuemax="80.0" aria-valuenow="40.0" aria-valuetext="40.00"></div></div></div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-4">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">Slider behaviour (hover)</h4>
+            </div>
+            <div class="card-body">
+                <div class="snap">
+                    <div id="hover" class="noUi-target noUi-rtl noUi-horizontal"><div class="noUi-base"><div class="noUi-connects"></div><div class="noUi-origin" style="transform: translate(-100%, 0px); z-index: 4;"><div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="0.0" aria-valuemax="10.0" aria-valuenow="10.0" aria-valuetext="10.00"></div></div></div></div>
+                    <span class="example-val mt-4 d-inline-block" id="hover-val"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-4">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">Slider behaviour (unconstrained)</h4>
+            </div>
+            <div class="card-body">
+                <div class="unconstrained">
+                    <div id="unconstrained" class="mb-4 noUi-target noUi-ltr noUi-horizontal"><div class="noUi-base"><div class="noUi-connects"><div class="noUi-connect" style="transform: translate(20%, 0px) scale(0.3, 1);"></div><div class="noUi-connect" style="transform: translate(50%, 0px) scale(0.3, 1);"></div></div><div class="noUi-origin" style="transform: translate(-80%, 0px); z-index: 6;"><div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="0.0" aria-valuemax="100.0" aria-valuenow="20.0" aria-valuetext="20.00"></div></div><div class="noUi-origin" style="transform: translate(-50%, 0px); z-index: 7;"><div class="noUi-handle" data-handle="1" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="0.0" aria-valuemax="100.0" aria-valuenow="50.0" aria-valuetext="50.00"></div></div><div class="noUi-origin" style="transform: translate(-20%, 0px); z-index: 4;"><div class="noUi-handle noUi-handle-upper" data-handle="2" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="0.0" aria-valuemax="100.0" aria-valuenow="80.0" aria-valuetext="80.00"></div></div></div></div>
+                    <span class="example-val" id="unconstrained-values">20.00 :: 50.00 :: 80.00</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-4">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">Slider behaviour (combined)</h4>
+            </div>
+            <div class="card-body">
+                <div class="combined">
+                    <div id="combined" class="noUi-target noUi-ltr noUi-horizontal"><div class="noUi-base"><div class="noUi-connects"><div class="noUi-connect noUi-draggable" style="transform: translate(33.3333%, 0px) scale(0.333333, 1);"></div></div><div class="noUi-origin" style="transform: translate(-66.6667%, 0px); z-index: 5;"><div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="20.0" aria-valuemax="60.0" aria-valuenow="40.0" aria-valuetext="40.00"></div></div><div class="noUi-origin" style="transform: translate(-33.3333%, 0px); z-index: 4;"><div class="noUi-handle noUi-handle-upper" data-handle="1" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="40.0" aria-valuemax="80.0" aria-valuenow="60.0" aria-valuetext="60.00"></div></div></div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-4">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">Slider range (left to right)</h4>
+            </div>
+            <div class="card-body">
+                <div class="slider-range  mb-5">
+                    <div id="pips-range" class="noUi-target noUi-ltr noUi-horizontal"><div class="noUi-base"><div class="noUi-connects"></div><div class="noUi-origin" style="transform: translate(-100%, 0px); z-index: 4;"><div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="0.0" aria-valuemax="10000.0" aria-valuenow="0.0" aria-valuetext="0.00"></div></div></div><div class="noUi-pips noUi-pips-horizontal"><div class="noUi-marker noUi-marker-horizontal noUi-marker-large" style="left: 0%;"></div><div class="noUi-value noUi-value-horizontal noUi-value-large" data-value="0" style="left: 0%;">0</div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 3.33333%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 6.66667%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-large" style="left: 10%;"></div><div class="noUi-value noUi-value-horizontal noUi-value-large" data-value="500" style="left: 10%;">500</div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 13.0769%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 16.1538%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 19.2308%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 22.3077%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 25.3846%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 28.4615%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 31.5385%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 34.6154%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 37.6923%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 40.7692%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 43.8462%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 46.9231%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-large" style="left: 50%;"></div><div class="noUi-value noUi-value-horizontal noUi-value-large" data-value="4000" style="left: 50%;">4000</div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 52.9412%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 55.8824%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 58.8235%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 61.7647%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 64.7059%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 67.6471%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 70.5882%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 73.5294%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 76.4706%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 79.4118%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 82.3529%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 85.2941%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 88.2353%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 91.1765%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 94.1176%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 97.0588%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-large" style="left: 100%;"></div><div class="noUi-value noUi-value-horizontal noUi-value-large" data-value="10000" style="left: 100%;">10000</div></div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-4">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">Slider range (right to left)</h4>
+            </div>
+            <div class="card-body">
+                <div class="slider-range  mb-5">
+                    <div id="pips-range-rtl" class="noUi-target noUi-rtl noUi-horizontal"><div class="noUi-base"><div class="noUi-connects"></div><div class="noUi-origin" style="transform: translate(0%, 0px); z-index: 4;"><div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="0.0" aria-valuemax="10000.0" aria-valuenow="0.0" aria-valuetext="0.00"></div></div></div><div class="noUi-pips noUi-pips-horizontal"><div class="noUi-marker noUi-marker-horizontal noUi-marker-large" style="right: 0%;"></div><div class="noUi-value noUi-value-horizontal noUi-value-large" data-value="0" style="right: 0%;">0</div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="right: 3.33333%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="right: 6.66667%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-large" style="right: 10%;"></div><div class="noUi-value noUi-value-horizontal noUi-value-large" data-value="500" style="right: 10%;">500</div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="right: 13.0769%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="right: 16.1538%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="right: 19.2308%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="right: 22.3077%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="right: 25.3846%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="right: 28.4615%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="right: 31.5385%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="right: 34.6154%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="right: 37.6923%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="right: 40.7692%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="right: 43.8462%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="right: 46.9231%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-large" style="right: 50%;"></div><div class="noUi-value noUi-value-horizontal noUi-value-large" data-value="4000" style="right: 50%;">4000</div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="right: 52.9412%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="right: 55.8824%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="right: 58.8235%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="right: 61.7647%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="right: 64.7059%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="right: 67.6471%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="right: 70.5882%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="right: 73.5294%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="right: 76.4706%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="right: 79.4118%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="right: 82.3529%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="right: 85.2941%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="right: 88.2353%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="right: 91.1765%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="right: 94.1176%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="right: 97.0588%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-large" style="right: 100%;"></div><div class="noUi-value noUi-value-horizontal noUi-value-large" data-value="10000" style="right: 100%;">10000</div></div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-6">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">Slider range Vertical (top to bottom)</h4>
+            </div>
+            <div class="card-body">
+                <div class="slider-range ">
+                    <div id="pips-range-vertical" class="slider-vertical noUi-target noUi-ltr noUi-vertical"><div class="noUi-base"><div class="noUi-connects"></div><div class="noUi-origin" style="transform: translate(0px, 0%); z-index: 4;"><div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="vertical" aria-valuemin="0.0" aria-valuemax="10000.0" aria-valuenow="0.0" aria-valuetext="0.00"></div></div></div><div class="noUi-pips noUi-pips-vertical"><div class="noUi-marker noUi-marker-vertical noUi-marker-large" style="top: 0%;"></div><div class="noUi-value noUi-value-vertical noUi-value-large" data-value="0" style="top: 0%;">0</div><div class="noUi-marker noUi-marker-vertical noUi-marker-normal" style="top: 3.33333%;"></div><div class="noUi-marker noUi-marker-vertical noUi-marker-normal" style="top: 6.66667%;"></div><div class="noUi-marker noUi-marker-vertical noUi-marker-large" style="top: 10%;"></div><div class="noUi-value noUi-value-vertical noUi-value-large" data-value="500" style="top: 10%;">500</div><div class="noUi-marker noUi-marker-vertical noUi-marker-normal" style="top: 13.0769%;"></div><div class="noUi-marker noUi-marker-vertical noUi-marker-normal" style="top: 16.1538%;"></div><div class="noUi-marker noUi-marker-vertical noUi-marker-normal" style="top: 19.2308%;"></div><div class="noUi-marker noUi-marker-vertical noUi-marker-normal" style="top: 22.3077%;"></div><div class="noUi-marker noUi-marker-vertical noUi-marker-normal" style="top: 25.3846%;"></div><div class="noUi-marker noUi-marker-vertical noUi-marker-normal" style="top: 28.4615%;"></div><div class="noUi-marker noUi-marker-vertical noUi-marker-normal" style="top: 31.5385%;"></div><div class="noUi-marker noUi-marker-vertical noUi-marker-normal" style="top: 34.6154%;"></div><div class="noUi-marker noUi-marker-vertical noUi-marker-normal" style="top: 37.6923%;"></div><div class="noUi-marker noUi-marker-vertical noUi-marker-normal" style="top: 40.7692%;"></div><div class="noUi-marker noUi-marker-vertical noUi-marker-normal" style="top: 43.8462%;"></div><div class="noUi-marker noUi-marker-vertical noUi-marker-normal" style="top: 46.9231%;"></div><div class="noUi-marker noUi-marker-vertical noUi-marker-large" style="top: 50%;"></div><div class="noUi-value noUi-value-vertical noUi-value-large" data-value="4000" style="top: 50%;">4000</div><div class="noUi-marker noUi-marker-vertical noUi-marker-normal" style="top: 52.9412%;"></div><div class="noUi-marker noUi-marker-vertical noUi-marker-normal" style="top: 55.8824%;"></div><div class="noUi-marker noUi-marker-vertical noUi-marker-normal" style="top: 58.8235%;"></div><div class="noUi-marker noUi-marker-vertical noUi-marker-normal" style="top: 61.7647%;"></div><div class="noUi-marker noUi-marker-vertical noUi-marker-normal" style="top: 64.7059%;"></div><div class="noUi-marker noUi-marker-vertical noUi-marker-normal" style="top: 67.6471%;"></div><div class="noUi-marker noUi-marker-vertical noUi-marker-normal" style="top: 70.5882%;"></div><div class="noUi-marker noUi-marker-vertical noUi-marker-normal" style="top: 73.5294%;"></div><div class="noUi-marker noUi-marker-vertical noUi-marker-normal" style="top: 76.4706%;"></div><div class="noUi-marker noUi-marker-vertical noUi-marker-normal" style="top: 79.4118%;"></div><div class="noUi-marker noUi-marker-vertical noUi-marker-normal" style="top: 82.3529%;"></div><div class="noUi-marker noUi-marker-vertical noUi-marker-normal" style="top: 85.2941%;"></div><div class="noUi-marker noUi-marker-vertical noUi-marker-normal" style="top: 88.2353%;"></div><div class="noUi-marker noUi-marker-vertical noUi-marker-normal" style="top: 91.1765%;"></div><div class="noUi-marker noUi-marker-vertical noUi-marker-normal" style="top: 94.1176%;"></div><div class="noUi-marker noUi-marker-vertical noUi-marker-normal" style="top: 97.0588%;"></div><div class="noUi-marker noUi-marker-vertical noUi-marker-large" style="top: 100%;"></div><div class="noUi-value noUi-value-vertical noUi-value-large" data-value="10000" style="top: 100%;">10000</div></div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-6">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">Slider range Vertical (bottom to top)</h4>
+            </div>
+            <div class="card-body">
+                <div class="slider-range ">
+                    <div id="pips-range-vertical-rtl" class="slider-vertical noUi-target noUi-rtl noUi-vertical"><div class="noUi-base"><div class="noUi-connects"></div><div class="noUi-origin" style="transform: translate(0px, 100%); z-index: 4;"><div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="vertical" aria-valuemin="0.0" aria-valuemax="10000.0" aria-valuenow="0.0" aria-valuetext="0.00"></div></div></div><div class="noUi-pips noUi-pips-vertical"><div class="noUi-marker noUi-marker-vertical noUi-marker-large" style="bottom: 0%;"></div><div class="noUi-value noUi-value-vertical noUi-value-large" data-value="0" style="bottom: 0%;">0</div><div class="noUi-marker noUi-marker-vertical noUi-marker-normal" style="bottom: 3.33333%;"></div><div class="noUi-marker noUi-marker-vertical noUi-marker-normal" style="bottom: 6.66667%;"></div><div class="noUi-marker noUi-marker-vertical noUi-marker-large" style="bottom: 10%;"></div><div class="noUi-value noUi-value-vertical noUi-value-large" data-value="500" style="bottom: 10%;">500</div><div class="noUi-marker noUi-marker-vertical noUi-marker-normal" style="bottom: 13.0769%;"></div><div class="noUi-marker noUi-marker-vertical noUi-marker-normal" style="bottom: 16.1538%;"></div><div class="noUi-marker noUi-marker-vertical noUi-marker-normal" style="bottom: 19.2308%;"></div><div class="noUi-marker noUi-marker-vertical noUi-marker-normal" style="bottom: 22.3077%;"></div><div class="noUi-marker noUi-marker-vertical noUi-marker-normal" style="bottom: 25.3846%;"></div><div class="noUi-marker noUi-marker-vertical noUi-marker-normal" style="bottom: 28.4615%;"></div><div class="noUi-marker noUi-marker-vertical noUi-marker-normal" style="bottom: 31.5385%;"></div><div class="noUi-marker noUi-marker-vertical noUi-marker-normal" style="bottom: 34.6154%;"></div><div class="noUi-marker noUi-marker-vertical noUi-marker-normal" style="bottom: 37.6923%;"></div><div class="noUi-marker noUi-marker-vertical noUi-marker-normal" style="bottom: 40.7692%;"></div><div class="noUi-marker noUi-marker-vertical noUi-marker-normal" style="bottom: 43.8462%;"></div><div class="noUi-marker noUi-marker-vertical noUi-marker-normal" style="bottom: 46.9231%;"></div><div class="noUi-marker noUi-marker-vertical noUi-marker-large" style="bottom: 50%;"></div><div class="noUi-value noUi-value-vertical noUi-value-large" data-value="4000" style="bottom: 50%;">4000</div><div class="noUi-marker noUi-marker-vertical noUi-marker-normal" style="bottom: 52.9412%;"></div><div class="noUi-marker noUi-marker-vertical noUi-marker-normal" style="bottom: 55.8824%;"></div><div class="noUi-marker noUi-marker-vertical noUi-marker-normal" style="bottom: 58.8235%;"></div><div class="noUi-marker noUi-marker-vertical noUi-marker-normal" style="bottom: 61.7647%;"></div><div class="noUi-marker noUi-marker-vertical noUi-marker-normal" style="bottom: 64.7059%;"></div><div class="noUi-marker noUi-marker-vertical noUi-marker-normal" style="bottom: 67.6471%;"></div><div class="noUi-marker noUi-marker-vertical noUi-marker-normal" style="bottom: 70.5882%;"></div><div class="noUi-marker noUi-marker-vertical noUi-marker-normal" style="bottom: 73.5294%;"></div><div class="noUi-marker noUi-marker-vertical noUi-marker-normal" style="bottom: 76.4706%;"></div><div class="noUi-marker noUi-marker-vertical noUi-marker-normal" style="bottom: 79.4118%;"></div><div class="noUi-marker noUi-marker-vertical noUi-marker-normal" style="bottom: 82.3529%;"></div><div class="noUi-marker noUi-marker-vertical noUi-marker-normal" style="bottom: 85.2941%;"></div><div class="noUi-marker noUi-marker-vertical noUi-marker-normal" style="bottom: 88.2353%;"></div><div class="noUi-marker noUi-marker-vertical noUi-marker-normal" style="bottom: 91.1765%;"></div><div class="noUi-marker noUi-marker-vertical noUi-marker-normal" style="bottom: 94.1176%;"></div><div class="noUi-marker noUi-marker-vertical noUi-marker-normal" style="bottom: 97.0588%;"></div><div class="noUi-marker noUi-marker-vertical noUi-marker-large" style="bottom: 100%;"></div><div class="noUi-value noUi-value-vertical noUi-value-large" data-value="10000" style="bottom: 100%;">10000</div></div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-6">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">Pip positions</h4>
+            </div>
+            <div class="card-body">
+                <div class="pip-position mb-5">
+                    <div id="pips-positions" class="noUi-target noUi-ltr noUi-horizontal"><div class="noUi-base"><div class="noUi-connects"></div><div class="noUi-origin" style="transform: translate(-100%, 0px); z-index: 4;"><div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="0.0" aria-valuemax="10000.0" aria-valuenow="0.0" aria-valuetext="0.00"></div></div></div><div class="noUi-pips noUi-pips-horizontal"><div class="noUi-marker noUi-marker-horizontal noUi-marker-large" style="left: 0%;"></div><div class="noUi-value noUi-value-horizontal noUi-value-large" data-value="0" style="left: 0%;">0</div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 4.16667%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 8.33333%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 12.5%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 16.6667%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 20.8333%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-large" style="left: 25%;"></div><div class="noUi-value noUi-value-horizontal noUi-value-large" data-value="1812.5" style="left: 25%;">1813</div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 29.1667%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 33.3333%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 37.5%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 41.6667%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 45.8333%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-large" style="left: 50%;"></div><div class="noUi-value noUi-value-horizontal noUi-value-large" data-value="4000" style="left: 50%;">4000</div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 54.1667%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 58.3333%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 62.5%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 66.6667%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 70.8333%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-large" style="left: 75%;"></div><div class="noUi-value noUi-value-horizontal noUi-value-large" data-value="7000" style="left: 75%;">7000</div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 79.1667%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 83.3333%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 87.5%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 91.6667%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 95.8333%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-large" style="left: 100%;"></div><div class="noUi-value noUi-value-horizontal noUi-value-large" data-value="10000" style="left: 100%;">10000</div></div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-6">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">Pip position stepped</h4>
+            </div>
+            <div class="card-body">
+                <div class="pip-position mb-5">
+                    <div id="pips-positions-stepped" class="noUi-target noUi-ltr noUi-horizontal"><div class="noUi-base"><div class="noUi-connects"></div><div class="noUi-origin" style="transform: translate(-100%, 0px); z-index: 4;"><div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="0.0" aria-valuemax="10000.0" aria-valuenow="0.0" aria-valuetext="0.00"></div></div></div><div class="noUi-pips noUi-pips-horizontal"><div class="noUi-marker noUi-marker-horizontal noUi-marker-large" style="left: 0%;"></div><div class="noUi-value noUi-value-horizontal noUi-value-large" data-value="0" style="left: 0%;">0</div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 3.87755%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 7.7551%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 11.6326%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 15.5102%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 19.3878%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 23.2653%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-large" style="left: 27.1429%;"></div><div class="noUi-value noUi-value-horizontal noUi-value-large" data-value="2000" style="left: 27.1429%;">2000</div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 30.9524%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 34.7619%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 38.5714%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 42.3809%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 46.1905%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-large" style="left: 50%;"></div><div class="noUi-value noUi-value-horizontal noUi-value-large" data-value="4000" style="left: 50%;">4000</div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 54.1667%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 58.3333%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 62.5%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 66.6667%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 70.8333%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-large" style="left: 75%;"></div><div class="noUi-value noUi-value-horizontal noUi-value-large" data-value="7000" style="left: 75%;">7000</div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 79.1667%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 83.3333%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 87.5%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 91.6667%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 95.8333%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-large" style="left: 100%;"></div><div class="noUi-value noUi-value-horizontal noUi-value-large" data-value="10000" style="left: 100%;">10000</div></div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-6">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">Pips count</h4>
+            </div>
+            <div class="card-body">
+                <div class="pips-count mb-5">
+                    <div id="pips-count" class="noUi-target noUi-ltr noUi-horizontal"><div class="noUi-base"><div class="noUi-connects"></div><div class="noUi-origin" style="transform: translate(-100%, 0px); z-index: 4;"><div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="0.0" aria-valuemax="10000.0" aria-valuenow="0.0" aria-valuetext="0.00"></div></div></div><div class="noUi-pips noUi-pips-horizontal"><div class="noUi-marker noUi-marker-horizontal noUi-marker-large" style="left: 0%;"></div><div class="noUi-value noUi-value-horizontal noUi-value-large" data-value="0" style="left: 0%;">0</div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 4%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 8%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 12%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 16%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-large" style="left: 20%;"></div><div class="noUi-value noUi-value-horizontal noUi-value-large" data-value="1375" style="left: 20%;">1375</div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 24%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 28%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 32%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 36%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-large" style="left: 40%;"></div><div class="noUi-value noUi-value-horizontal noUi-value-large" data-value="3125" style="left: 40%;">3125</div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 44%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 48%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 52%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 56%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-large" style="left: 60%;"></div><div class="noUi-value noUi-value-horizontal noUi-value-large" data-value="5200" style="left: 60%;">5200</div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 64%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 68%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 72%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 76%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-large" style="left: 80%;"></div><div class="noUi-value noUi-value-horizontal noUi-value-large" data-value="7600" style="left: 80%;">7600</div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 84%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 88%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 92%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 96%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-large" style="left: 100%;"></div><div class="noUi-value noUi-value-horizontal noUi-value-large" data-value="10000" style="left: 100%;">10000</div></div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-6">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">Pips count (stepped)</h4>
+            </div>
+            <div class="card-body">
+                <div class="pips-count mb-5">
+                    <div id="pips-count-stepped" class="noUi-target noUi-ltr noUi-horizontal"><div class="noUi-base"><div class="noUi-connects"></div><div class="noUi-origin" style="transform: translate(-100%, 0px); z-index: 4;"><div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="0.0" aria-valuemax="10000.0" aria-valuenow="0.0" aria-valuetext="0.00"></div></div></div><div class="noUi-pips noUi-pips-horizontal"><div class="noUi-marker noUi-marker-horizontal noUi-marker-large" style="left: 0%;"></div><div class="noUi-value noUi-value-horizontal noUi-value-large" data-value="0" style="left: 0%;">0</div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 4.28571%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 8.57143%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 12.8571%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 17.1429%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-large" style="left: 21.4286%;"></div><div class="noUi-value noUi-value-horizontal noUi-value-large" data-value="1500" style="left: 21.4286%;">1500</div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 25.7143%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 30%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 34.2857%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-large" style="left: 38.5714%;"></div><div class="noUi-value noUi-value-horizontal noUi-value-large" data-value="2999.9999999999995" style="left: 38.5714%;">3000</div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 42.5238%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 46.4762%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 50.4286%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 54.3809%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-large" style="left: 58.3333%;"></div><div class="noUi-value noUi-value-horizontal noUi-value-large" data-value="5000" style="left: 58.3333%;">5000</div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 62.5%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 66.6667%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 70.8333%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 75%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 79.1667%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-large" style="left: 83.3333%;"></div><div class="noUi-value noUi-value-horizontal noUi-value-large" data-value="8000.000000000002" style="left: 83.3333%;">8000</div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 87.5%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 91.6667%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 95.8333%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-large" style="left: 100%;"></div><div class="noUi-value noUi-value-horizontal noUi-value-large" data-value="10000" style="left: 100%;">10000</div></div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-6">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">Pips value</h4>
+            </div>
+            <div class="card-body">
+                <div class="pips-values mb-5">
+                    <div id="pips-values" class="noUi-target noUi-ltr noUi-horizontal"><div class="noUi-base"><div class="noUi-connects"></div><div class="noUi-origin" style="transform: translate(-100%, 0px); z-index: 4;"><div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="0.0" aria-valuemax="10000.0" aria-valuenow="0.0" aria-valuetext="0.00"></div></div></div><div class="noUi-pips noUi-pips-horizontal"><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 0%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-large" style="left: 1%;"></div><div class="noUi-value noUi-value-horizontal noUi-value-large" data-value="50" style="left: 1%;">50</div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 5.79714%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-large" style="left: 10.5943%;"></div><div class="noUi-value noUi-value-horizontal noUi-value-large" data-value="552" style="left: 10.5943%;">552</div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 14.4777%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 18.3611%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 22.2446%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 26.128%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-large" style="left: 30.0114%;"></div><div class="noUi-value noUi-value-horizontal noUi-value-large" data-value="2251" style="left: 30.0114%;">2251</div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 33.6267%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 37.2419%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-large" style="left: 40.8571%;"></div><div class="noUi-value noUi-value-horizontal noUi-value-large" data-value="3200" style="left: 40.8571%;">3200</div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 45.2262%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 49.5952%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 53.9643%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-large" style="left: 58.3333%;"></div><div class="noUi-value noUi-value-horizontal noUi-value-large" data-value="5000" style="left: 58.3333%;">5000</div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 62.6667%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 67%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 71.3333%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-large" style="left: 75.6667%;"></div><div class="noUi-value noUi-value-horizontal noUi-value-large" data-value="7080" style="left: 75.6667%;">7080</div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 79.6667%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 83.6667%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 87.6667%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-large" style="left: 91.6667%;"></div><div class="noUi-value noUi-value-horizontal noUi-value-large" data-value="9000" style="left: 91.6667%;">9000</div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 95.8333%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 100%;"></div></div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-6">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">Pips values (stepped)</h4>
+            </div>
+            <div class="card-body">
+                <div class="pips-values mb-5">
+                    <div id="pips-values-stepped" class="noUi-target noUi-ltr noUi-horizontal"><div class="noUi-base"><div class="noUi-connects"></div><div class="noUi-origin" style="transform: translate(-100%, 0px); z-index: 4;"><div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="0.0" aria-valuemax="10000.0" aria-valuenow="0.0" aria-valuetext="0.00"></div></div></div><div class="noUi-pips noUi-pips-horizontal"><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 0%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-large" style="left: 1%;"></div><div class="noUi-value noUi-value-horizontal noUi-value-large" data-value="50" style="left: 1%;">50</div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 5.5%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-large" style="left: 10%;"></div><div class="noUi-value noUi-value-horizontal noUi-value-large" data-value="500" style="left: 10%;">500</div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 14.0278%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 18.0556%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 22.0833%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 26.1111%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 30.1389%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 34.1667%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 38.1944%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 42.2222%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 46.25%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 50.2778%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 54.3056%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-large" style="left: 58.3333%;"></div><div class="noUi-value noUi-value-horizontal noUi-value-large" data-value="5000" style="left: 58.3333%;">5000</div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 62.5%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 66.6667%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 70.8333%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-large" style="left: 75%;"></div><div class="noUi-value noUi-value-horizontal noUi-value-large" data-value="7000" style="left: 75%;">7000</div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 79.1667%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 83.3333%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 87.5%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-large" style="left: 91.6667%;"></div><div class="noUi-value noUi-value-horizontal noUi-value-large" data-value="9000" style="left: 91.6667%;">9000</div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 95.8333%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 100%;"></div></div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-4">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">Disabling a slider</h4>
+            </div>
+            <div class="card-body">
+                <div class="slider-disabled ">
+                    <div id="disable1" class="mb-4 noUi-target noUi-ltr noUi-horizontal"><div class="noUi-base"><div class="noUi-connects"><div class="noUi-connect" style="transform: translate(0%, 0px) scale(0.8, 1);"></div></div><div class="noUi-origin" style="transform: translate(-20%, 0px); z-index: 4;"><div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="0.0" aria-valuemax="100.0" aria-valuenow="80.0" aria-valuetext="80.00"></div></div></div></div>
+                    <label>
+                        <input class="ms-2" type="checkbox" id="checkbox1">
+                        Disable slider
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-4">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">Disabling a slider</h4>
+            </div>
+            <div class="card-body">
+                <div class="slider-disabled">
+                    <div id="disable2" class="mb-4 noUi-target noUi-ltr noUi-horizontal"><div class="noUi-base"><div class="noUi-connects"></div><div class="noUi-origin" style="transform: translate(-80%, 0px); z-index: 5;"><div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="0.0" aria-valuemax="80.0" aria-valuenow="20.0" aria-valuetext="20.00"></div></div><div class="noUi-origin" style="transform: translate(-20%, 0px); z-index: 4;"><div class="noUi-handle noUi-handle-upper" data-handle="1" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="20.0" aria-valuemax="100.0" aria-valuenow="80.0" aria-valuetext="80.00"></div></div></div></div>
+                    <label>
+                        <input type="checkbox" id="checkbox2">
+                        Disable handle 1
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" id="checkbox3">
+                        Disable handle 2
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-4">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">Updating a slider</h4>
+            </div>
+            <div class="card-body">
+                <div class="slider-update ">
+                    <div id="slider-update" class="noUi-target noUi-ltr noUi-horizontal"><div class="noUi-base"><div class="noUi-connects"></div><div class="noUi-origin" style="transform: translate(-50%, 0px); z-index: 4;"><div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="0.0" aria-valuemax="40.0" aria-valuenow="20.0" aria-valuetext="20.00"></div></div></div></div>
+                    <span class="example-val d-block my-4" id="slider-update-value">20.00</span>
+                    <button class="update-button btn btn-info btn-sm mb-2" id="update-1">Set range [20, 50]</button>
+                    <button class="update-button btn btn-info btn-sm mb-2" id="update-2">Set range [10, 40]</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-4">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">Keyboard slider</h4>
+            </div>
+            <div class="card-body">
+                <h4 class="card-title mb-3 mb-xl-4"></h4>
+                <div id="keyboardslider" class="noUi-target noUi-ltr noUi-horizontal"><div class="noUi-base"><div class="noUi-connects"></div><div class="noUi-origin" style="transform: translate(-90%, 0px); z-index: 4;"><div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="0.0" aria-valuemax="100.0" aria-valuenow="10.0" aria-valuetext="10.00"></div></div></div></div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-4">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">Working with dates</h4>
+            </div>
+            <div class="card-body">
+                <div class="date-slider">
+                    <div id="slider-date" class="noUi-target noUi-ltr noUi-horizontal"><div class="noUi-base"><div class="noUi-connects"></div><div class="noUi-origin" style="transform: translate(-83.3866%, 0px); z-index: 5;"><div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="1262304000000.0" aria-valuemax="1420156800000.0" aria-valuenow="1293753600000.0" aria-valuetext="1293753600000"></div></div><div class="noUi-origin" style="transform: translate(-16.6134%, 0px); z-index: 4;"><div class="noUi-handle noUi-handle-upper" data-handle="1" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="1293753600000.0" aria-valuemax="1451606400000.0" aria-valuenow="1420156800000.0" aria-valuetext="1420156800000"></div></div></div></div>
+                    <div class="example-val my-4" id="event-start">Friday, 31st December 2010</div>
+                    <div class="example-val" id="event-end">Friday, 2nd January 2015</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-4">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">Using HTML5 input elements</h4>
+            </div>
+            <div class="card-body">
+                <div class="input-element">
+                    <div id="html5" class="noUi-target noUi-ltr noUi-horizontal"><div class="noUi-base"><div class="noUi-connects"><div class="noUi-connect" style="transform: translate(50%, 0px) scale(0.333333, 1);"></div></div><div class="noUi-origin" style="transform: translate(-50%, 0px); z-index: 5;"><div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="-20.0" aria-valuemax="30.0" aria-valuenow="10.0" aria-valuetext="10.00"></div></div><div class="noUi-origin" style="transform: translate(-16.6667%, 0px); z-index: 4;"><div class="noUi-handle noUi-handle-upper" data-handle="1" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="10.0" aria-valuemax="40.0" aria-valuenow="30.0" aria-valuetext="30.00"></div></div></div></div>
+                    <div class="inputs mt-4">
+                        <div class="dropdown bootstrap-select form-control my-4"><select class="form-control my-4" id="input-select"><option value="-20">-20</option><option value="-19">-19</option><option value="-18">-18</option><option value="-17">-17</option><option value="-16">-16</option><option value="-15">-15</option><option value="-14">-14</option><option value="-13">-13</option><option value="-12">-12</option><option value="-11">-11</option><option value="-10">-10</option><option value="-9">-9</option><option value="-8">-8</option><option value="-7">-7</option><option value="-6">-6</option><option value="-5">-5</option><option value="-4">-4</option><option value="-3">-3</option><option value="-2">-2</option><option value="-1">-1</option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option><option value="32">32</option><option value="33">33</option><option value="34">34</option><option value="35">35</option><option value="36">36</option><option value="37">37</option><option value="38">38</option><option value="39">39</option><option value="40">40</option></select><button type="button" tabindex="-1" class="btn dropdown-toggle btn-light" data-bs-toggle="dropdown" role="combobox" aria-owns="bs-select-2" aria-haspopup="listbox" aria-expanded="false" title="10" data-id="input-select"><div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner">10</div></div> </div></button><div class="dropdown-menu "><div class="inner show" role="listbox" id="bs-select-2" tabindex="-1"><ul class="dropdown-menu inner show" role="presentation"></ul></div></div></div>
+                        <input class="form-control" type="number" min="-20" max="40" step="1" id="input-number">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-4">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">Non linear slider</h4>
+            </div>
+            <div class="card-body">
+                <div class="nonlinear-slider">
+                    <div id="nonlinear" class="noUi-target noUi-ltr noUi-horizontal"><div class="noUi-base"><div class="noUi-connects"><div class="noUi-connect" style="transform: translate(10%, 0px) scale(0.4, 1);"></div></div><div class="noUi-origin" style="transform: translate(-90%, 0px); z-index: 5;"><div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="0.0" aria-valuemax="4000.0" aria-valuenow="500.0" aria-valuetext="500.00"></div></div><div class="noUi-origin" style="transform: translate(-50%, 0px); z-index: 6;"><div class="noUi-handle noUi-handle-upper" data-handle="1" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="500.0" aria-valuemax="10000.0" aria-valuenow="4000.0" aria-valuetext="4000.00"></div></div></div></div>
+                    <div class="outputs mt-4">
+                        <span class="example-val" id="lower-value">500.00, 10.00%</span>
+                        <span class="example-val" id="upper-value">4000.00, 50.00%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-4">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">Snapping between steps</h4>
+            </div>
+            <div class="card-body">
+                <div class="nonlinear-slider">
+                    <div id="slider-snap" class="noUi-target noUi-ltr noUi-horizontal"><div class="noUi-base"><div class="noUi-connects"><div class="noUi-connect" style="transform: translate(0%, 0px) scale(0.4, 1);"></div></div><div class="noUi-origin" style="transform: translate(-100%, 0px); z-index: 5;"><div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="0.0" aria-valuemax="500.0" aria-valuenow="0.0" aria-valuetext="0.00"></div></div><div class="noUi-origin" style="transform: translate(-60%, 0px); z-index: 6;"><div class="noUi-handle noUi-handle-upper" data-handle="1" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="0.0" aria-valuemax="1000.0" aria-valuenow="500.0" aria-valuetext="500.00"></div></div></div></div>
+                    <span class="example-val" id="slider-snap-value-lower">0.00</span>
+                    <span class="example-val" id="slider-snap-value-upper">500.00</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-4">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">Stepping in non-linear sliders</h4>
+            </div>
+            <div class="card-body">
+                <div class="nonlinear-slider">
+                    <div id="slider-non-linear-step" class="noUi-target noUi-ltr noUi-horizontal"><div class="noUi-base"><div class="noUi-connects"></div><div class="noUi-origin" style="transform: translate(-90%, 0px); z-index: 5;"><div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="0.0" aria-valuemax="4000.0" aria-valuenow="500.0" aria-valuetext="500.00"></div></div><div class="noUi-origin" style="transform: translate(-50%, 0px); z-index: 6;"><div class="noUi-handle noUi-handle-upper" data-handle="1" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="500.0" aria-valuemax="10000.0" aria-valuenow="4000.0" aria-valuetext="4000.00"></div></div></div></div>
+                    <span class="example-val" id="slider-non-linear-step-value">4000.00</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-4">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">Number formatting</h4>
+            </div>
+            <div class="card-body">
+                <div class="format-slider">
+                    <div id="slider-format" class="noUi-target noUi-ltr noUi-horizontal"><div class="noUi-base"><div class="noUi-connects"></div><div class="noUi-origin" style="transform: translate(-100%, 0px); z-index: 4;"><div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="20000.0" aria-valuemax="80000.0" aria-valuenow="20000.0" aria-valuetext="20000.000"></div></div></div></div>
+                    <input class="mt-4 form-control" title="Formatted number" id="input-format">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-4">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">Getting and setting slider values</h4>
+            </div>
+            <div class="card-body">
+                <div class="getnset-slider">
+                    <div id="slider" class="noUi-target noUi-ltr noUi-horizontal"><div class="noUi-base"><div class="noUi-connects"></div><div class="noUi-origin" style="transform: translate(-20%, 0px); z-index: 4;"><div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="0.0" aria-valuemax="100.0" aria-valuenow="80.0" aria-valuetext="80.00"></div></div></div></div>
+                    <div class="logger mt-4">
+                        <button class="btn btn-info btn-sm" id="write-button">Set to 20</button>
+                        <button class="btn btn-info btn-sm" id="read-button">Read slider value</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-4">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">Locking sliders together</h4>
+            </div>
+            <div class="card-body">
+                <div class="locked-slider">
+                    <div class="slider noUi-target noUi-ltr noUi-horizontal" id="slider1"><div class="noUi-base"><div class="noUi-connects"></div><div class="noUi-origin" style="transform: translate(-80%, 0px); z-index: 4;"><div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="50.0" aria-valuemax="100.0" aria-valuenow="60.0" aria-valuetext="60.00"></div></div></div></div>
+                    <span class="example-val" id="slider1-span">60.00</span>
+                    <div class="slider mt-4 noUi-target noUi-ltr noUi-horizontal" id="slider2"><div class="noUi-base"><div class="noUi-connects"></div><div class="noUi-origin" style="transform: translate(-40%, 0px); z-index: 4;"><div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="50.0" aria-valuemax="100.0" aria-valuenow="80.0" aria-valuetext="80.00"></div></div></div></div>
+                    <span class="example-val" id="slider2-span">80.00</span>
+                    <button class="btn btn-info btn-sm mt-4" id="lockbutton" style="float: right; margin: 20px 0 0;">Lock</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-4">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">Moving the slider by clicking pips</h4>
+            </div>
+            <div class="card-body">
+                <div class="extra-padding  mb-5">
+                    <div class="slider-pips">
+                        <div class="slider noUi-target noUi-ltr noUi-horizontal" id="slider-pips"><div class="noUi-base"><div class="noUi-connects"></div><div class="noUi-origin" style="transform: translate(-50%, 0px); z-index: 4;"><div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="0.0" aria-valuemax="100.0" aria-valuenow="50.0" aria-valuetext="50.00"></div></div></div><div class="noUi-pips noUi-pips-horizontal"><div class="noUi-marker noUi-marker-horizontal noUi-marker-large" style="left: 0%;"></div><div class="noUi-value noUi-value-horizontal noUi-value-large" data-value="0" style="left: 0%; cursor: pointer;">0</div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 1%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 2%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 3%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 4%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 5%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 6%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 7%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 8%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 9%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 10%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 11%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 12%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 13%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 14%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 15%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 16%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 17%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 18%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 19%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 20%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 21%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 22%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 23%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 24%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-large" style="left: 25%;"></div><div class="noUi-value noUi-value-horizontal noUi-value-large" data-value="25" style="left: 25%; cursor: pointer;">25</div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 26%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 27%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 28%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 29%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 30%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 31%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 32%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 33%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 34%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 35%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 36%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 37%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 38%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 39%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 40%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 41%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 42%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 43%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 44%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 45%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 46%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 47%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 48%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 49%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-large" style="left: 50%;"></div><div class="noUi-value noUi-value-horizontal noUi-value-large" data-value="50" style="left: 50%; cursor: pointer;">50</div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 51%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 52%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 53%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 54%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 55%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 56%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 57%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 58%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 59%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 60%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 61%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 62%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 63%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 64%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 65%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 66%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 67%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 68%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 69%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 70%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 71%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 72%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 73%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 74%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-large" style="left: 75%;"></div><div class="noUi-value noUi-value-horizontal noUi-value-large" data-value="75" style="left: 75%; cursor: pointer;">75</div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 76%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 77%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 78%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 79%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 80%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 81%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 82%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 83%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 84%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 85%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 86%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 87%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 88%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 89%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 90%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 91%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 92%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 93%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 94%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 95%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 96%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 97%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 98%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 99%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-large" style="left: 100%;"></div><div class="noUi-value noUi-value-horizontal noUi-value-large" data-value="100" style="left: 100%; cursor: pointer;">100</div></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-4">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">Colored Connect Elements</h4>
+            </div>
+            <div class="card-body">
+                <div class="slider-color">
+                    <div class="slider noUi-target noUi-ltr noUi-horizontal" id="slider-color"><div class="noUi-base"><div class="noUi-connects"><div class="noUi-connect c-1-color" style="transform: translate(11.1111%, 0px) scale(0.222222, 1);"></div><div class="noUi-connect c-2-color" style="transform: translate(33.3333%, 0px) scale(0.222222, 1);"></div><div class="noUi-connect c-3-color" style="transform: translate(55.5556%, 0px) scale(0.222222, 1);"></div><div class="noUi-connect c-4-color" style="transform: translate(77.7778%, 0px) scale(0.222222, 1);"></div></div><div class="noUi-origin" style="transform: translate(-88.8889%, 0px); z-index: 7;"><div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="2000.0" aria-valuemax="8000.0" aria-valuenow="4000.0" aria-valuetext="4000.00"></div></div><div class="noUi-origin" style="transform: translate(-66.6667%, 0px); z-index: 8;"><div class="noUi-handle" data-handle="1" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="4000.0" aria-valuemax="12000.0" aria-valuenow="8000.0" aria-valuetext="8000.00"></div></div><div class="noUi-origin" style="transform: translate(-44.4444%, 0px); z-index: 5;"><div class="noUi-handle" data-handle="2" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="8000.0" aria-valuemax="16000.0" aria-valuenow="12000.0" aria-valuetext="12000.00"></div></div><div class="noUi-origin" style="transform: translate(-22.2222%, 0px); z-index: 4;"><div class="noUi-handle noUi-handle-upper" data-handle="3" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="12000.0" aria-valuemax="20000.0" aria-valuenow="16000.0" aria-valuetext="16000.00"></div></div></div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-4">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">Changing the slider by key press</h4>
+            </div>
+            <div class="card-body">
+                <div class="keypress-slider pt-5">
+                    <div id="keypress" class="noUi-target noUi-ltr noUi-horizontal"><div class="noUi-base"><div class="noUi-connects"><div class="noUi-connect" style="transform: translate(15.7143%, 0px) scale(0.342857, 1);"></div></div><div class="noUi-origin" style="transform: translate(-84.2857%, 0px); z-index: 5;"><div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="0.0" aria-valuemax="80.0" aria-valuenow="20.0" aria-valuetext="20.00"><div class="noUi-tooltip">20.00</div></div></div><div class="noUi-origin" style="transform: translate(-50%, 0px); z-index: 6;"><div class="noUi-handle noUi-handle-upper" data-handle="1" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="20.0" aria-valuemax="200.0" aria-valuenow="80.0" aria-valuetext="80.00"><div class="noUi-tooltip">80.0</div></div></div></div></div>
+                    <input type="text" class="form-control my-4" id="input-with-keypress-1">
+                    <input type="text" class="form-control" id="input-with-keypress-0">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-4">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">Skipping steps</h4>
+            </div>
+            <div class="card-body">
+                <div class="skipping-slider">
+                    <div id="skipstep" class="noUi-target noUi-ltr noUi-horizontal"><div class="noUi-base"><div class="noUi-connects"></div><div class="noUi-origin" style="transform: translate(-80%, 0px); z-index: 5;"><div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="0.0" aria-valuemax="90.0" aria-valuenow="20.0" aria-valuetext="20.00"></div></div><div class="noUi-origin" style="transform: translate(-10%, 0px); z-index: 4;"><div class="noUi-handle noUi-handle-upper" data-handle="1" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="20.0" aria-valuemax="100.0" aria-valuenow="90.0" aria-valuetext="90.00"></div></div></div></div>
+                    <span class="example-val" id="skip-value-lower">20.00</span>
+                    <span class="example-val" id="skip-value-upper">90.00</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-4">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">Using the slider with huge numbers</h4>
+            </div>
+            <div class="card-body">
+                <div class="hugenumber-slider">
+                    <div id="slider-huge" class="noUi-target noUi-ltr noUi-horizontal"><div class="noUi-base"><div class="noUi-connects"></div><div class="noUi-origin" style="transform: translate(-100%, 0px); z-index: 4;"><div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="0.0" aria-valuemax="13.0" aria-valuenow="0.0" aria-valuetext="0"></div></div></div></div>
+                    <span class="example-val" id="huge-value">0</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-4">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">Creating a toggle</h4>
+            </div>
+            <div class="card-body">
+                <div class="toggle-slider">
+                    <div id="slider-toggle" class="noUi-target noUi-ltr noUi-vertical"><div class="noUi-base"><div class="noUi-connects"></div><div class="noUi-origin" style="transform: translate(0px, 0%); z-index: 4;"><div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="vertical" aria-valuemin="0.0" aria-valuemax="1.0" aria-valuenow="0.0" aria-valuetext="0"></div></div></div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-4">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">Soft limits</h4>
+            </div>
+            <div class="card-body">
+                <div class="extra-padding mb-5">
+                    <div class="softlimit-slider">
+                        <div id="soft" class="noUi-target noUi-ltr noUi-horizontal"><div class="noUi-base"><div class="noUi-connects"></div><div class="noUi-origin" style="transform: translate(-50%, 0px); z-index: 4;"><div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="0.0" aria-valuemax="100.0" aria-valuenow="50.0" aria-valuetext="50.00"></div></div></div><div class="noUi-pips noUi-pips-horizontal"><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 0%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 4%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 8%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 12%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 16%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-large" style="left: 20%;"></div><div class="noUi-value noUi-value-horizontal noUi-value-large" data-value="20" style="left: 20%;">20</div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 24%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 28%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 32%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 36%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 40%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 44%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 48%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 52%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 56%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 60%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 64%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 68%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 72%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 76%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-large" style="left: 80%;"></div><div class="noUi-value noUi-value-horizontal noUi-value-large" data-value="80" style="left: 80%;">80</div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 84%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 88%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 92%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 96%;"></div><div class="noUi-marker noUi-marker-horizontal noUi-marker-normal" style="left: 100%;"></div></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-4">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">Slider direction</h4>
+            </div>
+            <div class="card-body">
+                <div class="slider-direction">
+                    <div id="slider-direction" class="noUi-target noUi-rtl noUi-horizontal"><div class="noUi-base"><div class="noUi-connects"></div><div class="noUi-origin" style="transform: translate(-20%, 0px); z-index: 4;"><div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="0.0" aria-valuemax="100.0" aria-valuenow="20.0" aria-valuetext="20.00"></div></div></div></div>
+                    <div class="example-val" id="field">20.00</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-4">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">Color picker</h4>
+            </div>
+            <div class="card-body">
+                <div class="extra-padding">
+                    <div class="colorpicker-slider">
+                        <div class="sliders noUi-target noUi-ltr noUi-vertical" id="red"><div class="noUi-base"><div class="noUi-connects"><div class="noUi-connect" style="transform: translate(0px, 0%) scale(1, 0.498039);"></div></div><div class="noUi-origin" style="transform: translate(0px, 49.8039%); z-index: 4;"><div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="vertical" aria-valuemin="0.0" aria-valuemax="255.0" aria-valuenow="127.0" aria-valuetext="127"></div></div></div></div>
+                        <div class="sliders noUi-target noUi-ltr noUi-vertical" id="green"><div class="noUi-base"><div class="noUi-connects"><div class="noUi-connect" style="transform: translate(0px, 0%) scale(1, 0.498039);"></div></div><div class="noUi-origin" style="transform: translate(0px, 49.8039%); z-index: 4;"><div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="vertical" aria-valuemin="0.0" aria-valuemax="255.0" aria-valuenow="127.0" aria-valuetext="127"></div></div></div></div>
+                        <div class="sliders noUi-target noUi-ltr noUi-vertical" id="blue"><div class="noUi-base"><div class="noUi-connects"><div class="noUi-connect" style="transform: translate(0px, 0%) scale(1, 0.498039);"></div></div><div class="noUi-origin" style="transform: translate(0px, 49.8039%); z-index: 4;"><div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="vertical" aria-valuemin="0.0" aria-valuemax="255.0" aria-valuenow="127.0" aria-valuetext="127"></div></div></div></div>
+
+                        <div id="result" style="background: rgb(127, 127, 127); color: rgb(127, 127, 127);"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-4">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">Slider orientation</h4>
+            </div>
+            <div class="card-body">
+                <div class="slider-orientation">
+                    <div id="slider-vertical" class="slider-vertical noUi-target noUi-ltr noUi-vertical"><div class="noUi-base"><div class="noUi-connects"></div><div class="noUi-origin" style="transform: translate(0px, 40%); z-index: 4;"><div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="vertical" aria-valuemin="0.0" aria-valuemax="100.0" aria-valuenow="40.0" aria-valuetext="40.00"></div></div></div></div>
+                </div>
+            </div>
+        </div>
+    </div>

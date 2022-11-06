@@ -1,0 +1,625 @@
+﻿@{
+    ViewData["Title"] = "Bootstrap";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="row ">
+    <div class="col-xl-12">
+        <div class="page-titles">
+            <div class="d-flex align-items-center">
+                <h2 class="heading">List Group</h2>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- --element-area-- -->
+<div class="element-area">
+    <div class="demo-view">
+        <div class="container-fluid pt-0 ps-0 pe-lg-4 pe-0">
+            <!-- row -->
+            <div class="row">
+                <!-- Column  -->
+                <div class="col-xl-12">
+                    <div class="card dz-card" id="basic-list">
+                        <div class="card-header d-flex justify-content-between ">
+                            <h4 class="card-title">Basic List Group</h4>
+                            <ul class="nav nav-tabs dzm-tabs" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active " id="home-tab" data-bs-toggle="tab" data-bs-target="#BasicList" type="button" role="tab" aria-controls="home" aria-selected="true">Preview</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link " id="profile-tab" data-bs-toggle="tab" data-bs-target="#BasicList-html" type="button" role="tab" aria-controls="html" aria-selected="false">HTML</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="BasicList" role="tabpanel" aria-labelledby="home-tab">
+                                <div class="card-body">
+                                    <div class="basic-list-group">
+                                        <ul class="list-group">
+                                            <li class="list-group-item">Cras justo odio</li>
+                                            <li class="list-group-item">Dapibus ac facilisis in</li>
+                                            <li class="list-group-item">Morbi leo risus</li>
+                                            <li class="list-group-item">Porta ac consectetur ac</li>
+                                            <li class="list-group-item">Vestibulum at eros</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="BasicList-html" role="tabpanel" aria-labelledby="home-tab">
+                                <div class="card-body p-0 code-area">
+                                    <pre class="m-0"><code class="language-html hljs language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"basic-list-group"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-group"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-group-item"</span>&gt;</span>Cras justo odio<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-group-item"</span>&gt;</span>Dapibus ac facilisis in<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-group-item"</span>&gt;</span>Morbi leo risus<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-group-item"</span>&gt;</span>Porta ac consectetur ac<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-group-item"</span>&gt;</span>Vestibulum at eros<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Column  -->
+                <!-- Column  -->
+                <div class="col-xl-12">
+                    <div class="card dz-card" id="list-active">
+                        <div class="card-header flex-wrap d-flex justify-content-between le">
+                            <h4 class="card-title">List Active items</h4>
+                            <ul class="nav nav-tabs dzm-tabs" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active " id="home-tab" data-bs-toggle="tab" data-bs-target="#ListActive" type="button" role="tab" aria-controls="home" aria-selected="true">Preview</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link " id="profile-tab" data-bs-toggle="tab" data-bs-target="#ListActive-html" type="button" role="tab" aria-controls="html" aria-selected="false">HTML</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="ListActive" role="tabpanel" aria-labelledby="home-tab">
+                                <div class="card-body">
+                                    <div class="basic-list-group">
+                                        <ul class="list-group">
+                                            <li class="list-group-item active">Cras justo odio</li>
+                                            <li class="list-group-item">Dapibus ac facilisis in</li>
+                                            <li class="list-group-item">Morbi leo risus</li>
+                                            <li class="list-group-item">Porta ac consectetur ac</li>
+                                            <li class="list-group-item">Vestibulum at eros</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade " id="ListActive-html" role="tabpanel" aria-labelledby="home-tab">
+                                <div class="card-body p-0 code-area">
+                                    <pre class="m-0"><code class="language-html hljs language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"basic-list-group"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-group"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-group-item active"</span>&gt;</span>Cras justo odio<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-group-item"</span>&gt;</span>Dapibus ac facilisis in<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-group-item"</span>&gt;</span>Morbi leo risus<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-group-item"</span>&gt;</span>Porta ac consectetur ac<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-group-item"</span>&gt;</span>Vestibulum at eros<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Column  -->
+                <!-- Column  -->
+                <div class="col-xl-12">
+                    <div class="card dz-card" id="list-disabled">
+                        <div class="card-header flex-wrap d-flex justify-content-between le">
+                            <h4 class="card-title">List Disabled items</h4>
+                            <ul class="nav nav-tabs dzm-tabs" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active " id="home-tab" data-bs-toggle="tab" data-bs-target="#ListDisabled" type="button" role="tab" aria-controls="home" aria-selected="true">Preview</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link " id="profile-tab" data-bs-toggle="tab" data-bs-target="#ListDisabled-html" type="button" role="tab" aria-controls="html" aria-selected="false">HTML</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="ListDisabled" role="tabpanel" aria-labelledby="home-tab">
+                                <div class="card-body">
+                                    <div class="basic-list-group">
+                                        <ul class="list-group">
+                                            <li class="list-group-item disabled">Cras justo odio</li>
+                                            <li class="list-group-item">Dapibus ac facilisis in</li>
+                                            <li class="list-group-item">Morbi leo risus</li>
+                                            <li class="list-group-item">Porta ac consectetur ac</li>
+                                            <li class="list-group-item">Vestibulum at eros</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade " id="ListDisabled-html" role="tabpanel" aria-labelledby="home-tab">
+                                <div class="card-body p-0 code-area">
+                                    <pre class="m-0"><code class="language-html hljs language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"basic-list-group"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-group"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-group-item disabled"</span>&gt;</span>Cras justo odio<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-group-item"</span>&gt;</span>Dapibus ac facilisis in<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-group-item"</span>&gt;</span>Morbi leo risus<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-group-item"</span>&gt;</span>Porta ac consectetur ac<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-group-item"</span>&gt;</span>Vestibulum at eros<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Column  -->
+                <!-- Column  -->
+                <div class="col-xl-12">
+                    <div class="card dz-card" id="link-button">
+                        <div class="card-header flex-wrap d-flex justify-content-between le">
+                            <h4 class="card-title">Links and buttons items</h4>
+                            <ul class="nav nav-tabs dzm-tabs" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active " id="home-tab" data-bs-toggle="tab" data-bs-target="#LinksButtons" type="button" role="tab" aria-controls="home" aria-selected="true">Preview</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link " id="profile-tab" data-bs-toggle="tab" data-bs-target="#LinksButtons-html" type="button" role="tab" aria-controls="html" aria-selected="false">HTML</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="LinksButtons" role="tabpanel" aria-labelledby="home-tab">
+                                <div class="card-body">
+                                    <div class="basic-list-group">
+                                        <div class="list-group">
+                                            <a href="javascript:void(0);" class="list-group-item list-group-item-action active">
+                                                Cras
+                                                justo odio
+                                            </a><a href="javascript:void(0);" class="list-group-item list-group-item-action">
+                                                Dapibus
+                                                ac facilisis in
+                                            </a> <a href="javascript:void(0);" class="list-group-item list-group-item-action">
+                                                Morbi
+                                                leo risus
+                                            </a>
+                                            <a href="javascript:void(0);" class="list-group-item list-group-item-action">
+                                                Porta
+                                                ac consectetur
+                                                ac
+                                            </a> <a href="javascript:void(0);" class="list-group-item list-group-item-action disabled">
+                                                Vestibulum
+                                                at eros
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="LinksButtons-html" role="tabpanel" aria-labelledby="home-tab">
+                                <div class="card-body p-0 code-area">
+                                    <pre class="m-0"><code class="language-html hljs language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"basic-list-group"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-group"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-group-item list-group-item-action active"</span>&gt;</span>Cras
+            justo odio <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-group-item list-group-item-action"</span>&gt;</span>Dapibus
+            ac facilisis in<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-group-item list-group-item-action"</span>&gt;</span>Morbi
+            leo risus<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-group-item list-group-item-action"</span>&gt;</span>Porta
+            ac consectetur
+            ac<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-group-item list-group-item-action disabled"</span>&gt;</span>Vestibulum
+            at eros<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Column  -->
+                <!-- Column  -->
+                <div class="col-xl-12">
+                    <div class="card dz-card" id="flush">
+                        <div class="card-header flex-wrap d-flex justify-content-between le">
+                            <h4 class="card-title">Flush</h4>
+                            <ul class="nav nav-tabs dzm-tabs" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active " id="home-tab" data-bs-toggle="tab" data-bs-target="#Flush" type="button" role="tab" aria-controls="home" aria-selected="true">Preview</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link " id="profile-tab" data-bs-toggle="tab" data-bs-target="#Flush-html" type="button" role="tab" aria-controls="html" aria-selected="false">HTML</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="Flush" role="tabpanel" aria-labelledby="home-tab">
+                                <div class="card-body">
+                                    <div class="basic-list-group">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">Cras justo odio</li>
+                                            <li class="list-group-item">Dapibus ac facilisis in</li>
+                                            <li class="list-group-item">Morbi leo risus</li>
+                                            <li class="list-group-item">Porta ac consectetur ac</li>
+                                            <li class="list-group-item">Vestibulum at eros</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade " id="Flush-html" role="tabpanel" aria-labelledby="home-tab">
+                                <div class="card-body p-0 code-area">
+                                    <pre class="m-0"><code class="language-html hljs language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"basic-list-group"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-group list-group-flush"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-group-item"</span>&gt;</span>Cras justo odio<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-group-item"</span>&gt;</span>Dapibus ac facilisis in<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-group-item"</span>&gt;</span>Morbi leo risus<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-group-item"</span>&gt;</span>Porta ac consectetur ac<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-group-item"</span>&gt;</span>Vestibulum at eros<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Column  -->
+                <!-- Column  -->
+                <div class="col-xl-12">
+                    <div class="card dz-card" id="with-badges">
+                        <div class="card-header flex-wrap d-flex justify-content-between le">
+                            <h4 class="card-title">With badges</h4>
+                            <ul class="nav nav-tabs dzm-tabs" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active " id="home-tab" data-bs-toggle="tab" data-bs-target="#WithBadges" type="button" role="tab" aria-controls="home" aria-selected="true">Preview</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link " id="profile-tab" data-bs-toggle="tab" data-bs-target="#WithBadges-html" type="button" role="tab" aria-controls="html" aria-selected="false">HTML</button>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="WithBadges" role="tabpanel" aria-labelledby="home-tab">
+                                <div class="card-body">
+                                    <div class="basic-list-group">
+                                        <ul class="list-group">
+                                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                Cras justo odio <span class="badge badge-primary badge-pill">14</span>
+                                            </li>
+                                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                Dapibus ac facilisis in <span class="badge badge-primary badge-pill">2</span>
+                                            </li>
+                                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                Cras justo odio <span class="badge badge-primary badge-pill">14</span>
+                                            </li>
+                                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                Morbi leo risus <span class="badge badge-primary badge-pill">1</span>
+                                            </li>
+                                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                Morbi leo risus <span class="badge badge-primary badge-pill">1</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade " id="WithBadges-html" role="tabpanel" aria-labelledby="home-tab">
+                                <div class="card-body p-0 code-area">
+                                    <pre class="m-0"><code class="language-html hljs language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"basic-list-group"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-group"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-group-item d-flex justify-content-between align-items-center"</span>&gt;</span>
+    Cras justo odio <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge badge-primary badge-pill"</span>&gt;</span>14<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-group-item d-flex justify-content-between align-items-center"</span>&gt;</span>
+    Dapibus ac facilisis in <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge badge-primary badge-pill"</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-group-item d-flex justify-content-between align-items-center"</span>&gt;</span>
+    Cras justo odio <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge badge-primary badge-pill"</span>&gt;</span>14<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-group-item d-flex justify-content-between align-items-center"</span>&gt;</span>
+    Morbi leo risus <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge badge-primary badge-pill"</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-group-item d-flex justify-content-between align-items-center"</span>&gt;</span>
+    Morbi leo risus <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge badge-primary badge-pill"</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Column  -->
+                <!-- Column  -->
+                <div class="col-xl-12">
+                    <div class="card dz-card" id="custom-content">
+                        <div class="card-header flex-wrap d-flex justify-content-between le">
+                            <h4 class="card-title">Custom content</h4>
+                            <ul class="nav nav-tabs dzm-tabs" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active " id="home-tab" data-bs-toggle="tab" data-bs-target="#CustomContent" type="button" role="tab" aria-controls="home" aria-selected="true">Preview</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link " id="profile-tab" data-bs-toggle="tab" data-bs-target="#CustomContent-html" type="button" role="tab" aria-controls="html" aria-selected="false">HTML</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="CustomContent" role="tabpanel" aria-labelledby="home-tab">
+                                <div class="card-body">
+                                    <div class="basic-list-group">
+                                        <div class="list-group">
+                                            <a href="javascript:void(0);" class="list-group-item list-group-item-action flex-column align-items-start active">
+                                                <div class="d-flex w-100 justify-content-between">
+                                                    <h5 class="mb-3 text-white">List group item heading</h5><small>
+                                                        3 days
+                                                        ago
+                                                    </small>
+                                                </div>
+                                                <p class="mb-1 text-white">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p><small>
+                                                    Donec id elit non mi
+                                                    porta.
+                                                </small>
+                                            </a>
+                                            <a href="javascript:void(0);" class="list-group-item list-group-item-action flex-column align-items-start">
+                                                <div class="d-flex w-100 justify-content-between">
+                                                    <h5 class="mb-3">List group item heading</h5><small class="text-muted">
+                                                        3
+                                                        days ago
+                                                    </small>
+                                                </div>
+                                                <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p><small class="text-muted">
+                                                    Donec
+                                                    id elit non mi porta.
+                                                </small>
+                                            </a>
+                                            <a href="javascript:void(0);" class="list-group-item list-group-item-action flex-column align-items-start">
+                                                <div class="d-flex w-100 justify-content-between">
+                                                    <h5 class="mb-3">List group item heading</h5><small class="text-muted">
+                                                        3
+                                                        days ago
+                                                    </small>
+                                                </div>
+                                                <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p><small class="text-muted">
+                                                    Donec
+                                                    id elit non mi porta.
+                                                </small>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade " id="CustomContent-html" role="tabpanel" aria-labelledby="home-tab">
+                                <div class="card-body code-area">
+                                    <pre class="m-0"><code class="language-html hljs language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"basic-list-group"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-group"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-group-item list-group-item-action flex-column align-items-start active"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"d-flex w-100 justify-content-between"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">h5</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mb-3 text-white"</span>&gt;</span>List group item heading<span class="hljs-tag">&lt;/<span class="hljs-name">h5</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">small</span>&gt;</span>3 days
+                        ago<span class="hljs-tag">&lt;/<span class="hljs-name">small</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mb-1"</span>&gt;</span>Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">small</span>&gt;</span>Donec id elit non mi
+                    porta.<span class="hljs-tag">&lt;/<span class="hljs-name">small</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-group-item list-group-item-action flex-column align-items-start"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"d-flex w-100 justify-content-between"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">h5</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mb-3"</span>&gt;</span>List group item heading<span class="hljs-tag">&lt;/<span class="hljs-name">h5</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">small</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-muted"</span>&gt;</span>3
+                        days ago<span class="hljs-tag">&lt;/<span class="hljs-name">small</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mb-1"</span>&gt;</span>Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">small</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-muted"</span>&gt;</span>Donec
+                    id elit non mi porta.<span class="hljs-tag">&lt;/<span class="hljs-name">small</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0);"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-group-item list-group-item-action flex-column align-items-start"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"d-flex w-100 justify-content-between"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">h5</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mb-3"</span>&gt;</span>List group item heading<span class="hljs-tag">&lt;/<span class="hljs-name">h5</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">small</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-muted"</span>&gt;</span>3
+                        days ago<span class="hljs-tag">&lt;/<span class="hljs-name">small</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mb-1"</span>&gt;</span>Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">small</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-muted"</span>&gt;</span>Donec
+                    id elit non mi porta.<span class="hljs-tag">&lt;/<span class="hljs-name">small</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Column  -->
+                <!-- Column  -->
+                <div class="col-xl-12">
+                    <div class="card dz-card" id="contextual">
+                        <div class="card-header flex-wrap d-flex justify-content-between le">
+                            <h4 class="card-title">Contextual</h4>
+                            <ul class="nav nav-tabs dzm-tabs" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active " id="home-tab" data-bs-toggle="tab" data-bs-target="#Contextual" type="button" role="tab" aria-controls="home" aria-selected="true">Preview</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link " id="profile-tab" data-bs-toggle="tab" data-bs-target="#Contextual-html" type="button" role="tab" aria-controls="html" aria-selected="false">HTML</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="Contextual" role="tabpanel" aria-labelledby="home-tab">
+                                <div class="card-body">
+                                    <div class="basic-list-group">
+                                        <ul class="list-group">
+                                            <li class="list-group-item">Dapibus ac facilisis in</li>
+                                            <li class="list-group-item list-group-item-primary">This is a primary list group item</li>
+                                            <li class="list-group-item list-group-item-secondary">This is a secondary list group item</li>
+                                            <li class="list-group-item list-group-item-success">This is a success list group item</li>
+                                            <li class="list-group-item list-group-item-danger">
+                                                This is a danger list group item
+                                            </li>
+                                            <li class="list-group-item list-group-item-warning">This is a warning list group item</li>
+                                            <li class="list-group-item list-group-item-info">
+                                                This is a info list group item
+                                            </li>
+                                            <li class="list-group-item list-group-item-light">
+                                                This is a light list group item
+                                            </li>
+                                            <li class="list-group-item list-group-item-dark">
+                                                This is a dark list group item
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade " id="Contextual-html" role="tabpanel" aria-labelledby="home-tab">
+                                <div class="car d" id="contextual">
+                                    <div class="card-body p-0 code-area">
+                                        <pre class="m-0"> <code class="language-html hljs language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"basic-list-group"</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-group"</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-group-item"</span>&gt;</span>Dapibus ac facilisis in<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-group-item list-group-item-primary"</span>&gt;</span>This is a primary list group item<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-group-item list-group-item-secondary"</span>&gt;</span>This is a secondary list group item<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-group-item list-group-item-success"</span>&gt;</span>This is a success list group item<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-group-item list-group-item-danger"</span>&gt;</span>This is a danger list group item
+                                        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-group-item list-group-item-warning"</span>&gt;</span>This is a warning list group item<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-group-item list-group-item-info"</span>&gt;</span>This is a info list group item
+                                        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-group-item list-group-item-light"</span>&gt;</span>This is a light list group item
+                                        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-group-item list-group-item-dark"</span>&gt;</span>This is a dark list group item
+                                        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Column  -->
+                </div>
+                <div class="row">
+                    <!-- Column  -->
+                    <div class="col-lg-12">
+                        <div class="card dz-card" id="list-tab">
+                            <div class="card-header flex-wrap d-flex justify-content-between le">
+                                <h4 class="card-title">List Tab</h4>
+                                <ul class="nav nav-tabs dzm-tabs" id="myTab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active " id="home-tab" data-bs-toggle="tab" data-bs-target="#ListTab" type="button" role="tab" aria-controls="home" aria-selected="true">Preview</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link " id="profile-tab" data-bs-toggle="tab" data-bs-target="#ListTab-html" type="button" role="tab" aria-controls="html" aria-selected="false">HTML</button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="ListTab" role="tabpanel" aria-labelledby="home-tab">
+                                    <div class="card-body">
+                                        <div class="basic-list-group">
+                                            <div class="row">
+                                                <div class="col-lg-6 col-xl-2 col-xxl-3">
+                                                    <div class="list-group mb-4 " id="list-tab" role="tablist">
+                                                        <a class="list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab">Home</a> <a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab">Profile</a> <a class="list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="list" href="#list-messages" role="tab">Messages</a>
+                                                        <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list" href="#list-settings" role="tab">Settings</a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 col-xl-10 col-xxl-9">
+                                                    <div class="tab-content" id="nav-tabContent">
+                                                        <div class="tab-pane fade show active" id="list-home">
+                                                            <h4 class="mb-4">Home Tab Content</h4>
+                                                            <p>
+                                                                Velit aute mollit ipsum ad dolor consectetur nulla officia culpa adipisicing exercitation fugiat tempor. Voluptate deserunt sit sunt nisi aliqua fugiat proident ea ut. Mollit voluptate reprehenderit
+                                                                occaecat nisi ad non minim tempor sunt voluptate consectetur exercitation id ut nulla. Ea et fugiat aliquip nostrud sunt incididunt consectetur culpa aliquip eiusmod dolor. Anim ad Lorem aliqua in
+                                                                cupidatat nisi enim eu nostrud do aliquip veniam minim.
+                                                            </p>
+                                                        </div>
+                                                        <div class="tab-pane fade" id="list-profile" role="tabpanel">
+                                                            <h4 class="mb-4">Profile Tab Content</h4>
+                                                            <p>
+                                                                Cupidatat quis ad sint excepteur laborum in esse qui. Et excepteur consectetur ex nisi eu do cillum ad laborum. Mollit et eu officia dolore sunt Lorem culpa qui commodo velit ex amet id ex. Officia anim
+                                                                incididunt laboris deserunt anim aute dolor incididunt veniam aute dolore do exercitation. Dolor nisi culpa ex ad irure in elit eu dolore. Ad laboris ipsum reprehenderit irure non commodo enim culpa
+                                                                commodo veniam incididunt veniam ad.
+                                                            </p>
+                                                        </div>
+                                                        <div class="tab-pane fade" id="list-messages">
+                                                            <h4 class="mb-4">Message Tab Content</h4>
+                                                            <p>
+                                                                Ut ut do pariatur aliquip aliqua aliquip exercitation do nostrud commodo reprehenderit aute ipsum voluptate. Irure Lorem et laboris nostrud amet cupidatat cupidatat anim do ut velit mollit consequat
+                                                                enim tempor. Consectetur est minim nostrud nostrud consectetur irure labore voluptate irure. Ipsum id Lorem sit sint voluptate est pariatur eu ad cupidatat et deserunt culpa sit eiusmod deserunt.
+                                                                Consectetur et fugiat anim do eiusmod aliquip nulla laborum elit adipisicing pariatur cillum.
+                                                            </p>
+                                                        </div>
+                                                        <div class="tab-pane fade" id="list-settings">
+                                                            <h4 class="mb-4">Settings Tab Content</h4>
+                                                            <p>
+                                                                Irure enim occaecat labore sit qui aliquip reprehenderit amet velit. Deserunt ullamco ex elit nostrud ut dolore nisi officia magna sit occaecat laboris sunt dolor. Nisi eu minim cillum occaecat aute
+                                                                est cupidatat aliqua labore aute occaecat ea aliquip sunt amet. Aute mollit dolor ut exercitation irure commodo non amet consectetur quis amet culpa. Quis ullamco nisi amet qui aute irure eu. Magna
+                                                                labore dolor quis ex labore id nostrud deserunt dolor eiusmod eu pariatur culpa mollit in irure.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="ListTab-html" role="tabpanel" aria-labelledby="home-tab">
+                                    <div class="card-body p-0 code-area">
+                                        <pre class="m-0"><code class="language-html hljs language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"basic-list-group"</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-lg-6 col-xl-2"</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-group mb-4 "</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"list-tab"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"tablist"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-group-item list-group-item-action active"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"list-home-list"</span> <span class="hljs-attr">data-bs-toggle</span>=<span class="hljs-string">"list"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#list-home"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"tab"</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-group-item list-group-item-action"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"list-profile-list"</span>
+                                        <span class="hljs-attr">data-bs-toggle</span>=<span class="hljs-string">"list"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#list-profile"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"tab"</span>&gt;</span>Profile<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-group-item list-group-item-action"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"list-messages-list"</span> <span class="hljs-attr">data-bs-toggle</span>=<span class="hljs-string">"list"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#list-messages"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"tab"</span>&gt;</span>Messages<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span>
+                                        <span class="hljs-attr">class</span>=<span class="hljs-string">"list-group-item list-group-item-action"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"list-settings-list"</span> <span class="hljs-attr">data-bs-toggle</span>=<span class="hljs-string">"list"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#list-settings"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"tab"</span>&gt;</span>Settings<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-lg-6 col-xl-10"</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"tab-content"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"nav-tabContent"</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"tab-pane fade show active"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"list-home"</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">h4</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mb-4"</span>&gt;</span>Home Tab Content<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Velit aute mollit ipsum ad dolor consectetur nulla officia culpa adipisicing exercitation fugiat tempor. Voluptate deserunt sit sunt nisi aliqua fugiat proident ea ut. Mollit voluptate reprehenderit
+                        occaecat nisi ad non minim tempor sunt voluptate consectetur exercitation id ut nulla. Ea et fugiat aliquip nostrud sunt incididunt consectetur culpa aliquip eiusmod dolor. Anim ad Lorem aliqua in
+                        cupidatat nisi enim eu nostrud do aliquip veniam minim.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"tab-pane fade"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"list-profile"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"tabpanel"</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">h4</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mb-4"</span>&gt;</span>Profile Tab Content<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Cupidatat quis ad sint excepteur laborum in esse qui. Et excepteur consectetur ex nisi eu do cillum ad laborum. Mollit et eu officia dolore sunt Lorem culpa qui commodo velit ex amet id ex. Officia anim
+                        incididunt laboris deserunt anim aute dolor incididunt veniam aute dolore do exercitation. Dolor nisi culpa ex ad irure in elit eu dolore. Ad laboris ipsum reprehenderit irure non commodo enim culpa
+                        commodo veniam incididunt veniam ad.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"tab-pane fade"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"list-messages"</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">h4</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mb-4"</span>&gt;</span>Message Tab Content<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Ut ut do pariatur aliquip aliqua aliquip exercitation do nostrud commodo reprehenderit aute ipsum voluptate. Irure Lorem et laboris nostrud amet cupidatat cupidatat anim do ut velit mollit consequat
+                        enim tempor. Consectetur est minim nostrud nostrud consectetur irure labore voluptate irure. Ipsum id Lorem sit sint voluptate est pariatur eu ad cupidatat et deserunt culpa sit eiusmod deserunt.
+                        Consectetur et fugiat anim do eiusmod aliquip nulla laborum elit adipisicing pariatur cillum.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"tab-pane fade"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"list-settings"</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">h4</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mb-4"</span>&gt;</span>Settings Tab Content<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Irure enim occaecat labore sit qui aliquip reprehenderit amet velit. Deserunt ullamco ex elit nostrud ut dolore nisi officia magna sit occaecat laboris sunt dolor. Nisi eu minim cillum occaecat aute
+                        est cupidatat aliqua labore aute occaecat ea aliquip sunt amet. Aute mollit dolor ut exercitation irure commodo non amet consectetur quis amet culpa. Quis ullamco nisi amet qui aute irure eu. Magna
+                        labore dolor quis ex labore id nostrud deserunt dolor eiusmod eu pariatur culpa mollit in irure.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Column  -->
+                </div>
+                <!-- /Column  -->
+            </div>
+
+        </div>
+    </div>
+    <div class="demo-right ">
+        <div class="demo-right-inner dlab-scroll " id="right-sidebar">
+            <h4 class="title">Examples For List Group</h4>
+            <ul class="navbar-nav" id="menu-bar">
+                <li><a href="#basic-list" class="scroll">Basic List Group</a></li>
+                <li><a href="#list-active" class="scroll">List Active items</a></li>
+                <li><a href="#list-disabled" class="scroll">List Disabled Item</a></li>
+                <li><a href="#link-button" class="scroll">Link And Button Item</a></li>
+                <li><a href="#flush" class="scroll">Flush</a></li>
+                <li><a href="#with-badges" class="scroll">With Badges</a></li>
+                <li><a href="#custom-content" class="scroll">Custom Content</a></li>
+                <li><a href="#contextual" class="scroll">Contextual</a></li>
+                <li><a href="#list-tab" class="scroll">List-Tab</a></li>
+
+            </ul>
+        </div>
+    </div>

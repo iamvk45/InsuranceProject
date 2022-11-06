@@ -1,0 +1,141 @@
+﻿@{
+    ViewData["Title"] = "Forms";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="row">
+    <div class="col-xl-9">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">Date Picker</h4>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-xl-4 mb-3">
+                        <div class="example">
+                            <p class="mb-1">Date Range Pick</p>
+                            <input class="form-control input-daterange-datepicker" type="text" name="daterange" value="01/01/2015 - 01/31/2015">
+                        </div>
+                    </div>
+                    <div class="col-xl-4 mb-3">
+                        <div class="example">
+                            <p class="mb-1">Date Range With Time</p>
+                            <input type="text" class="form-control input-daterange-timepicker" name="daterange" value="01/01/2015 1:30 PM - 01/01/2015 2:00 PM">
+                        </div>
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="example">
+                            <p class="mb-1">Limit Selectable Dates</p>
+                            <input class="form-control input-limit-datepicker" type="text" name="daterange" value="06/01/2015 - 06/07/2015">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-3">
+        <!-- Card -->
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">Pick-Date picker</h4>
+            </div>
+            <div class="card-body">
+                <p class="mb-1">Default picker</p>
+                <input name="datepicker" class="datepicker-default form-control picker__input" id="datepicker" readonly="" aria-haspopup="true" aria-expanded="false" aria-readonly="false" aria-owns="datepicker_root"><div class="picker" id="datepicker_root" aria-hidden="true"><div class="picker__holder" tabindex="-1"><div class="picker__frame"><div class="picker__wrap"><div class="picker__box"><div class="picker__header"><div class="picker__month">October</div><div class="picker__year">2022</div><div class="picker__nav--prev" data-nav="-1" role="button" aria-controls="datepicker_table" title="Previous month"> </div><div class="picker__nav--next" data-nav="1" role="button" aria-controls="datepicker_table" title="Next month"> </div></div><table class="picker__table" id="datepicker_table" role="grid" aria-controls="datepicker" aria-readonly="true"><thead><tr><th class="picker__weekday" scope="col" title="Sunday">Sun</th><th class="picker__weekday" scope="col" title="Monday">Mon</th><th class="picker__weekday" scope="col" title="Tuesday">Tue</th><th class="picker__weekday" scope="col" title="Wednesday">Wed</th><th class="picker__weekday" scope="col" title="Thursday">Thu</th><th class="picker__weekday" scope="col" title="Friday">Fri</th><th class="picker__weekday" scope="col" title="Saturday">Sat</th></tr></thead><tbody><tr><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1664044200000" role="gridcell" aria-label="25 September, 2022">25</div></td><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1664130600000" role="gridcell" aria-label="26 September, 2022">26</div></td><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1664217000000" role="gridcell" aria-label="27 September, 2022">27</div></td><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1664303400000" role="gridcell" aria-label="28 September, 2022">28</div></td><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1664389800000" role="gridcell" aria-label="29 September, 2022">29</div></td><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1664476200000" role="gridcell" aria-label="30 September, 2022">30</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1664562600000" role="gridcell" aria-label="1 October, 2022">1</div></td></tr><tr><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1664649000000" role="gridcell" aria-label="2 October, 2022">2</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1664735400000" role="gridcell" aria-label="3 October, 2022">3</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1664821800000" role="gridcell" aria-label="4 October, 2022">4</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1664908200000" role="gridcell" aria-label="5 October, 2022">5</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1664994600000" role="gridcell" aria-label="6 October, 2022">6</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1665081000000" role="gridcell" aria-label="7 October, 2022">7</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1665167400000" role="gridcell" aria-label="8 October, 2022">8</div></td></tr><tr><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1665253800000" role="gridcell" aria-label="9 October, 2022">9</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1665340200000" role="gridcell" aria-label="10 October, 2022">10</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1665426600000" role="gridcell" aria-label="11 October, 2022">11</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1665513000000" role="gridcell" aria-label="12 October, 2022">12</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1665599400000" role="gridcell" aria-label="13 October, 2022">13</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1665685800000" role="gridcell" aria-label="14 October, 2022">14</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1665772200000" role="gridcell" aria-label="15 October, 2022">15</div></td></tr><tr><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1665858600000" role="gridcell" aria-label="16 October, 2022">16</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1665945000000" role="gridcell" aria-label="17 October, 2022">17</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1666031400000" role="gridcell" aria-label="18 October, 2022">18</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1666117800000" role="gridcell" aria-label="19 October, 2022">19</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1666204200000" role="gridcell" aria-label="20 October, 2022">20</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1666290600000" role="gridcell" aria-label="21 October, 2022">21</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1666377000000" role="gridcell" aria-label="22 October, 2022">22</div></td></tr><tr><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1666463400000" role="gridcell" aria-label="23 October, 2022">23</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1666549800000" role="gridcell" aria-label="24 October, 2022">24</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1666636200000" role="gridcell" aria-label="25 October, 2022">25</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1666722600000" role="gridcell" aria-label="26 October, 2022">26</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1666809000000" role="gridcell" aria-label="27 October, 2022">27</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1666895400000" role="gridcell" aria-label="28 October, 2022">28</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1666981800000" role="gridcell" aria-label="29 October, 2022">29</div></td></tr><tr><td role="presentation"><div class="picker__day picker__day--infocus picker__day--today picker__day--highlighted" data-pick="1667068200000" role="gridcell" aria-label="30 October, 2022" aria-activedescendant="true">30</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1667154600000" role="gridcell" aria-label="31 October, 2022">31</div></td><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1667241000000" role="gridcell" aria-label="1 November, 2022">1</div></td><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1667327400000" role="gridcell" aria-label="2 November, 2022">2</div></td><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1667413800000" role="gridcell" aria-label="3 November, 2022">3</div></td><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1667500200000" role="gridcell" aria-label="4 November, 2022">4</div></td><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1667586600000" role="gridcell" aria-label="5 November, 2022">5</div></td></tr></tbody></table><div class="picker__footer"><button class="picker__button--today" type="button" data-pick="1667068200000" disabled="" aria-controls="datepicker">Today</button><button class="picker__button--clear" type="button" data-clear="1" disabled="" aria-controls="datepicker">Clear</button><button class="picker__button--close" type="button" data-close="true" disabled="" aria-controls="datepicker">Close</button></div></div></div></div></div></div>
+            </div>
+        </div>
+        <!-- Card -->
+    </div>
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">Date picker</h4>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-6 col-xl-3 col-xxl-6 mb-3">
+                        <label class="form-label">Default Clock Picker</label>
+                        <div class="input-group clockpicker">
+                            <input type="text" class="form-control" value="09:30"><span class="input-group-text"><i class="far fa-clock"></i></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-3 col-xxl-6 mb-3">
+                        <label class="form-label">Auto btn-close Clock Picker</label>
+                        <div class="input-group clockpicker" data-placement="bottom" data-align="top" data-autobtn-close="true">
+                            <input type="text" class="form-control" value="13:14">
+                            <span class="input-group-text"><i class="far fa-clock"></i></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-3 col-xxl-6 mb-3">
+                        <label class="form-label">Now time</label>
+                        <div class="input-group">
+                            <input class="form-control" id="single-input" value="" placeholder="Now">
+                            <button type="button" id="check-minutes" class="btn waves-effect waves-light btn-ft btn-success">Check the minutes</button>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-3 col-xxl-6">
+                        <label class="form-label">Left Placement</label>
+                        <div class="input-group clockpicker" data-placement="left" data-align="top" data-autobtn-close="true">
+                            <input type="text" class="form-control" value="13:14">
+                            <span class="input-group-text"><i class="far fa-clock"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">Material Date picker</h4>
+            </div>
+            <div class="card-body">
+                <div class="row form-material">
+                    <div class="col-xl-3 col-xxl-6 col-md-6 mb-3">
+                        <label class="form-label">Default Material Date Picker</label>
+                        <input type="text" class="form-control" placeholder="2017-06-04" id="mdate" data-dtp="dtp_WPizh">
+                    </div>
+                    <div class="col-xl-3 col-xxl-6 col-md-6 mb-3">
+                        <label class="form-label">Default Material Date Timepicker</label>
+                        <input type="text" id="date-format" class="form-control" placeholder="Saturday 24 June 2017 - 21:44" data-dtp="dtp_PtsG3">
+                    </div>
+                    <div class="col-xl-3 col-xxl-6 col-md-6 mb-3">
+                        <label class="form-label">Time Picker</label>
+                        <input class="form-control" id="timepicker" placeholder="Check time" data-dtp="dtp_gAvti">
+                    </div>
+                    <div class="col-xl-3 col-xxl-6 col-md-6">
+                        <label class="form-label">Min Date set</label>
+                        <input type="text" class="form-control" placeholder="set min date" id="min-date" data-dtp="dtp_nRyMv">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">Color Picker</h4>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-6 mb-3">
+                        <div class="example">
+                            <p class="mb-1">Simple mode</p>
+                            <div class="asColorPicker-wrap"><input type="text" class="as_colorpicker form-control asColorPicker-input" value="#7ab2fa"><a href="#" class="asColorPicker-clear"></a><div class="asColorPicker-trigger"><span style="background: rgb(122, 178, 250);"></span></div></div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 mb-3">
+                        <div class="example">
+                            <p class="mb-1">Complex mode</p>
+                            <div class="asColorPicker-wrap"><input type="text" class="complex-colorpicker form-control asColorPicker-input" value="#fa7a7a"><a href="#" class="asColorPicker-clear"></a><div class="asColorPicker-trigger"><span style="background: rgb(250, 122, 122);"></span></div></div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 mb-3">
+                        <div class="example">
+                            <p class="mb-1">Gradiant mode</p>
+                            <div class="asColorPicker-wrap"><input type="text" class="gradient-colorpicker form-control asColorPicker-input" value="#bee0ab"><a href="#" class="asColorPicker-clear"></a><div class="asColorPicker-trigger"><span style="background: rgb(190, 224, 171);"></span></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

@@ -1,0 +1,658 @@
+﻿@{
+    ViewData["Title"] = "Bootstrap";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row ">
+    <div class="col-xl-12">
+        <div class="page-titles">
+            <div class="d-flex align-items-center">
+                <h2 class="heading">Banking</h2>
+                <!-- <p class="text-warning ms-2">Welcome Back Yatin Sharma !</p> -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- --element-area-- -->
+<div class="element-area">
+    <div class="demo-view">
+        <div class="container-fluid pt-0 ps-0 pe-lg-4 pe-0">
+            <!-- row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card dz-card" id="badges-size">
+                        <div class="card-header flex-wrap d-flex justify-content-between border-0 ">
+                            <div>
+                                <h4 class="card-title">Badges Size</h4>
+                                <p class="mb-0 subtitle">Default Bootstrap Badges</p>
+                            </div>
+                            <ul class="nav nav-tabs dzm-tabs" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active " id="home-tab" data-bs-toggle="tab" data-bs-target="#BadgesSize" type="button" role="tab" aria-controls="home" aria-selected="true">Preview</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link " id="profile-tab" data-bs-toggle="tab" data-bs-target="#BadgesSize-html" type="button" role="tab" aria-controls="html" aria-selected="false">HTML</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="BadgesSize" role="tabpanel" aria-labelledby="home-tab">
+                                <div class="card-body pt-0">
+                                    <div class="bootstrap-badge">
+                                        <span class="badge badge-xs light badge-primary">Primary</span>
+                                        <span class="badge badge-sm light badge-primary">Primary</span>
+                                        <span class="badge light badge-secondary">Secondary</span>
+                                        <span class="badge badge-lg light badge-danger">Danger</span>
+                                        <span class="badge badge-xl light badge-warning">Warning</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="BadgesSize-html" role="tabpanel" aria-labelledby="home-tab">
+                                <div class="card-body p-0 code-area">
+<pre class="m-0"><code class="language-html hljs language-xml">
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"bootstrap-badge"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge badge-xs light badge-primary"</span>&gt;</span>Primary<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge badge-sm light badge-primary"</span>&gt;</span>Primary<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge light badge-secondary"</span>&gt;</span>Secondary<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge badge-lg light badge-danger"</span>&gt;</span>Danger<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge badge-xl light badge-warning"</span>&gt;</span>Warning<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span> </code></pre>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="card dz-card" id="badges-light">
+                        <div class="card-header flex-wrap d-flex justify-content-between border-0 ">
+                            <div>
+                                <h4 class="card-title">Badges Light</h4>
+                                <p class="mb-0 subtitle">Default Bootstrap Badges</p>
+                            </div>
+                            <ul class="nav nav-tabs dzm-tabs" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active " id="home-tab" data-bs-toggle="tab" data-bs-target="#BadgesLight" type="button" role="tab" aria-controls="home" aria-selected="true">Preview</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link " id="profile-tab" data-bs-toggle="tab" data-bs-target="#BadgesLight-html" type="button" role="tab" aria-controls="html" aria-selected="false">HTML</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="BadgesLight" role="tabpanel" aria-labelledby="home-tab">
+                                <div class="card-body pt-0">
+                                    <div class="bootstrap-badge">
+                                        <span class="badge light badge-primary">Primary</span>
+                                        <span class="badge light badge-secondary">Secondary</span>
+                                        <span class="badge light badge-success">Success</span>
+                                        <span class="badge light badge-danger">Danger</span>
+                                        <span class="badge light badge-warning">Warning</span>
+                                        <span class="badge light badge-info">Info</span>
+                                        <span class="badge light badge-light">Light</span>
+                                        <span class="badge light badge-dark">Dark</span>
+                                    </div>
+                                    <div class="bootstrap-badge">
+                                        <span class="badge light badge-primary">1</span>
+                                        <span class="badge light badge-secondary">2</span>
+                                        <span class="badge light badge-success">3</span>
+                                        <span class="badge light badge-danger">4</span>
+                                        <span class="badge light badge-warning">5</span>
+                                        <span class="badge light badge-info">6</span>
+                                        <span class="badge light badge-light">7</span>
+                                        <span class="badge light badge-dark">8</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="BadgesLight-html" role="tabpanel" aria-labelledby="home-tab">
+                                <div class="card-body p-0 code-area">
+<pre class="m-0"><code class="language-html hljs language-xml">												
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"bootstrap-badge"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge light badge-primary"</span>&gt;</span>Primary<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge light badge-secondary"</span>&gt;</span>Secondary<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge light badge-success"</span>&gt;</span>Success<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge light badge-danger"</span>&gt;</span>Danger<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge light badge-warning"</span>&gt;</span>Warning<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge light badge-info"</span>&gt;</span>Info<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge light badge-light"</span>&gt;</span>Light<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge light badge-dark"</span>&gt;</span>Dark<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"bootstrap-badge"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge light badge-primary"</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge light badge-secondary"</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge light badge-success"</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge light badge-danger"</span>&gt;</span>4<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge light badge-warning"</span>&gt;</span>5<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge light badge-info"</span>&gt;</span>6<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge light badge-light"</span>&gt;</span>7<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge light badge-dark"</span>&gt;</span>8<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="card dz-card" id="badges">
+                        <div class="card-header flex-wrap d-flex justify-content-between border-0 ">
+                            <div>
+                                <h4 class="card-title">Badges </h4>
+                                <p class="mb-0 subtitle">Default Bootstrap Badges</p>
+                            </div>
+                            <ul class="nav nav-tabs dzm-tabs" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active " id="home-tab" data-bs-toggle="tab" data-bs-target="#Badges" type="button" role="tab" aria-controls="home" aria-selected="true">Preview</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link " id="profile-tab" data-bs-toggle="tab" data-bs-target="#Badges-html" type="button" role="tab" aria-controls="html" aria-selected="false">HTML</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="Badges" role="tabpanel" aria-labelledby="home-tab">
+                                <div class="card-body pt-0">
+                                    <div class="bootstrap-badge">
+                                        <span class="badge badge-primary">Primary</span>
+                                        <span class="badge badge-secondary">Secondary</span>
+                                        <span class="badge badge-success">Success</span>
+                                        <span class="badge badge-danger">Danger</span>
+                                        <span class="badge badge-warning">Warning</span>
+                                        <span class="badge badge-info">Info</span>
+                                        <span class="badge badge-light">Light</span>
+                                        <span class="badge badge-dark">Dark</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade " id="Badges-html" role="tabpanel" aria-labelledby="home-tab">
+                                <div class="card-body p-0 code-area">
+<pre class="m-0"><code class="language-html hljs language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"bootstrap-badge"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge badge-primary"</span>&gt;</span>Primary<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge badge-secondary"</span>&gt;</span>Secondary<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge badge-success"</span>&gt;</span>Success<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge badge-danger"</span>&gt;</span>Danger<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge badge-warning"</span>&gt;</span>Warning<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge badge-info"</span>&gt;</span>Info<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge badge-light"</span>&gt;</span>Light<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge badge-dark"</span>&gt;</span>Dark<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="card dz-card" id="pill-badge">
+                        <div class="card-header flex-wrap d-flex justify-content-between border-0 ">
+                            <div>
+                                <h4 class="card-title">Pill Badge </h4>
+                                <p class="mb-0 subtitle">add <code>.badge-pill</code> to change the style</p>
+                            </div>
+                            <ul class="nav nav-tabs dzm-tabs" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active " id="home-tab" data-bs-toggle="tab" data-bs-target="#PillBadge" type="button" role="tab" aria-controls="home" aria-selected="true">Preview</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link " id="profile-tab" data-bs-toggle="tab" data-bs-target="#PillBadge-html" type="button" role="tab" aria-controls="html" aria-selected="false">HTML</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="PillBadge" role="tabpanel" aria-labelledby="home-tab">
+                                <div class="card-body pt-0">
+                                    <div class="bootstrap-badge">
+                                        <span class="badge badge-pill badge-primary">Pill badge</span>
+                                        <span class="badge badge-pill badge-secondary">Pill badge</span>
+                                        <span class="badge badge-pill badge-success">Pill badge</span>
+                                        <span class="badge badge-pill badge-danger">Pill badge</span>
+                                        <span class="badge badge-pill badge-warning">Pill badge</span>
+                                        <span class="badge badge-pill badge-info">Pill badge</span>
+                                        <span class="badge badge-pill badge-light">Pill badge</span>
+                                        <span class="badge badge-pill badge-dark">Pill badge</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="PillBadge-html" role="tabpanel" aria-labelledby="home-tab">
+                                <div class="card-body p-0 code-area">
+<pre class="m-0"> <code class="language-html hljs language-xml">
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"bootstrap-badge"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge badge-pill badge-primary"</span>&gt;</span>Pill badge<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge badge-pill badge-secondary"</span>&gt;</span>Pill badge<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge badge-pill badge-success"</span>&gt;</span>Pill badge<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge badge-pill badge-danger"</span>&gt;</span>Pill badge<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge badge-pill badge-warning"</span>&gt;</span>Pill badge<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge badge-pill badge-info"</span>&gt;</span>Pill badge<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge badge-pill badge-light"</span>&gt;</span>Pill badge<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge badge-pill badge-dark"</span>&gt;</span>Pill badge<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="card dz-card" id="link-badge">
+                        <div class="card-header flex-wrap d-flex justify-content-between border-0  ">
+                            <div>
+                                <h4 class="card-title">Link Badge </h4>
+                                <p class="mb-0 subtitle">Link badge add in anchor tag</p>
+                            </div>
+                            <ul class="nav nav-tabs dzm-tabs" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active " id="home-tab" data-bs-toggle="tab" data-bs-target="#LinkBadge" type="button" role="tab" aria-controls="home" aria-selected="true">Preview</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link " id="profile-tab" data-bs-toggle="tab" data-bs-target="#LinkBadge-html" type="button" role="tab" aria-controls="html" aria-selected="false">HTML</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="LinkBadge" role="tabpanel" aria-labelledby="home-tab">
+                                <div class="card-body pt-0">
+                                    <div class="bootstrap-badge">
+                                        <a href="javascript:void(0)" class="badge badge-primary">Links</a>
+                                        <a href="javascript:void(0)" class="badge badge-secondary">Links</a>
+                                        <a href="javascript:void(0)" class="badge badge-success">Links</a>
+                                        <a href="javascript:void(0)" class="badge badge-danger">Links</a>
+                                        <a href="javascript:void(0)" class="badge badge-warning">Links</a>
+                                        <a href="javascript:void(0)" class="badge badge-info">Links</a>
+                                        <a href="javascript:void(0)" class="badge badge-light">Links</a>
+                                        <a href="javascript:void(0)" class="badge badge-dark">Links</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="LinkBadge-html" role="tabpanel" aria-labelledby="home-tab">
+                                <div class="card-body p-0 code-area">
+<pre class="m-0"><code class="language-html hljs language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"bootstrap-badge"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0)"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge badge-primary"</span>&gt;</span>Links<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0)"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge badge-secondary"</span>&gt;</span>Links<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0)"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge badge-success"</span>&gt;</span>Links<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0)"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge badge-danger"</span>&gt;</span>Links<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0)"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge badge-warning"</span>&gt;</span>Links<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0)"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge badge-info"</span>&gt;</span>Links<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0)"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge badge-light"</span>&gt;</span>Links<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0)"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge badge-dark"</span>&gt;</span>Links<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-12">
+                    <div class="card dz-card" id="rounded-badge">
+                        <div class="card-header flex-wrap d-flex justify-content-between">
+                            <div>
+                                <h4 class="card-title">Rounded Badge </h4>
+                                <p class="mb-0 subtitle">add <code>.badge-rounded</code> to change the style</p>
+                            </div>
+                            <ul class="nav nav-tabs dzm-tabs" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active " id="home-tab" data-bs-toggle="tab" data-bs-target="#RoundedBadge" type="button" role="tab" aria-controls="home" aria-selected="true">Preview</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link " id="profile-tab" data-bs-toggle="tab" data-bs-target="#RoundedBadge-html" type="button" role="tab" aria-controls="html" aria-selected="false">HTML</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="RoundedBadge" role="tabpanel" aria-labelledby="home-tab">
+                                <div class="card-body">
+                                    <div class="bootstrap-badge">
+                                        <a href="javascript:void(0)" class="badge badge-rounded badge-primary">Rounded</a>
+                                        <a href="javascript:void(0)" class="badge badge-rounded badge-secondary">Rounded</a>
+                                        <a href="javascript:void(0)" class="badge badge-rounded badge-success">Rounded</a>
+                                        <a href="javascript:void(0)" class="badge badge-rounded badge-danger">Rounded</a>
+                                        <a href="javascript:void(0)" class="badge badge-rounded badge-warning">Rounded</a>
+                                        <a href="javascript:void(0)" class="badge badge-rounded badge-info">Rounded</a>
+                                        <a href="javascript:void(0)" class="badge badge-rounded badge-light">Rounded</a>
+                                        <a href="javascript:void(0)" class="badge badge-rounded badge-dark">Rounded</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="RoundedBadge-html" role="tabpanel" aria-labelledby="home-tab">
+                                <div class="card-body p-0 code-area">
+<pre class="m-0"><code class="language-html hljs language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"bootstrap-badge"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0)"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge badge-rounded badge-primary"</span>&gt;</span>Rounded<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0)"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge badge-rounded badge-secondary"</span>&gt;</span>Rounded<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0)"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge badge-rounded badge-success"</span>&gt;</span>Rounded<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0)"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge badge-rounded badge-danger"</span>&gt;</span>Rounded<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0)"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge badge-rounded badge-warning"</span>&gt;</span>Rounded<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0)"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge badge-rounded badge-info"</span>&gt;</span>Rounded<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0)"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge badge-rounded badge-light"</span>&gt;</span>Rounded<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0)"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge badge-rounded badge-dark"</span>&gt;</span>Rounded<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-12">
+                    <div class="card dz-card" id="rounded-outline">
+                        <div class="card-header flex-wrap d-flex justify-content-between ">
+                            <div>
+                                <h4 class="card-title">Rounded Outline Badge</h4>
+                                <p class="mb-0 subtitle">add <code>.badge-rounded</code> to change the style</p>
+                            </div>
+                            <ul class="nav nav-tabs dzm-tabs" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active " id="home-tab" data-bs-toggle="tab" data-bs-target="#OutlineBadge" type="button" role="tab" aria-controls="home" aria-selected="true">Preview</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link " id="profile-tab" data-bs-toggle="tab" data-bs-target="#OutlineBadge-html" type="button" role="tab" aria-controls="html" aria-selected="false">HTML</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="OutlineBadge" role="tabpanel" aria-labelledby="home-tab">
+                                <div class="card-body">
+                                    <div class="bootstrap-badge">
+                                        <a href="javascript:void(0)" class="badge badge-rounded badge-outline-primary">Rounded</a>
+                                        <a href="javascript:void(0)" class="badge badge-rounded badge-outline-secondary">Rounded</a>
+                                        <a href="javascript:void(0)" class="badge badge-rounded badge-outline-success">Rounded</a>
+                                        <a href="javascript:void(0)" class="badge badge-rounded badge-outline-danger">Rounded</a>
+                                        <a href="javascript:void(0)" class="badge badge-rounded badge-outline-warning">Rounded</a>
+                                        <a href="javascript:void(0)" class="badge badge-rounded badge-outline-info">Rounded</a>
+                                        <a href="javascript:void(0)" class="badge badge-rounded badge-outline-light">Rounded</a>
+                                        <a href="javascript:void(0)" class="badge badge-rounded badge-outline-dark">Rounded</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade " id="OutlineBadge-html" role="tabpanel" aria-labelledby="home-tab">
+                                <div class="card-body p-0 code-area">
+<pre class="m-0"><code class="language-html hljs language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"bootstrap-badge"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0)"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge badge-rounded badge-outline-primary"</span>&gt;</span>Rounded<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0)"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge badge-rounded badge-outline-secondary"</span>&gt;</span>Rounded<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0)"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge badge-rounded badge-outline-success"</span>&gt;</span>Rounded<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0)"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge badge-rounded badge-outline-danger"</span>&gt;</span>Rounded<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0)"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge badge-rounded badge-outline-warning"</span>&gt;</span>Rounded<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0)"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge badge-rounded badge-outline-info"</span>&gt;</span>Rounded<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0)"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge badge-rounded badge-outline-light"</span>&gt;</span>Rounded<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0)"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge badge-rounded badge-outline-dark"</span>&gt;</span>Rounded<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-12">
+                    <div class="card dz-card" id="outline-circle">
+                        <div class="card-header flex-wrap d-flex justify-content-between border-0 ">
+                            <div>
+                                <h4 class="card-title">Outline Circle Badge</h4>
+                                <p class="mb-0 subtitle">add <code>.badge-circle</code> to change the style</p>
+                            </div>
+                            <ul class="nav nav-tabs dzm-tabs" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active " id="home-tab" data-bs-toggle="tab" data-bs-target="#OutlineCircle" type="button" role="tab" aria-controls="home" aria-selected="true">Preview</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link " id="profile-tab" data-bs-toggle="tab" data-bs-target="#OutlineCircle-html" type="button" role="tab" aria-controls="html" aria-selected="false">HTML</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="OutlineCircle" role="tabpanel" aria-labelledby="home-tab">
+                                <div class="card-body pt-0">
+                                    <div class="bootstrap-badge">
+                                        <a href="javascript:void(0)" class="badge badge-circle badge-outline-primary">1</a>
+                                        <a href="javascript:void(0)" class="badge badge-circle badge-outline-secondary">2</a>
+                                        <a href="javascript:void(0)" class="badge badge-circle badge-outline-success">3</a>
+                                        <a href="javascript:void(0)" class="badge badge-circle badge-outline-danger">4</a>
+                                        <a href="javascript:void(0)" class="badge badge-circle badge-outline-warning">5</a>
+                                        <a href="javascript:void(0)" class="badge badge-circle badge-outline-info">6</a>
+                                        <a href="javascript:void(0)" class="badge badge-circle badge-outline-light">7</a>
+                                        <a href="javascript:void(0)" class="badge badge-circle badge-outline-dark">8</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade " id="OutlineCircle-html" role="tabpanel" aria-labelledby="home-tab">
+                                <div class="card-body p-0 code-area">
+<pre class="m-0"><code class="language-html hljs language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"bootstrap-badge"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0)"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge badge-circle badge-outline-primary"</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0)"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge badge-circle badge-outline-secondary"</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0)"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge badge-circle badge-outline-success"</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0)"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge badge-circle badge-outline-danger"</span>&gt;</span>4<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0)"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge badge-circle badge-outline-warning"</span>&gt;</span>5<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0)"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge badge-circle badge-outline-info"</span>&gt;</span>6<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0)"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge badge-circle badge-outline-light"</span>&gt;</span>7<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0)"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge badge-circle badge-outline-dark"</span>&gt;</span>8<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-12">
+                    <div class="card dz-card" id="circle-badge">
+                        <div class="card-header flex-wrap d-flex justify-content-between border-0 ">
+                            <div>
+                                <h4 class="card-title">Circle Badge</h4>
+                                <p class="mb-0 subtitle">add <code>.badge-circle</code> to change the style</p>
+                            </div>
+                            <ul class="nav nav-tabs dzm-tabs" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active " id="home-tab" data-bs-toggle="tab" data-bs-target="#CircleBadge" type="button" role="tab" aria-controls="home" aria-selected="true">Preview</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link " id="profile-tab" data-bs-toggle="tab" data-bs-target="#CircleBadge-html" type="button" role="tab" aria-controls="html" aria-selected="false">HTML</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="CircleBadge" role="tabpanel" aria-labelledby="home-tab">
+                                <div class="card-body pt-0">
+                                    <div class="bootstrap-badge">
+                                        <a href="javascript:void(0)" class="badge badge-circle badge-primary">1</a>
+                                        <a href="javascript:void(0)" class="badge badge-circle badge-secondary">2</a>
+                                        <a href="javascript:void(0)" class="badge badge-circle badge-success">3</a>
+                                        <a href="javascript:void(0)" class="badge badge-circle badge-danger">4</a>
+                                        <a href="javascript:void(0)" class="badge badge-circle badge-warning">5</a>
+                                        <a href="javascript:void(0)" class="badge badge-circle badge-info">6</a>
+                                        <a href="javascript:void(0)" class="badge badge-circle badge-light">7</a>
+                                        <a href="javascript:void(0)" class="badge badge-circle badge-dark">8</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="CircleBadge-html" role="tabpanel" aria-labelledby="home-tab">
+                                <div class="card-body p-0 code-area">
+<pre class="m-0"><code class="language-html hljs language-xml">
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"bootstrap-badge"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0)"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge badge-circle badge-primary"</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0)"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge badge-circle badge-secondary"</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0)"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge badge-circle badge-success"</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0)"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge badge-circle badge-danger"</span>&gt;</span>4<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0)"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge badge-circle badge-warning"</span>&gt;</span>5<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0)"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge badge-circle badge-info"</span>&gt;</span>6<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0)"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge badge-circle badge-light"</span>&gt;</span>7<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0)"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge badge-circle badge-dark"</span>&gt;</span>8<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-12">
+                    <div class="card dz-card" id="circle-badge-default">
+                        <div class="card-header flex-wrap d-flex justify-content-between border-0 ">
+                            <div>
+                                <h4 class="card-title">Circle Badge Default </h4>
+                                <p class="mb-0 subtitle">Default bootstrap outline baadge</p>
+                            </div>
+                            <ul class="nav nav-tabs dzm-tabs" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active " id="home-tab" data-bs-toggle="tab" data-bs-target="#BadgeDefault" type="button" role="tab" aria-controls="home" aria-selected="true">Preview</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link " id="profile-tab" data-bs-toggle="tab" data-bs-target="#BadgeDefault-html" type="button" role="tab" aria-controls="html" aria-selected="false">HTML</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="BadgeDefault" role="tabpanel" aria-labelledby="home-tab">
+                                <div class="card-body pt-0">
+                                    <div class="bootstrap-badge">
+                                        <a href="javascript:void(0)" class="badge badge-outline-primary">1</a>
+                                        <a href="javascript:void(0)" class="badge badge-outline-secondary">2</a>
+                                        <a href="javascript:void(0)" class="badge badge-outline-success">3</a>
+                                        <a href="javascript:void(0)" class="badge badge-outline-danger">4</a>
+                                        <a href="javascript:void(0)" class="badge badge-outline-warning">5</a>
+                                        <a href="javascript:void(0)" class="badge badge-outline-info">6</a>
+                                        <a href="javascript:void(0)" class="badge badge-outline-light">7</a>
+                                        <a href="javascript:void(0)" class="badge badge-outline-dark">8</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade " id="BadgeDefault-html" role="tabpanel" aria-labelledby="home-tab">
+                                <div class="card-body p-0 code-area">
+<pre class="m-0"><code class="language-html hljs language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"bootstrap-badge"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0)"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge badge-outline-primary"</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0)"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge badge-outline-secondary"</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0)"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge badge-outline-success"</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0)"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge badge-outline-danger"</span>&gt;</span>4<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0)"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge badge-outline-warning"</span>&gt;</span>5<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0)"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge badge-outline-info"</span>&gt;</span>6<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0)"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge badge-outline-light"</span>&gt;</span>7<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0)"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge badge-outline-dark"</span>&gt;</span>8<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-12">
+                    <div class="card dz-card" id="number-badge">
+                        <div class="card-header flex-wrap d-flex justify-content-between border-0 ">
+                            <div>
+                                <h4 class="card-title">Number Badge</h4>
+                                <p class="mb-0 subtitle">Default bootstrap outline baadge</p>
+                            </div>
+                            <ul class="nav nav-tabs dzm-tabs" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active " id="home-tab" data-bs-toggle="tab" data-bs-target="#NumberBadge" type="button" role="tab" aria-controls="home" aria-selected="true">Preview</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link " id="profile-tab" data-bs-toggle="tab" data-bs-target="#NumberBadge-html" type="button" role="tab" aria-controls="html" aria-selected="false">HTML</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active " id="NumberBadge" role="tabpanel" aria-labelledby="home-tab">
+                                <div class="card-body pt-0">
+                                    <div class="bootstrap-badge">
+                                        <a href="javascript:void(0)" class="badge badge-primary">1</a>
+                                        <a href="javascript:void(0)" class="badge badge-secondary">2</a>
+                                        <a href="javascript:void(0)" class="badge badge-success">3</a>
+                                        <a href="javascript:void(0)" class="badge badge-danger">4</a>
+                                        <a href="javascript:void(0)" class="badge badge-warning">5</a>
+                                        <a href="javascript:void(0)" class="badge badge-info">6</a>
+                                        <a href="javascript:void(0)" class="badge badge-light">7</a>
+                                        <a href="javascript:void(0)" class="badge badge-dark">8</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade " id="NumberBadge-html" role="tabpanel" aria-labelledby="home-tab">
+                                <div class="card-body p-0 code-area">
+<pre class="m-0"><code class="language-html hljs language-xml">								
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-body"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"bootstrap-badge"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0)"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge badge-primary"</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0)"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge badge-secondary"</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0)"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge badge-success"</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0)"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge badge-danger"</span>&gt;</span>4<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0)"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge badge-warning"</span>&gt;</span>5<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0)"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge badge-info"</span>&gt;</span>6<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0)"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge badge-light"</span>&gt;</span>7<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0)"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge badge-dark"</span>&gt;</span>8<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-12">
+                    <div class="card dz-card" id="badge-sizes">
+                        <div class="card-header flex-wrap d-flex justify-content-between border-0 ">
+                            <div>
+                                <h4 class="card-title">Badge Sizes </h4>
+                                <p class="mb-0 subtitle">
+                                    add <code>
+                                        .badge-xs .badge-sm .badge-md .badge-lg
+                                        .badge-xl
+                                    </code> to change the style
+                                </p>
+                            </div>
+                            <ul class="nav nav-tabs dzm-tabs" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active " id="home-tab" data-bs-toggle="tab" data-bs-target="#BadgeSizes" type="button" role="tab" aria-controls="home" aria-selected="true">Preview</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link " id="profile-tab" data-bs-toggle="tab" data-bs-target="#BadgeSizes-html" type="button" role="tab" aria-controls="html" aria-selected="false">HTML</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active " id="BadgeSizes" role="tabpanel" aria-labelledby="home-tab">
+                                <div class="card-body pt-0">
+                                    <div class="bootstrap-badge">
+                                        <a href="javascript:void(0)" class="badge badge-xs badge-primary">xs</a>
+                                        <a href="javascript:void(0)" class="badge badge-sm badge-secondary">sm</a>
+                                        <a href="javascript:void(0)" class="badge badge-md badge-success">md</a>
+                                        <a href="javascript:void(0)" class="badge badge-lg badge-danger">lg</a>
+                                        <a href="javascript:void(0)" class="badge badge-xl badge-warning">xl</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade  " id="BadgeSizes-html" role="tabpanel" aria-labelledby="home-tab">
+                                <div class="card-body p-0 code-area">
+                                    <pre class="m-0"><code class="language-html hljs language-xml">
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"bootstrap-badge"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0)"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge badge-xs badge-primary"</span>&gt;</span>xs<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0)"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge badge-sm badge-secondary"</span>&gt;</span>sm<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0)"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge badge-md badge-success"</span>&gt;</span>md<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0)"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge badge-lg badge-danger"</span>&gt;</span>lg<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:void(0)"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge badge-xl badge-warning"</span>&gt;</span>xl<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column  -->
+                <!-- /Column  -->
+            </div>
+        </div>
+    </div>
+    <div class="demo-right ">
+        <div class="demo-right-inner dlab-scroll " id="right-sidebar">
+            <h4 class="title">Examples For Badge</h4>
+            <ul class="navbar-nav" id="menu-bar">
+                <li><a href="#badges-size" class="scroll">Badges Size</a></li>
+                <li><a href="#badges-light" class="scroll">Badges Light</a></li>
+                <li><a href="#badges" class="scroll">Badges</a></li>
+                <li><a href="#pill-badge" class="scroll">Pill Badge</a></li>
+                <li><a href="#link-badge" class="scroll">Link Badge</a></li>
+                <li><a href="#rounded-badge" class="scroll">Rounded Badge</a></li>
+                <li><a href="#rounded-outline" class="scroll">Rounded Outline Badge </a></li>
+                <li><a href="#outline-circle" class="scroll">Outline Circle Badge </a></li>
+                <li><a href="#circle-badge" class="scroll">Circle Badge</a></li>
+                <li><a href="#circle-badge-default" class="scroll">Circle Badge Default</a></li>
+                <li><a href="#number-badge" class="scroll">Number Badge</a></li>
+                <li><a href="#badge-sizes" class="scroll">Badge Sizes</a></li>
+                <li><a href="#badge-modal" class="scroll">Badge Modal</a></li>
+
+            </ul>
+        </div>
+    </div>
+</div>
+
